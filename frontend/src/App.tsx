@@ -5,6 +5,7 @@ import Incidents from './pages/Incidents'
 import Campaigns from './pages/Campaigns'
 import CampaignGraph from './pages/CampaignGraph'
 import SecurityAudit from './pages/SecurityAudit'
+import TrojanVictim from './pages/TrojanVictim'
 import Copilot from './pages/Copilot'
 import Evaluation from './pages/Evaluation'
 import Architecture from './pages/Architecture'
@@ -21,6 +22,7 @@ function App() {
           <Route path="/incidents" element={<Incidents />} />
           <Route path="/campaigns" element={<Campaigns />} />
           <Route path="/graph" element={<CampaignGraph />} />
+          <Route path="/trojan-victim" element={<TrojanVictim />} />
           <Route path="/architecture" element={<Architecture />} />
           <Route path="/copilot" element={<Copilot />} />
           <Route path="/evaluation" element={<Evaluation />} />

@@ -8,6 +8,7 @@ import {
   Shield,
   Layers,
   Network,
+  Crosshair,
 } from 'lucide-react'
 
 const navItems = [
@@ -18,6 +19,7 @@ const navItems = [
       { to: '/incidents', label: 'Incidents', icon: FileSearch },
       { to: '/campaigns', label: 'Campaign Clusters', icon: Target },
       { to: '/graph', label: 'Campaign Graph', icon: Network },
+      { to: '/trojan-victim', label: 'Trojan Victim Protocol', icon: Crosshair },
       { to: '/architecture', label: 'System Architecture', icon: Layers },
       { to: '/demo', label: 'Killer Demo Mode', icon: Shield },
     ],

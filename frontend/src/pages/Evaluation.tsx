@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { CheckCircle, Target, Cpu, Zap, ShieldAlert } from 'lucide-react'
+import { CheckCircle, Target, Cpu, Zap } from 'lucide-react'
 
 export default function Evaluation() {
   const [metrics, setMetrics] = useState<any>({
