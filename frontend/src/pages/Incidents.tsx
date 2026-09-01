@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { FileSearch, Cpu, Lock } from 'lucide-react'
+import { FileSearch, Cpu, Lock, Sparkles } from 'lucide-react'
 
 export default function Incidents() {
   const [rawText, setRawText] = useState('')
@@ -29,12 +29,22 @@ export default function Incidents() {
     }
   }
 
+  const getStr = (val: any) => {
+    if (!val) return 'none'
+    if (typeof val === 'object' && val.value) return String(val.value)
+    return String(val)
+  }
+
   return (
     <div className="animate-fade-in" style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
       <div className="section-header">
         <div>
-          <h2 style={{ fontSize: '1.25rem', fontWeight: 700 }}>Incident Ingestion & Scam DNA Analyzer</h2>
-          <div className="section-header__subtitle">Submit raw multilingual incident text for closed-taxonomy extraction</div>
+          <h2 style={{ fontSize: '1.25rem', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <Sparkles style={{ color: 'var(--primary-400)' }} /> Incident Ingestion & Scam DNA Fingerprint Extractor
+          </h2>
+          <div className="section-header__subtitle">
+            Submits raw multilingual incident transcripts (English, Tamil, Hindi, Code-Switching) for structured Scam DNA extraction (§3.4)
+          </div>
         </div>
       </div>
 
@@ -112,7 +122,7 @@ export default function Incidents() {
                   className="badge badge--online"
                   style={{ cursor: 'pointer', border: 'none' }}
                 >
-                  Negative Control (Legit)
+                  Legit SBI Statement
                 </button>
               </div>
 
@@ -141,78 +151,115 @@ export default function Incidents() {
               type="submit"
               disabled={loading}
               style={{
-                padding: '10px 18px',
+                padding: '12px 18px',
                 borderRadius: 'var(--radius-md)',
                 background: 'linear-gradient(135deg, var(--primary-500), var(--accent-500))',
                 border: 'none',
                 color: 'white',
-                fontWeight: 600,
+                fontWeight: 700,
                 cursor: 'pointer',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
                 gap: '8px',
+                boxShadow: 'var(--shadow-glow-cyan)',
               }}
             >
-              {loading ? 'Extracting Scam DNA...' : 'Analyze Incident'}
+              {loading ? 'Extracting Scam DNA...' : 'Analyze Incident & Extract DNA'}
             </button>
           </form>
         </div>
 
         {/* Extraction Output */}
-        <div className="glass-card">
-          <h3 style={{ fontSize: '1rem', marginBottom: '16px', display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <Cpu size={18} style={{ color: 'var(--accent-400)' }} /> Extracted Scam DNA Fingerprint
-          </h3>
+        <div className="glass-card glass-card--accent">
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '16px' }}>
+            <h3 style={{ fontSize: '1rem', display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <Cpu size={18} style={{ color: 'var(--accent-400)' }} /> Extracted Scam DNA Pattern Fingerprint
+            </h3>
+
+            {analyzed?.scam_dna?.extraction_confidence && (
+              <span className="badge badge--success mono">
+                {(analyzed.scam_dna.extraction_confidence * 100).toFixed(0)}% CONFIDENCE
+              </span>
+            )}
+          </div>
 
           {!analyzed ? (
             <div className="empty-state">
               <FileSearch className="empty-state__icon" />
-              <div className="empty-state__title">No Incident Loaded</div>
-              <div className="empty-state__text">Submit a transcript to see structured Scam DNA extraction.</div>
+              <div className="empty-state__title">No Incident Analyzed Yet</div>
+              <div className="empty-state__text">Submit a transcript or click one of the 1-Click Test buttons to trigger real Scam DNA pattern extraction.</div>
             </div>
           ) : (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', fontSize: '0.85rem' }}>
-              <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', padding: '6px 0', borderBottom: '1px solid var(--border-subtle)' }}>
                 <span style={{ color: 'var(--text-muted)' }}>Incident ID:</span>
                 <span className="mono">{analyzed.id}</span>
               </div>
-              <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                <span style={{ color: 'var(--text-muted)' }}>Target Impersonation:</span>
-                <span className="badge badge--info">{analyzed.scam_dna?.impersonation_target}</span>
-              </div>
-              <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                <span style={{ color: 'var(--text-muted)' }}>Payment Method:</span>
-                <span className="badge badge--warning">{analyzed.scam_dna?.payment_method}</span>
-              </div>
-              <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                <span style={{ color: 'var(--text-muted)' }}>Urgency Level:</span>
-                <span>{((analyzed.scam_dna?.urgency || 0) * 100).toFixed(0)}%</span>
-              </div>
-              <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                <span style={{ color: 'var(--text-muted)' }}>Fear Pressure:</span>
-                <span>{((analyzed.scam_dna?.fear || 0) * 100).toFixed(0)}%</span>
+
+              <div style={{ display: 'flex', justifyContent: 'space-between', padding: '6px 0', borderBottom: '1px solid var(--border-subtle)' }}>
+                <span style={{ color: 'var(--text-muted)' }}>Detected Language:</span>
+                <span className="badge badge--info mono">{getStr(analyzed.scam_dna?.language)}</span>
               </div>
 
+              <div style={{ display: 'flex', justifyContent: 'space-between', padding: '6px 0', borderBottom: '1px solid var(--border-subtle)' }}>
+                <span style={{ color: 'var(--text-muted)' }}>Target Impersonation:</span>
+                <span className="badge badge--danger mono">{getStr(analyzed.scam_dna?.impersonation_target)}</span>
+              </div>
+
+              <div style={{ display: 'flex', justifyContent: 'space-between', padding: '6px 0', borderBottom: '1px solid var(--border-subtle)' }}>
+                <span style={{ color: 'var(--text-muted)' }}>Payment Method:</span>
+                <span className="badge badge--warning mono">{getStr(analyzed.scam_dna?.payment_method)}</span>
+              </div>
+
+              <div style={{ display: 'flex', justifyContent: 'space-between', padding: '6px 0', borderBottom: '1px solid var(--border-subtle)' }}>
+                <span style={{ color: 'var(--text-muted)' }}>Urgency Pressure:</span>
+                <span style={{ fontWeight: 700, color: (analyzed.scam_dna?.urgency || 0) > 0.5 ? 'var(--danger-400)' : 'var(--success-400)' }}>
+                  {((analyzed.scam_dna?.urgency || 0) * 100).toFixed(0)}%
+                </span>
+              </div>
+
+              <div style={{ display: 'flex', justifyContent: 'space-between', padding: '6px 0', borderBottom: '1px solid var(--border-subtle)' }}>
+                <span style={{ color: 'var(--text-muted)' }}>Fear Induction:</span>
+                <span style={{ fontWeight: 700, color: (analyzed.scam_dna?.fear || 0) > 0.5 ? 'var(--danger-400)' : 'var(--success-400)' }}>
+                  {((analyzed.scam_dna?.fear || 0) * 100).toFixed(0)}%
+                </span>
+              </div>
+
+              {/* Social Engineering Tactics Badges */}
+              {analyzed.scam_dna?.social_engineering_tactics && (
+                <div style={{ marginTop: '8px' }}>
+                  <div style={{ color: 'var(--text-muted)', marginBottom: '6px', fontWeight: 600 }}>Detected Social Engineering Tactics:</div>
+                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
+                    {analyzed.scam_dna.social_engineering_tactics.map((tactic: any) => (
+                      <span key={getStr(tactic)} className="badge badge--danger">
+                        {getStr(tactic)}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Extracted Identifiers */}
               <div style={{ marginTop: '8px' }}>
-                <div style={{ color: 'var(--text-muted)', marginBottom: '4px' }}>Extracted Entities:</div>
+                <div style={{ color: 'var(--text-muted)', marginBottom: '6px', fontWeight: 600 }}>Extracted Identifiers:</div>
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
                   {analyzed.scam_dna?.phone_numbers?.map((p: string) => (
-                    <span key={p} className="badge badge--info">Phone: {p}</span>
+                    <span key={p} className="badge badge--info mono">Phone: {p}</span>
                   ))}
                   {analyzed.scam_dna?.upi_ids?.map((u: string) => (
-                    <span key={u} className="badge badge--warning">UPI: {u}</span>
+                    <span key={u} className="badge badge--warning mono">UPI: {u}</span>
                   ))}
                   {analyzed.scam_dna?.urls?.map((url: string) => (
-                    <span key={url} className="badge badge--danger">URL: {url}</span>
+                    <span key={url} className="badge badge--danger mono">URL: {url}</span>
                   ))}
                 </div>
               </div>
 
-              <div style={{ marginTop: '8px', padding: '8px 12px', background: 'var(--bg-primary)', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border-subtle)', display: 'flex', alignItems: 'center', gap: '8px' }}>
-                <Lock size={14} style={{ color: 'var(--success-400)' }} />
-                <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
-                  All extracted identifiers are PII-hashed in system logs (§4.2).
+              <div style={{ marginTop: '12px', padding: '10px 14px', background: 'var(--bg-primary)', borderRadius: 'var(--radius-sm)', border: '1px solid rgba(16,185,129,0.3)', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <Lock size={16} style={{ color: 'var(--success-400)' }} />
+                <span style={{ fontSize: '0.78rem', color: 'var(--text-primary)' }}>
+                  All extracted phone numbers, UPI handles, & URLs are PII-hashed in system logs (§4.2).
                 </span>
               </div>
             </div>

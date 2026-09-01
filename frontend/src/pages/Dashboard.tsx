@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import CyberRadar from '../components/CyberRadar'
 import {
   FileSearch,
   Target,
@@ -65,6 +66,11 @@ export default function Dashboard() {
             </span>
           </div>
         </div>
+      </div>
+
+      {/* Cyber Radar Component */}
+      <div style={{ marginBottom: '24px' }}>
+        <CyberRadar />
       </div>
 
       {/* Stats Grid */}
@@ -149,31 +155,31 @@ export default function Dashboard() {
             <PipelineStage
               icon={<Cpu size={16} />}
               label="LLM Extraction → Scam DNA"
-              status="pending"
+              status="ready"
             />
             <PipelineConnector />
             <PipelineStage
               icon={<Zap size={16} />}
               label="Entity Resolution"
-              status="pending"
+              status="ready"
             />
             <PipelineConnector />
             <PipelineStage
               icon={<Network size={16} />}
               label="Embedding + ML Similarity"
-              status="pending"
+              status="ready"
             />
             <PipelineConnector />
             <PipelineStage
               icon={<Target size={16} />}
               label="Campaign Detection"
-              status="pending"
+              status="ready"
             />
             <PipelineConnector />
             <PipelineStage
               icon={<AlertTriangle size={16} />}
               label="Campaign Alert"
-              status="pending"
+              status="ready"
             />
           </div>
         </div>
