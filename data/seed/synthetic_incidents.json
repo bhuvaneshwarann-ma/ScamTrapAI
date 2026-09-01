@@ -1,0 +1,2752 @@
+[
+  {
+    "id": "f9333e89-6b09-4dca-8f8d-53b5d991f862",
+    "raw_text": "Customs Clearance Notice: Illegal package seized under your name. Pay clearance fee Rs 14,500 to account customs.duty.tax@oksbi or arrest warrant issued. Details: https://customs-clearance-india.org/tax.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-04-FEDEX-CUSTOMS",
+    "created_at": "2026-09-01T02:21:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Courier Parcel Illegal Goods Extortion"
+    }
+  },
+  {
+    "id": "e6cf6f09-76ce-458e-82b5-87827c2f0448",
+    "raw_text": "प्रिय ग्राहक, आपका SBI बैंक खाता ब्लॉक हो गया है। तुरंत KYC अपडेट करें https://sbi-kyc-update-portal.xyz/verify या कॉल करें +919876543211।",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-01-SBI-KYC",
+    "created_at": "2026-08-30T15:02:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "SBI KYC Account Suspension Campaign"
+    }
+  },
+  {
+    "id": "556decff-508a-4578-b89d-2b2495e15c2c",
+    "raw_text": "Dear SBI customer, your account 39958838 will be suspended within 2 hours due to pending KYC update. Click https://sbi-kyc-update-portal.xyz/verify or call +919876543210 to update now.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-01-SBI-KYC",
+    "created_at": "2026-08-07T15:05:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "SBI KYC Account Suspension Campaign"
+    }
+  },
+  {
+    "id": "0afe2e51-f169-45d3-8031-4d98e5b1d303",
+    "raw_text": "Paytm reward alert! You won Rs 4,999 cashback. Claim now before expiry: http://paytm-security-alert.net/login or send Rs 1 test to paytm.verify.secure@paytm.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-02-PAYTM-REFUND",
+    "created_at": "2026-08-04T01:22:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Paytm Cashback & Security Alert Scam"
+    }
+  },
+  {
+    "id": "83291e45-186d-4598-9697-83e2cab059c1",
+    "raw_text": "URGENT: Your HDFC credit card reward points worth Rs 7,500 expire today. Redeem now on official website HDFC Bank portal app. [Ref: 5653]",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-NEG-03-UNRELATED-URGENT",
+    "created_at": "2026-08-14T07:59:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "is_negative_control": true
+    }
+  },
+  {
+    "id": "f8400def-09eb-4c28-80b1-aff68f73f5bb",
+    "raw_text": "e-Challan Notice: Court warrant issued for vehicle traffic violation. Pay Rs 1000 penalty immediately to avoid impounding vehicle: https://echallan-parivahan-pay.info/fine. Helpline: +919555666777.",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-05-TRAFFIC-CHALLAN",
+    "created_at": "2026-08-13T17:54:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Fake Traffic e-Challan Fine Scam"
+    }
+  },
+  {
+    "id": "091ac017-d28a-4190-abd0-c00bc13f4a14",
+    "raw_text": "FedEx Alert: Parcel AWB-8821 held by Mumbai Customs. Contains illegal passports and drugs. Call Customs Officer immediately at +919000111222 to prevent FIR.",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-04-FEDEX-CUSTOMS",
+    "created_at": "2026-08-12T13:42:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Courier Parcel Illegal Goods Extortion"
+    }
+  },
+  {
+    "id": "0cd5d2b1-5236-45c7-be2b-6cbc9c375a36",
+    "raw_text": "You received Rs 4999 in Paytm wallet! Enter PIN at http://paytm-security-alert.net/login to accept payment. Contact helpline: +919123456789.",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-02-PAYTM-REFUND",
+    "created_at": "2026-08-22T10:18:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Paytm Cashback & Security Alert Scam"
+    }
+  },
+  {
+    "id": "43798da1-c0f6-4ee9-b001-6c07911f2350",
+    "raw_text": "बिजली विभाग चेतावनी: आपका बिजली कनेक्शन आज रात काट दिया जाएगा। तुरंत भुगतान करें elect.bill.pay@okhdfcbank पर। कॉल करें अधिकारी: +919444012345।",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-03-ELECTRICITY-BILL",
+    "created_at": "2026-08-26T07:52:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Electricity Bill Disconnection Threat"
+    }
+  },
+  {
+    "id": "f2d75585-2bd2-4977-a179-efdb4b47d22c",
+    "raw_text": "Paytm कैशबैक ऑफर! आपको 4999 रुपये मिले हैं। दावा करने के लिए लिंक पर क्लिक करें http://paytm-security-alert.net/login। सहायता: +919123456789।",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-02-PAYTM-REFUND",
+    "created_at": "2026-09-01T22:04:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Paytm Cashback & Security Alert Scam"
+    }
+  },
+  {
+    "id": "f5598e34-69eb-4db1-ba85-f01b69fe1c9e",
+    "raw_text": "Customs Clearance Notice: Illegal package seized under your name. Pay clearance fee Rs 14,500 to account customs.duty.tax@oksbi or arrest warrant issued. Details: https://customs-clearance-india.org/tax.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-04-FEDEX-CUSTOMS",
+    "created_at": "2026-08-26T05:10:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Courier Parcel Illegal Goods Extortion"
+    }
+  },
+  {
+    "id": "2c4df026-cd71-4d8c-aed2-2ee8e2fd9200",
+    "raw_text": "बिजली विभाग चेतावनी: आपका बिजली कनेक्शन आज रात काट दिया जाएगा। तुरंत भुगतान करें elect.bill.pay@okhdfcbank पर। कॉल करें अधिकारी: +919444012345।",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-03-ELECTRICITY-BILL",
+    "created_at": "2026-08-17T23:28:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Electricity Bill Disconnection Threat"
+    }
+  },
+  {
+    "id": "f200c774-cb11-4d2f-bb1b-4257508ac782",
+    "raw_text": "மின்சார வாரியம் எச்சரிக்கை: உங்கள் மின் இணைப்பு இன்று இரவு 9 மணிக்கு துண்டிக்கப்படும். உடனே கட்டணத்தை elect.bill.pay@okhdfcbank செலுத்தவும். தொடர்புக்கு +919444012345.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-03-ELECTRICITY-BILL",
+    "created_at": "2026-08-13T21:18:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Electricity Bill Disconnection Threat"
+    }
+  },
+  {
+    "id": "b85545a4-b9be-4b4a-a564-453575ebcda9",
+    "raw_text": "e-Challan Notice: Court warrant issued for vehicle traffic violation. Pay Rs 1000 penalty immediately to avoid impounding vehicle: https://echallan-parivahan-pay.info/fine. Helpline: +919555666777.",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-05-TRAFFIC-CHALLAN",
+    "created_at": "2026-08-18T06:39:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Fake Traffic e-Challan Fine Scam"
+    }
+  },
+  {
+    "id": "7016a3cf-8f95-4ded-b06d-3d65447e7d34",
+    "raw_text": "வணக்கம், உங்கள் SBI கணக்கு முடக்கப்படும். உடனடியாக KYC புதுப்பிக்கவும்: https://sbi-kyc-update-portal.xyz/verify. உதவிக்கு அழைக்கவும்: +919876543211.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-01-SBI-KYC",
+    "created_at": "2026-08-05T11:39:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "SBI KYC Account Suspension Campaign"
+    }
+  },
+  {
+    "id": "70dbb0d2-af22-4c90-bbd3-c60490ac9850",
+    "raw_text": "प्रिय ग्राहक, आपका SBI बैंक खाता ब्लॉक हो गया है। तुरंत KYC अपडेट करें https://sbi-kyc-update-portal.xyz/verify या कॉल करें +919876543210।",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-01-SBI-KYC",
+    "created_at": "2026-08-24T12:22:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "SBI KYC Account Suspension Campaign"
+    }
+  },
+  {
+    "id": "100ad54e-14d2-43f0-9f4b-52b66a01dfb9",
+    "raw_text": "Work from home opportunity! Earn Rs 3000 daily by liking YouTube videos. Contact HR Priya on WhatsApp +919999900000. Registration fee Rs 200. [Ref: 2215]",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-NEG-02-OTHER-SCAM",
+    "created_at": "2026-08-07T01:59:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "is_negative_control": true
+    }
+  },
+  {
+    "id": "01680b7a-e9b4-48cd-b73d-6e1fd13ccd7e",
+    "raw_text": "FedEx Alert: Parcel AWB-8821 held by Mumbai Customs. Contains illegal passports and drugs. Call Customs Officer immediately at +919000111222 to prevent FIR.",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-04-FEDEX-CUSTOMS",
+    "created_at": "2026-08-29T19:14:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Courier Parcel Illegal Goods Extortion"
+    }
+  },
+  {
+    "id": "0a1085ee-dabd-4e5b-bb72-85290d93dbd2",
+    "raw_text": "கஸ்டம்ஸ் நோட்டீஸ்: உங்கள் பெயரில் அனுப்பப்பட்ட பார்சலில் சட்டவிரோத பொருட்கள் உள்ளன. கைது நடவடிக்கை தவிர்க்க உடனே அழைக்கவும்: +919000111222.",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-04-FEDEX-CUSTOMS",
+    "created_at": "2026-08-18T04:26:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Courier Parcel Illegal Goods Extortion"
+    }
+  },
+  {
+    "id": "4f120e35-c250-4ecc-9358-b366db840c2b",
+    "raw_text": "Traffic Police Warning: e-Challan #CH-9921 unpaid for vehicle speed violation. Court summons issued if unpaid within 24h. Pay fine at https://echallan-parivahan-pay.info/fine or UPI police.challan@paytm.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-05-TRAFFIC-CHALLAN",
+    "created_at": "2026-08-26T13:39:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Fake Traffic e-Challan Fine Scam"
+    }
+  },
+  {
+    "id": "2a43869d-090a-4c71-8fa0-08488197a262",
+    "raw_text": "SBI ALERT: Your netbanking blocked. Update PAN card immediately to unlock: https://sbi-kyc-update-portal.xyz/verify. Pay Rs 1 re-verification fee to sbi.kyc.update@ybl.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-01-SBI-KYC",
+    "created_at": "2026-08-26T09:02:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "SBI KYC Account Suspension Campaign"
+    }
+  },
+  {
+    "id": "948e9af7-c81f-468f-ab28-dae1441eafa3",
+    "raw_text": "Work from home opportunity! Earn Rs 3000 daily by liking YouTube videos. Contact HR Priya on WhatsApp +919999900000. Registration fee Rs 200. [Ref: 3126]",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-NEG-02-OTHER-SCAM",
+    "created_at": "2026-08-17T08:59:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "is_negative_control": true
+    }
+  },
+  {
+    "id": "a88048e3-4667-4184-9891-58892f90f89a",
+    "raw_text": "e-Challan Notice: Court warrant issued for vehicle traffic violation. Pay Rs 1000 penalty immediately to avoid impounding vehicle: https://echallan-parivahan-pay.info/fine. Helpline: +919555666777.",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-05-TRAFFIC-CHALLAN",
+    "created_at": "2026-08-14T04:19:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Fake Traffic e-Challan Fine Scam"
+    }
+  },
+  {
+    "id": "1c800494-3b89-4c32-9578-e1d38896d00c",
+    "raw_text": "e-Challan Notice: Court warrant issued for vehicle traffic violation. Pay Rs 1000 penalty immediately to avoid impounding vehicle: https://echallan-parivahan-pay.info/fine. Helpline: +919555666777.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-05-TRAFFIC-CHALLAN",
+    "created_at": "2026-08-22T21:01:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Fake Traffic e-Challan Fine Scam"
+    }
+  },
+  {
+    "id": "b3f174fc-e464-4b8a-8b44-e2a0eadabe3c",
+    "raw_text": "கஸ்டம்ஸ் நோட்டீஸ்: உங்கள் பெயரில் அனுப்பப்பட்ட பார்சலில் சட்டவிரோத பொருட்கள் உள்ளன. கைது நடவடிக்கை தவிர்க்க உடனே அழைக்கவும்: +919000111222.",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-04-FEDEX-CUSTOMS",
+    "created_at": "2026-08-06T23:54:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Courier Parcel Illegal Goods Extortion"
+    }
+  },
+  {
+    "id": "6e52910d-3cdb-47bb-be5e-528e2eeb8b23",
+    "raw_text": "FedEx Alert: Parcel AWB-8821 held by Mumbai Customs. Contains illegal passports and drugs. Call Customs Officer immediately at +919000111222 to prevent FIR.",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-04-FEDEX-CUSTOMS",
+    "created_at": "2026-08-17T03:41:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Courier Parcel Illegal Goods Extortion"
+    }
+  },
+  {
+    "id": "816b5a26-f264-4f62-93e1-4bc3f336b1ef",
+    "raw_text": "प्रिय ग्राहक, आपका SBI बैंक खाता ब्लॉक हो गया है। तुरंत KYC अपडेट करें https://sbi-kyc-update-portal.xyz/verify या कॉल करें +919876543210।",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-01-SBI-KYC",
+    "created_at": "2026-08-12T16:36:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "SBI KYC Account Suspension Campaign"
+    }
+  },
+  {
+    "id": "e1e9f76a-6cc5-49a5-893f-f7964ba0b144",
+    "raw_text": "प्रिय ग्राहक, आपका SBI बैंक खाता ब्लॉक हो गया है। तुरंत KYC अपडेट करें https://sbi-kyc-update-portal.xyz/verify या कॉल करें +919876543210।",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-01-SBI-KYC",
+    "created_at": "2026-08-31T23:09:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "SBI KYC Account Suspension Campaign"
+    }
+  },
+  {
+    "id": "3719ba0c-0b70-49f9-bfb3-a319e5179758",
+    "raw_text": "Work from home opportunity! Earn Rs 3000 daily by liking YouTube videos. Contact HR Priya on WhatsApp +919999900000. Registration fee Rs 200. [Ref: 1430]",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-NEG-02-OTHER-SCAM",
+    "created_at": "2026-08-28T06:59:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "is_negative_control": true
+    }
+  },
+  {
+    "id": "749c1a6f-191b-4356-bc85-78615db5c843",
+    "raw_text": "प्रिय ग्राहक, आपका SBI बैंक खाता ब्लॉक हो गया है। तुरंत KYC अपडेट करें https://sbi-kyc-update-portal.xyz/verify या कॉल करें +919876543211।",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-01-SBI-KYC",
+    "created_at": "2026-08-19T07:04:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "SBI KYC Account Suspension Campaign"
+    }
+  },
+  {
+    "id": "a688b80f-f217-489e-9554-2b18fd95a973",
+    "raw_text": "Dear consumer, power bill overdue. Officer visiting to cut power. Pay pending Rs 650 via elect.bill.pay@okhdfcbank right now to halt order. Link: https://eb-bill-pay-tnb.com/pay.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-03-ELECTRICITY-BILL",
+    "created_at": "2026-08-30T04:38:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Electricity Bill Disconnection Threat"
+    }
+  },
+  {
+    "id": "0fd07e43-7605-4c29-85b6-6902d7462bfa",
+    "raw_text": "प्रिय ग्राहक, आपका SBI बैंक खाता ब्लॉक हो गया है। तुरंत KYC अपडेट करें https://sbi-kyc-update-portal.xyz/verify या कॉल करें +919876543210।",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-01-SBI-KYC",
+    "created_at": "2026-08-16T23:54:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "SBI KYC Account Suspension Campaign"
+    }
+  },
+  {
+    "id": "d4598678-c4eb-4eca-a4b0-693edefa06b9",
+    "raw_text": "You received Rs 4999 in Paytm wallet! Enter PIN at http://paytm-security-alert.net/login to accept payment. Contact helpline: +919123456789.",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-02-PAYTM-REFUND",
+    "created_at": "2026-09-01T02:38:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Paytm Cashback & Security Alert Scam"
+    }
+  },
+  {
+    "id": "36852b44-3b1a-42a3-81ef-302d6788a9c1",
+    "raw_text": "Traffic Police Warning: e-Challan #CH-9921 unpaid for vehicle speed violation. Court summons issued if unpaid within 24h. Pay fine at https://echallan-parivahan-pay.info/fine or UPI police.challan@paytm.",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-05-TRAFFIC-CHALLAN",
+    "created_at": "2026-08-15T17:24:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Fake Traffic e-Challan Fine Scam"
+    }
+  },
+  {
+    "id": "85b5539f-a05e-445d-bc59-42132d51fb4a",
+    "raw_text": "e-Challan Notice: Court warrant issued for vehicle traffic violation. Pay Rs 1000 penalty immediately to avoid impounding vehicle: https://echallan-parivahan-pay.info/fine. Helpline: +919555666777.",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-05-TRAFFIC-CHALLAN",
+    "created_at": "2026-08-22T05:16:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Fake Traffic e-Challan Fine Scam"
+    }
+  },
+  {
+    "id": "e8b6b7bd-b432-49e8-86a4-f869ed62352c",
+    "raw_text": "கஸ்டம்ஸ் நோட்டீஸ்: உங்கள் பெயரில் அனுப்பப்பட்ட பார்சலில் சட்டவிரோத பொருட்கள் உள்ளன. கைது நடவடிக்கை தவிர்க்க உடனே அழைக்கவும்: +919000111222.",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-04-FEDEX-CUSTOMS",
+    "created_at": "2026-08-28T06:01:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Courier Parcel Illegal Goods Extortion"
+    }
+  },
+  {
+    "id": "3633cb36-fc28-4d39-85b4-fa20d277cb3a",
+    "raw_text": "URGENT: Your electricity connection will be disconnected tonight at 9:30 PM due to unpaid bill. Pay immediately to elect.bill.pay@okhdfcbank or call officer at +919444012345.",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-03-ELECTRICITY-BILL",
+    "created_at": "2026-08-12T19:48:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Electricity Bill Disconnection Threat"
+    }
+  },
+  {
+    "id": "0cd8f650-ce1a-4a9f-8810-e4e797aebc88",
+    "raw_text": "Traffic Police Warning: e-Challan #CH-9921 unpaid for vehicle speed violation. Court summons issued if unpaid within 24h. Pay fine at https://echallan-parivahan-pay.info/fine or UPI police.challan@paytm.",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-05-TRAFFIC-CHALLAN",
+    "created_at": "2026-08-24T15:14:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Fake Traffic e-Challan Fine Scam"
+    }
+  },
+  {
+    "id": "2f66a60e-6753-4b71-a42a-b524c26762e9",
+    "raw_text": "Traffic Police Warning: e-Challan #CH-9921 unpaid for vehicle speed violation. Court summons issued if unpaid within 24h. Pay fine at https://echallan-parivahan-pay.info/fine or UPI police.challan@paytm.",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-05-TRAFFIC-CHALLAN",
+    "created_at": "2026-08-17T08:08:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Fake Traffic e-Challan Fine Scam"
+    }
+  },
+  {
+    "id": "4c5656b8-090a-488f-ab58-3868b0179c03",
+    "raw_text": "URGENT: Your HDFC credit card reward points worth Rs 7,500 expire today. Redeem now on official website HDFC Bank portal app. [Ref: 3981]",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-NEG-03-UNRELATED-URGENT",
+    "created_at": "2026-08-13T19:59:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "is_negative_control": true
+    }
+  },
+  {
+    "id": "ce09752d-c388-4f64-9295-915a8c88e75a",
+    "raw_text": "You received Rs 4999 in Paytm wallet! Enter PIN at http://paytm-security-alert.net/login to accept payment. Contact helpline: +919123456789.",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-02-PAYTM-REFUND",
+    "created_at": "2026-08-28T23:42:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Paytm Cashback & Security Alert Scam"
+    }
+  },
+  {
+    "id": "f267b86e-e1c7-4f9c-a8d0-4cc17a214e79",
+    "raw_text": "Traffic Police Warning: e-Challan #CH-9921 unpaid for vehicle speed violation. Court summons issued if unpaid within 24h. Pay fine at https://echallan-parivahan-pay.info/fine or UPI police.challan@paytm.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-05-TRAFFIC-CHALLAN",
+    "created_at": "2026-08-14T01:10:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Fake Traffic e-Challan Fine Scam"
+    }
+  },
+  {
+    "id": "ee5fee97-d7fa-4a54-855d-72ff37b752ea",
+    "raw_text": "Work from home opportunity! Earn Rs 3000 daily by liking YouTube videos. Contact HR Priya on WhatsApp +919999900000. Registration fee Rs 200. [Ref: 8842]",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-NEG-02-OTHER-SCAM",
+    "created_at": "2026-08-12T03:59:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "is_negative_control": true
+    }
+  },
+  {
+    "id": "892e8ef6-4768-460a-aab6-8ed7b49b9b81",
+    "raw_text": "e-Challan Notice: Court warrant issued for vehicle traffic violation. Pay Rs 1000 penalty immediately to avoid impounding vehicle: https://echallan-parivahan-pay.info/fine. Helpline: +919555666777.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-05-TRAFFIC-CHALLAN",
+    "created_at": "2026-08-19T08:25:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Fake Traffic e-Challan Fine Scam"
+    }
+  },
+  {
+    "id": "3294644e-121f-4377-8442-60d11bebfdf9",
+    "raw_text": "Work from home opportunity! Earn Rs 3000 daily by liking YouTube videos. Contact HR Priya on WhatsApp +919999900000. Registration fee Rs 200. [Ref: 2208]",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-NEG-02-OTHER-SCAM",
+    "created_at": "2026-08-29T09:59:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "is_negative_control": true
+    }
+  },
+  {
+    "id": "8704413b-ef5c-48bf-af2c-f9a31b0703a0",
+    "raw_text": "Dear SBI customer, your account 47295260 will be suspended within 2 hours due to pending KYC update. Click https://sbi-kyc-update-portal.xyz/verify or call +919876543210 to update now.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-01-SBI-KYC",
+    "created_at": "2026-08-06T22:47:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "SBI KYC Account Suspension Campaign"
+    }
+  },
+  {
+    "id": "8b402355-d04e-417d-a132-81addd3c40ca",
+    "raw_text": "FedEx Alert: Parcel AWB-8821 held by Mumbai Customs. Contains illegal passports and drugs. Call Customs Officer immediately at +919000111222 to prevent FIR.",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-04-FEDEX-CUSTOMS",
+    "created_at": "2026-08-10T12:03:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Courier Parcel Illegal Goods Extortion"
+    }
+  },
+  {
+    "id": "1b4e04d2-34c6-4f3c-a862-6854c8c522fa",
+    "raw_text": "e-Challan Notice: Court warrant issued for vehicle traffic violation. Pay Rs 1000 penalty immediately to avoid impounding vehicle: https://echallan-parivahan-pay.info/fine. Helpline: +919555666777.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-05-TRAFFIC-CHALLAN",
+    "created_at": "2026-08-14T08:16:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Fake Traffic e-Challan Fine Scam"
+    }
+  },
+  {
+    "id": "eaca8869-a7b8-4c7a-bf4a-181992b34457",
+    "raw_text": "Dear consumer, power bill overdue. Officer visiting to cut power. Pay pending Rs 650 via elect.bill.pay@okhdfcbank right now to halt order. Link: https://eb-bill-pay-tnb.com/pay.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-03-ELECTRICITY-BILL",
+    "created_at": "2026-08-11T05:20:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Electricity Bill Disconnection Threat"
+    }
+  },
+  {
+    "id": "92bdc107-3ee0-46ea-9da3-aef715338e3a",
+    "raw_text": "Traffic Police Warning: e-Challan #CH-9921 unpaid for vehicle speed violation. Court summons issued if unpaid within 24h. Pay fine at https://echallan-parivahan-pay.info/fine or UPI police.challan@paytm.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-05-TRAFFIC-CHALLAN",
+    "created_at": "2026-08-18T03:34:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Fake Traffic e-Challan Fine Scam"
+    }
+  },
+  {
+    "id": "36ed319d-1b77-4d69-955d-798c6fc4b537",
+    "raw_text": "Dear customer, your monthly SBI bank statement for August is ready. View it safely in your YONO app. SBI will never ask for your OTP or password. [Ref: 4292]",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-NEG-01-LEGIT-BANK",
+    "created_at": "2026-08-09T18:59:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "is_negative_control": true
+    }
+  },
+  {
+    "id": "bf2f9799-37eb-40fa-9688-2c431a2414aa",
+    "raw_text": "கஸ்டம்ஸ் நோட்டீஸ்: உங்கள் பெயரில் அனுப்பப்பட்ட பார்சலில் சட்டவிரோத பொருட்கள் உள்ளன. கைது நடவடிக்கை தவிர்க்க உடனே அழைக்கவும்: +919000111222.",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-04-FEDEX-CUSTOMS",
+    "created_at": "2026-08-08T11:02:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Courier Parcel Illegal Goods Extortion"
+    }
+  },
+  {
+    "id": "6553bc0b-ee75-43ed-a05d-cf9d037cbacd",
+    "raw_text": "प्रिय ग्राहक, आपका SBI बैंक खाता ब्लॉक हो गया है। तुरंत KYC अपडेट करें https://sbi-kyc-update-portal.xyz/verify या कॉल करें +919876543211।",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-01-SBI-KYC",
+    "created_at": "2026-08-08T03:59:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "SBI KYC Account Suspension Campaign"
+    }
+  },
+  {
+    "id": "7eb98d57-cf5a-46ba-ad72-61957caa684f",
+    "raw_text": "உங்களுக்கு Paytm 4999 ரூபாய் கேஷ்பேக் வந்துள்ளது. உடனடியாக பெற http://paytm-security-alert.net/login கிளிக் செய்யவும்.",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-02-PAYTM-REFUND",
+    "created_at": "2026-08-27T04:53:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Paytm Cashback & Security Alert Scam"
+    }
+  },
+  {
+    "id": "6e6666dd-9802-4dd4-a62c-24570556d38f",
+    "raw_text": "Dear SBI customer, your account 22575562 will be suspended within 2 hours due to pending KYC update. Click https://sbi-kyc-update-portal.xyz/verify or call +919876543211 to update now.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-01-SBI-KYC",
+    "created_at": "2026-08-08T23:31:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "SBI KYC Account Suspension Campaign"
+    }
+  },
+  {
+    "id": "200bf8a6-469e-4aad-8f11-60ddae10bcdf",
+    "raw_text": "बिजली विभाग चेतावनी: आपका बिजली कनेक्शन आज रात काट दिया जाएगा। तुरंत भुगतान करें elect.bill.pay@okhdfcbank पर। कॉल करें अधिकारी: +919444012345।",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-03-ELECTRICITY-BILL",
+    "created_at": "2026-08-12T08:59:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Electricity Bill Disconnection Threat"
+    }
+  },
+  {
+    "id": "b3d9fb2c-ad79-4a18-b857-024fee0c64b2",
+    "raw_text": "உங்களுக்கு Paytm 4999 ரூபாய் கேஷ்பேக் வந்துள்ளது. உடனடியாக பெற http://paytm-security-alert.net/login கிளிக் செய்யவும்.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-02-PAYTM-REFUND",
+    "created_at": "2026-09-02T14:56:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Paytm Cashback & Security Alert Scam"
+    }
+  },
+  {
+    "id": "a6c5fbd5-69b4-44dc-83e5-10fb28f4b7e1",
+    "raw_text": "FedEx Alert: Parcel AWB-8821 held by Mumbai Customs. Contains illegal passports and drugs. Call Customs Officer immediately at +919000111222 to prevent FIR.",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-04-FEDEX-CUSTOMS",
+    "created_at": "2026-08-12T20:49:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Courier Parcel Illegal Goods Extortion"
+    }
+  },
+  {
+    "id": "135b0359-3046-40c8-a36a-35957339d565",
+    "raw_text": "Customs Clearance Notice: Illegal package seized under your name. Pay clearance fee Rs 14,500 to account customs.duty.tax@oksbi or arrest warrant issued. Details: https://customs-clearance-india.org/tax.",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-04-FEDEX-CUSTOMS",
+    "created_at": "2026-08-10T11:01:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Courier Parcel Illegal Goods Extortion"
+    }
+  },
+  {
+    "id": "5518c44a-4782-4cc8-a2a1-4eeb802c85ba",
+    "raw_text": "Traffic Police Warning: e-Challan #CH-9921 unpaid for vehicle speed violation. Court summons issued if unpaid within 24h. Pay fine at https://echallan-parivahan-pay.info/fine or UPI police.challan@paytm.",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-05-TRAFFIC-CHALLAN",
+    "created_at": "2026-08-22T03:14:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Fake Traffic e-Challan Fine Scam"
+    }
+  },
+  {
+    "id": "eba6e661-cda2-4480-bb4e-40a53edd3153",
+    "raw_text": "e-Challan Notice: Court warrant issued for vehicle traffic violation. Pay Rs 1000 penalty immediately to avoid impounding vehicle: https://echallan-parivahan-pay.info/fine. Helpline: +919555666777.",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-05-TRAFFIC-CHALLAN",
+    "created_at": "2026-09-02T08:33:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Fake Traffic e-Challan Fine Scam"
+    }
+  },
+  {
+    "id": "8392d91e-60ad-4b39-aef8-3a2fcc37f5eb",
+    "raw_text": "Paytm कैशबैक ऑफर! आपको 4999 रुपये मिले हैं। दावा करने के लिए लिंक पर क्लिक करें http://paytm-security-alert.net/login। सहायता: +919123456789।",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-02-PAYTM-REFUND",
+    "created_at": "2026-08-17T22:21:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Paytm Cashback & Security Alert Scam"
+    }
+  },
+  {
+    "id": "739916db-51ee-445d-bf7c-31b0b42e1f5d",
+    "raw_text": "வணக்கம், உங்கள் SBI கணக்கு முடக்கப்படும். உடனடியாக KYC புதுப்பிக்கவும்: https://sbi-kyc-update-portal.xyz/verify. உதவிக்கு அழைக்கவும்: +919876543211.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-01-SBI-KYC",
+    "created_at": "2026-08-17T11:35:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "SBI KYC Account Suspension Campaign"
+    }
+  },
+  {
+    "id": "b1ecacca-983c-4861-a78e-90fff033f218",
+    "raw_text": "Traffic Police Warning: e-Challan #CH-9921 unpaid for vehicle speed violation. Court summons issued if unpaid within 24h. Pay fine at https://echallan-parivahan-pay.info/fine or UPI police.challan@paytm.",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-05-TRAFFIC-CHALLAN",
+    "created_at": "2026-08-22T01:43:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Fake Traffic e-Challan Fine Scam"
+    }
+  },
+  {
+    "id": "3012e658-55ec-401f-8e13-912e41d66432",
+    "raw_text": "Dear SBI customer, your account 90048665 will be suspended within 2 hours due to pending KYC update. Click https://sbi-kyc-update-portal.xyz/verify or call +919876543210 to update now.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-01-SBI-KYC",
+    "created_at": "2026-08-05T04:23:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "SBI KYC Account Suspension Campaign"
+    }
+  },
+  {
+    "id": "3281e5fb-579c-408e-9539-ebb1eb216862",
+    "raw_text": "e-Challan Notice: Court warrant issued for vehicle traffic violation. Pay Rs 1000 penalty immediately to avoid impounding vehicle: https://echallan-parivahan-pay.info/fine. Helpline: +919555666777.",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-05-TRAFFIC-CHALLAN",
+    "created_at": "2026-08-21T13:08:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Fake Traffic e-Challan Fine Scam"
+    }
+  },
+  {
+    "id": "ba725bdd-14e4-4daf-a82e-c1d11bd5f3c9",
+    "raw_text": "URGENT: Your electricity connection will be disconnected tonight at 9:30 PM due to unpaid bill. Pay immediately to elect.bill.pay@okhdfcbank or call officer at +919444012345.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-03-ELECTRICITY-BILL",
+    "created_at": "2026-08-20T17:47:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Electricity Bill Disconnection Threat"
+    }
+  },
+  {
+    "id": "c9186159-4074-4aae-a6ff-b594a29b260d",
+    "raw_text": "URGENT: Your HDFC credit card reward points worth Rs 7,500 expire today. Redeem now on official website HDFC Bank portal app. [Ref: 5496]",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-NEG-03-UNRELATED-URGENT",
+    "created_at": "2026-08-09T11:59:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "is_negative_control": true
+    }
+  },
+  {
+    "id": "8e6e9d06-3019-48a0-8a98-71b55b8f6b28",
+    "raw_text": "FedEx Alert: Parcel AWB-8821 held by Mumbai Customs. Contains illegal passports and drugs. Call Customs Officer immediately at +919000111222 to prevent FIR.",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-04-FEDEX-CUSTOMS",
+    "created_at": "2026-09-01T07:50:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Courier Parcel Illegal Goods Extortion"
+    }
+  },
+  {
+    "id": "e6de53e7-ddce-4a3b-868e-bb2baa71977c",
+    "raw_text": "Paytm reward alert! You won Rs 4,999 cashback. Claim now before expiry: http://paytm-security-alert.net/login or send Rs 1 test to paytm.verify.secure@paytm.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-02-PAYTM-REFUND",
+    "created_at": "2026-08-28T16:38:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Paytm Cashback & Security Alert Scam"
+    }
+  },
+  {
+    "id": "b8772c8f-f3ce-4418-aa9b-201787941925",
+    "raw_text": "e-Challan Notice: Court warrant issued for vehicle traffic violation. Pay Rs 1000 penalty immediately to avoid impounding vehicle: https://echallan-parivahan-pay.info/fine. Helpline: +919555666777.",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-05-TRAFFIC-CHALLAN",
+    "created_at": "2026-08-13T12:10:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Fake Traffic e-Challan Fine Scam"
+    }
+  },
+  {
+    "id": "a91213e3-4a6b-485a-9c20-c65557265f14",
+    "raw_text": "கஸ்டம்ஸ் நோட்டீஸ்: உங்கள் பெயரில் அனுப்பப்பட்ட பார்சலில் சட்டவிரோத பொருட்கள் உள்ளன. கைது நடவடிக்கை தவிர்க்க உடனே அழைக்கவும்: +919000111222.",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-04-FEDEX-CUSTOMS",
+    "created_at": "2026-08-26T02:13:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Courier Parcel Illegal Goods Extortion"
+    }
+  },
+  {
+    "id": "8928324d-bc06-4b90-9b82-40fb9304eb9f",
+    "raw_text": "Paytm कैशबैक ऑफर! आपको 4999 रुपये मिले हैं। दावा करने के लिए लिंक पर क्लिक करें http://paytm-security-alert.net/login। सहायता: +919123456789।",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-02-PAYTM-REFUND",
+    "created_at": "2026-08-11T02:53:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Paytm Cashback & Security Alert Scam"
+    }
+  },
+  {
+    "id": "dfc248ef-d968-453e-a483-db12b79b20b2",
+    "raw_text": "URGENT: Your HDFC credit card reward points worth Rs 7,500 expire today. Redeem now on official website HDFC Bank portal app. [Ref: 3034]",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-NEG-03-UNRELATED-URGENT",
+    "created_at": "2026-08-18T16:59:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "is_negative_control": true
+    }
+  },
+  {
+    "id": "e8a19d69-80a1-4c4a-aa9d-b2efce40a531",
+    "raw_text": "FedEx Alert: Parcel AWB-8821 held by Mumbai Customs. Contains illegal passports and drugs. Call Customs Officer immediately at +919000111222 to prevent FIR.",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-04-FEDEX-CUSTOMS",
+    "created_at": "2026-08-19T01:28:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Courier Parcel Illegal Goods Extortion"
+    }
+  },
+  {
+    "id": "b757eebb-94ec-4201-acf7-f835a71ca788",
+    "raw_text": "Dear SBI customer, your account 56843172 will be suspended within 2 hours due to pending KYC update. Click https://sbi-kyc-update-portal.xyz/verify or call +919876543210 to update now.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-01-SBI-KYC",
+    "created_at": "2026-08-30T18:55:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "SBI KYC Account Suspension Campaign"
+    }
+  },
+  {
+    "id": "1368d802-0585-48c1-ae3f-39b94e52319f",
+    "raw_text": "e-Challan Notice: Court warrant issued for vehicle traffic violation. Pay Rs 1000 penalty immediately to avoid impounding vehicle: https://echallan-parivahan-pay.info/fine. Helpline: +919555666777.",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-05-TRAFFIC-CHALLAN",
+    "created_at": "2026-08-18T08:23:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Fake Traffic e-Challan Fine Scam"
+    }
+  },
+  {
+    "id": "c7a36e1b-ada6-4924-ad62-2d763c64738e",
+    "raw_text": "Dear customer, your monthly SBI bank statement for August is ready. View it safely in your YONO app. SBI will never ask for your OTP or password. [Ref: 3580]",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-NEG-01-LEGIT-BANK",
+    "created_at": "2026-08-31T00:59:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "is_negative_control": true
+    }
+  },
+  {
+    "id": "99d731a8-86ae-488f-952d-ff56b7c7da86",
+    "raw_text": "Work from home opportunity! Earn Rs 3000 daily by liking YouTube videos. Contact HR Priya on WhatsApp +919999900000. Registration fee Rs 200. [Ref: 7044]",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-NEG-02-OTHER-SCAM",
+    "created_at": "2026-08-14T08:59:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "is_negative_control": true
+    }
+  },
+  {
+    "id": "79359a67-1f8a-4170-9986-fa9f8f73d3a0",
+    "raw_text": "URGENT: Your electricity connection will be disconnected tonight at 9:30 PM due to unpaid bill. Pay immediately to elect.bill.pay@okhdfcbank or call officer at +919444012345.",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-03-ELECTRICITY-BILL",
+    "created_at": "2026-08-19T03:38:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Electricity Bill Disconnection Threat"
+    }
+  },
+  {
+    "id": "7cc21c1f-6ed5-4558-8699-5ee9e72336c9",
+    "raw_text": "SBI ALERT: Your netbanking blocked. Update PAN card immediately to unlock: https://sbi-kyc-update-portal.xyz/verify. Pay Rs 1 re-verification fee to sbi.kyc.update@ybl.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-01-SBI-KYC",
+    "created_at": "2026-08-09T13:39:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "SBI KYC Account Suspension Campaign"
+    }
+  },
+  {
+    "id": "db200a7e-4930-43f4-8d6f-86131a6e3510",
+    "raw_text": "மின்சார வாரியம் எச்சரிக்கை: உங்கள் மின் இணைப்பு இன்று இரவு 9 மணிக்கு துண்டிக்கப்படும். உடனே கட்டணத்தை elect.bill.pay@okhdfcbank செலுத்தவும். தொடர்புக்கு +919444012345.",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-03-ELECTRICITY-BILL",
+    "created_at": "2026-08-06T15:33:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Electricity Bill Disconnection Threat"
+    }
+  },
+  {
+    "id": "d7e732a8-a419-4e80-926c-9b61c270c5a0",
+    "raw_text": "URGENT: Your electricity connection will be disconnected tonight at 9:30 PM due to unpaid bill. Pay immediately to elect.bill.pay@okhdfcbank or call officer at +919444012345.",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-03-ELECTRICITY-BILL",
+    "created_at": "2026-08-09T19:34:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Electricity Bill Disconnection Threat"
+    }
+  },
+  {
+    "id": "f334d606-4807-4aed-8ce2-27fb9fc03894",
+    "raw_text": "बिजली विभाग चेतावनी: आपका बिजली कनेक्शन आज रात काट दिया जाएगा। तुरंत भुगतान करें elect.bill.pay@okhdfcbank पर। कॉल करें अधिकारी: +919444012345।",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-03-ELECTRICITY-BILL",
+    "created_at": "2026-08-25T01:43:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Electricity Bill Disconnection Threat"
+    }
+  },
+  {
+    "id": "5fda0bfb-ecbe-45e4-95cb-a908455c57d2",
+    "raw_text": "வணக்கம், உங்கள் SBI கணக்கு முடக்கப்படும். உடனடியாக KYC புதுப்பிக்கவும்: https://sbi-kyc-update-portal.xyz/verify. உதவிக்கு அழைக்கவும்: +919876543210.",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-01-SBI-KYC",
+    "created_at": "2026-09-01T18:04:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "SBI KYC Account Suspension Campaign"
+    }
+  },
+  {
+    "id": "f793ec1f-b9ab-4a7c-a3f3-baad5b29fada",
+    "raw_text": "Paytm कैशबैक ऑफर! आपको 4999 रुपये मिले हैं। दावा करने के लिए लिंक पर क्लिक करें http://paytm-security-alert.net/login। सहायता: +919123456789।",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-02-PAYTM-REFUND",
+    "created_at": "2026-08-19T07:49:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Paytm Cashback & Security Alert Scam"
+    }
+  },
+  {
+    "id": "2d81019e-1e40-4b7d-9ed5-82540cd51b8e",
+    "raw_text": "You received Rs 4999 in Paytm wallet! Enter PIN at http://paytm-security-alert.net/login to accept payment. Contact helpline: +919123456789.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-02-PAYTM-REFUND",
+    "created_at": "2026-08-04T20:08:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Paytm Cashback & Security Alert Scam"
+    }
+  },
+  {
+    "id": "6df195ca-42e0-4637-892a-b033afd435ed",
+    "raw_text": "You received Rs 4999 in Paytm wallet! Enter PIN at http://paytm-security-alert.net/login to accept payment. Contact helpline: +919123456789.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-02-PAYTM-REFUND",
+    "created_at": "2026-08-10T07:38:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Paytm Cashback & Security Alert Scam"
+    }
+  },
+  {
+    "id": "ce92ed81-b107-499c-839c-16fa87c151ce",
+    "raw_text": "வணக்கம், உங்கள் SBI கணக்கு முடக்கப்படும். உடனடியாக KYC புதுப்பிக்கவும்: https://sbi-kyc-update-portal.xyz/verify. உதவிக்கு அழைக்கவும்: +919876543211.",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-01-SBI-KYC",
+    "created_at": "2026-08-23T05:52:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "SBI KYC Account Suspension Campaign"
+    }
+  },
+  {
+    "id": "5c34471b-3131-45ec-914d-0e6989b0af23",
+    "raw_text": "வணக்கம், உங்கள் SBI கணக்கு முடக்கப்படும். உடனடியாக KYC புதுப்பிக்கவும்: https://sbi-kyc-update-portal.xyz/verify. உதவிக்கு அழைக்கவும்: +919876543210.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-01-SBI-KYC",
+    "created_at": "2026-08-19T11:11:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "SBI KYC Account Suspension Campaign"
+    }
+  },
+  {
+    "id": "307d75fe-2ac6-43f8-89c4-e08c19a9a628",
+    "raw_text": "வணக்கம், உங்கள் SBI கணக்கு முடக்கப்படும். உடனடியாக KYC புதுப்பிக்கவும்: https://sbi-kyc-update-portal.xyz/verify. உதவிக்கு அழைக்கவும்: +919876543210.",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-01-SBI-KYC",
+    "created_at": "2026-08-14T03:37:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "SBI KYC Account Suspension Campaign"
+    }
+  },
+  {
+    "id": "eb3ecc8d-3a84-45f6-83cf-2741d16f28a4",
+    "raw_text": "Dear consumer, power bill overdue. Officer visiting to cut power. Pay pending Rs 650 via elect.bill.pay@okhdfcbank right now to halt order. Link: https://eb-bill-pay-tnb.com/pay.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-03-ELECTRICITY-BILL",
+    "created_at": "2026-08-12T14:07:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Electricity Bill Disconnection Threat"
+    }
+  },
+  {
+    "id": "5ffd7be2-60d9-4a08-aed1-e6be992b3876",
+    "raw_text": "URGENT: Your HDFC credit card reward points worth Rs 7,500 expire today. Redeem now on official website HDFC Bank portal app. [Ref: 5982]",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-NEG-03-UNRELATED-URGENT",
+    "created_at": "2026-08-18T19:59:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "is_negative_control": true
+    }
+  },
+  {
+    "id": "3b418e71-519c-4bf8-b3cc-beb626200cca",
+    "raw_text": "Customs Clearance Notice: Illegal package seized under your name. Pay clearance fee Rs 14,500 to account customs.duty.tax@oksbi or arrest warrant issued. Details: https://customs-clearance-india.org/tax.",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-04-FEDEX-CUSTOMS",
+    "created_at": "2026-09-01T13:52:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Courier Parcel Illegal Goods Extortion"
+    }
+  },
+  {
+    "id": "e41cc1ab-fafd-472c-9186-0597b6abbfef",
+    "raw_text": "உங்களுக்கு Paytm 4999 ரூபாய் கேஷ்பேக் வந்துள்ளது. உடனடியாக பெற http://paytm-security-alert.net/login கிளிக் செய்யவும்.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-02-PAYTM-REFUND",
+    "created_at": "2026-08-08T10:15:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Paytm Cashback & Security Alert Scam"
+    }
+  },
+  {
+    "id": "fe2ebeb9-cc5b-4001-bd4f-f6e9acc6f0ee",
+    "raw_text": "You received Rs 4999 in Paytm wallet! Enter PIN at http://paytm-security-alert.net/login to accept payment. Contact helpline: +919123456789.",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-02-PAYTM-REFUND",
+    "created_at": "2026-08-16T18:44:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Paytm Cashback & Security Alert Scam"
+    }
+  },
+  {
+    "id": "0ec07ca0-b7a3-495b-9b53-eba3d631b2a7",
+    "raw_text": "Traffic Police Warning: e-Challan #CH-9921 unpaid for vehicle speed violation. Court summons issued if unpaid within 24h. Pay fine at https://echallan-parivahan-pay.info/fine or UPI police.challan@paytm.",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-05-TRAFFIC-CHALLAN",
+    "created_at": "2026-09-01T01:31:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Fake Traffic e-Challan Fine Scam"
+    }
+  },
+  {
+    "id": "7c261de5-1bb3-48f1-8b64-c0910dc8d24a",
+    "raw_text": "SBI ALERT: Your netbanking blocked. Update PAN card immediately to unlock: https://sbi-kyc-update-portal.xyz/verify. Pay Rs 1 re-verification fee to sbi.kyc.update@ybl.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-01-SBI-KYC",
+    "created_at": "2026-08-08T19:05:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "SBI KYC Account Suspension Campaign"
+    }
+  },
+  {
+    "id": "2c94759a-94e5-4a9d-84ec-ff0a780b1668",
+    "raw_text": "e-Challan Notice: Court warrant issued for vehicle traffic violation. Pay Rs 1000 penalty immediately to avoid impounding vehicle: https://echallan-parivahan-pay.info/fine. Helpline: +919555666777.",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-05-TRAFFIC-CHALLAN",
+    "created_at": "2026-08-19T16:39:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Fake Traffic e-Challan Fine Scam"
+    }
+  },
+  {
+    "id": "bde1053b-c5df-498b-a099-f71faad6d1f5",
+    "raw_text": "Dear consumer, power bill overdue. Officer visiting to cut power. Pay pending Rs 650 via elect.bill.pay@okhdfcbank right now to halt order. Link: https://eb-bill-pay-tnb.com/pay.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-03-ELECTRICITY-BILL",
+    "created_at": "2026-08-30T10:26:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Electricity Bill Disconnection Threat"
+    }
+  },
+  {
+    "id": "ac206a5e-39e0-473f-a38c-fa2fc5ce10e3",
+    "raw_text": "URGENT: Your electricity connection will be disconnected tonight at 9:30 PM due to unpaid bill. Pay immediately to elect.bill.pay@okhdfcbank or call officer at +919444012345.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-03-ELECTRICITY-BILL",
+    "created_at": "2026-08-25T18:26:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Electricity Bill Disconnection Threat"
+    }
+  },
+  {
+    "id": "66363888-1962-4999-aa03-88d5b0164aa7",
+    "raw_text": "மின்சார வாரியம் எச்சரிக்கை: உங்கள் மின் இணைப்பு இன்று இரவு 9 மணிக்கு துண்டிக்கப்படும். உடனே கட்டணத்தை elect.bill.pay@okhdfcbank செலுத்தவும். தொடர்புக்கு +919444012345.",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-03-ELECTRICITY-BILL",
+    "created_at": "2026-08-10T08:25:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Electricity Bill Disconnection Threat"
+    }
+  },
+  {
+    "id": "6315fe1a-23d3-4edd-b0ce-47ab0807690b",
+    "raw_text": "Work from home opportunity! Earn Rs 3000 daily by liking YouTube videos. Contact HR Priya on WhatsApp +919999900000. Registration fee Rs 200. [Ref: 9476]",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-NEG-02-OTHER-SCAM",
+    "created_at": "2026-08-17T05:59:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "is_negative_control": true
+    }
+  },
+  {
+    "id": "3ff264b1-576d-4ead-91aa-e043336a2897",
+    "raw_text": "Dear consumer, power bill overdue. Officer visiting to cut power. Pay pending Rs 650 via elect.bill.pay@okhdfcbank right now to halt order. Link: https://eb-bill-pay-tnb.com/pay.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-03-ELECTRICITY-BILL",
+    "created_at": "2026-08-08T01:37:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Electricity Bill Disconnection Threat"
+    }
+  },
+  {
+    "id": "147c672e-c538-4b71-904a-323bd7b2a1c4",
+    "raw_text": "You received Rs 4999 in Paytm wallet! Enter PIN at http://paytm-security-alert.net/login to accept payment. Contact helpline: +919123456789.",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-02-PAYTM-REFUND",
+    "created_at": "2026-08-02T21:46:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Paytm Cashback & Security Alert Scam"
+    }
+  },
+  {
+    "id": "d9abea1d-e595-4599-a73b-76f49031724d",
+    "raw_text": "You received Rs 4999 in Paytm wallet! Enter PIN at http://paytm-security-alert.net/login to accept payment. Contact helpline: +919123456789.",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-02-PAYTM-REFUND",
+    "created_at": "2026-09-02T00:21:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Paytm Cashback & Security Alert Scam"
+    }
+  },
+  {
+    "id": "9fc01cc6-0c25-4af4-93ba-8169b955d327",
+    "raw_text": "Customs Clearance Notice: Illegal package seized under your name. Pay clearance fee Rs 14,500 to account customs.duty.tax@oksbi or arrest warrant issued. Details: https://customs-clearance-india.org/tax.",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-04-FEDEX-CUSTOMS",
+    "created_at": "2026-08-16T23:53:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Courier Parcel Illegal Goods Extortion"
+    }
+  },
+  {
+    "id": "4c756594-a390-49e3-9591-536f9c9393dc",
+    "raw_text": "வணக்கம், உங்கள் SBI கணக்கு முடக்கப்படும். உடனடியாக KYC புதுப்பிக்கவும்: https://sbi-kyc-update-portal.xyz/verify. உதவிக்கு அழைக்கவும்: +919876543210.",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-01-SBI-KYC",
+    "created_at": "2026-08-16T16:45:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "SBI KYC Account Suspension Campaign"
+    }
+  },
+  {
+    "id": "e1d69293-dec4-4403-9f02-c50dc02ce614",
+    "raw_text": "e-Challan Notice: Court warrant issued for vehicle traffic violation. Pay Rs 1000 penalty immediately to avoid impounding vehicle: https://echallan-parivahan-pay.info/fine. Helpline: +919555666777.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-05-TRAFFIC-CHALLAN",
+    "created_at": "2026-08-10T22:52:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Fake Traffic e-Challan Fine Scam"
+    }
+  },
+  {
+    "id": "e79f9b59-143a-4418-9b23-70945f09d6ca",
+    "raw_text": "கஸ்டம்ஸ் நோட்டீஸ்: உங்கள் பெயரில் அனுப்பப்பட்ட பார்சலில் சட்டவிரோத பொருட்கள் உள்ளன. கைது நடவடிக்கை தவிர்க்க உடனே அழைக்கவும்: +919000111222.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-04-FEDEX-CUSTOMS",
+    "created_at": "2026-08-23T09:45:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Courier Parcel Illegal Goods Extortion"
+    }
+  },
+  {
+    "id": "039bfc48-f5bb-49e9-837a-d962785f943a",
+    "raw_text": "e-Challan Notice: Court warrant issued for vehicle traffic violation. Pay Rs 1000 penalty immediately to avoid impounding vehicle: https://echallan-parivahan-pay.info/fine. Helpline: +919555666777.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-05-TRAFFIC-CHALLAN",
+    "created_at": "2026-09-02T07:56:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Fake Traffic e-Challan Fine Scam"
+    }
+  },
+  {
+    "id": "aadd32ff-69c4-4905-9877-831dba1ac3ae",
+    "raw_text": "You received Rs 4999 in Paytm wallet! Enter PIN at http://paytm-security-alert.net/login to accept payment. Contact helpline: +919123456789.",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-02-PAYTM-REFUND",
+    "created_at": "2026-08-27T17:21:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Paytm Cashback & Security Alert Scam"
+    }
+  },
+  {
+    "id": "cc06d3e0-9da5-4127-9556-6580d8196e3a",
+    "raw_text": "बिजली विभाग चेतावनी: आपका बिजली कनेक्शन आज रात काट दिया जाएगा। तुरंत भुगतान करें elect.bill.pay@okhdfcbank पर। कॉल करें अधिकारी: +919444012345।",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-03-ELECTRICITY-BILL",
+    "created_at": "2026-08-16T12:51:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Electricity Bill Disconnection Threat"
+    }
+  },
+  {
+    "id": "0a468134-a8f6-4c76-8438-0c843edfe3ac",
+    "raw_text": "SBI ALERT: Your netbanking blocked. Update PAN card immediately to unlock: https://sbi-kyc-update-portal.xyz/verify. Pay Rs 1 re-verification fee to sbi.kyc.update@ybl.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-01-SBI-KYC",
+    "created_at": "2026-08-21T10:32:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "SBI KYC Account Suspension Campaign"
+    }
+  },
+  {
+    "id": "4403c9b7-27bd-41c5-aae5-8bd29f7138b2",
+    "raw_text": "बिजली विभाग चेतावनी: आपका बिजली कनेक्शन आज रात काट दिया जाएगा। तुरंत भुगतान करें elect.bill.pay@okhdfcbank पर। कॉल करें अधिकारी: +919444012345।",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-03-ELECTRICITY-BILL",
+    "created_at": "2026-08-23T14:55:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Electricity Bill Disconnection Threat"
+    }
+  },
+  {
+    "id": "e4977f91-07db-4a91-b84a-266cb2f60adf",
+    "raw_text": "மின்சார வாரியம் எச்சரிக்கை: உங்கள் மின் இணைப்பு இன்று இரவு 9 மணிக்கு துண்டிக்கப்படும். உடனே கட்டணத்தை elect.bill.pay@okhdfcbank செலுத்தவும். தொடர்புக்கு +919444012345.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-03-ELECTRICITY-BILL",
+    "created_at": "2026-08-09T00:41:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Electricity Bill Disconnection Threat"
+    }
+  },
+  {
+    "id": "fbdc4f79-f752-4779-af07-e0b63c05f6b4",
+    "raw_text": "Paytm reward alert! You won Rs 4,999 cashback. Claim now before expiry: http://paytm-security-alert.net/login or send Rs 1 test to paytm.verify.secure@paytm.",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-02-PAYTM-REFUND",
+    "created_at": "2026-08-28T10:37:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Paytm Cashback & Security Alert Scam"
+    }
+  },
+  {
+    "id": "54c49fe2-1471-4c8d-b7ee-dea34fd22c2e",
+    "raw_text": "Paytm कैशबैक ऑफर! आपको 4999 रुपये मिले हैं। दावा करने के लिए लिंक पर क्लिक करें http://paytm-security-alert.net/login। सहायता: +919123456789।",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-02-PAYTM-REFUND",
+    "created_at": "2026-08-26T07:27:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Paytm Cashback & Security Alert Scam"
+    }
+  },
+  {
+    "id": "60f1c713-4aec-45b2-839d-443aabe922cb",
+    "raw_text": "You received Rs 4999 in Paytm wallet! Enter PIN at http://paytm-security-alert.net/login to accept payment. Contact helpline: +919123456789.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-02-PAYTM-REFUND",
+    "created_at": "2026-08-28T23:13:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Paytm Cashback & Security Alert Scam"
+    }
+  },
+  {
+    "id": "6ee6d903-78c2-4091-bd74-3ce49de8f393",
+    "raw_text": "SBI ALERT: Your netbanking blocked. Update PAN card immediately to unlock: https://sbi-kyc-update-portal.xyz/verify. Pay Rs 1 re-verification fee to sbi.kyc.update@ybl.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-01-SBI-KYC",
+    "created_at": "2026-09-01T12:43:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "SBI KYC Account Suspension Campaign"
+    }
+  },
+  {
+    "id": "15bdc2b8-33f2-43b3-a90c-40d6175500a0",
+    "raw_text": "கஸ்டம்ஸ் நோட்டீஸ்: உங்கள் பெயரில் அனுப்பப்பட்ட பார்சலில் சட்டவிரோத பொருட்கள் உள்ளன. கைது நடவடிக்கை தவிர்க்க உடனே அழைக்கவும்: +919000111222.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-04-FEDEX-CUSTOMS",
+    "created_at": "2026-08-15T16:28:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Courier Parcel Illegal Goods Extortion"
+    }
+  },
+  {
+    "id": "f34c959c-bb13-48f8-8e94-d4101054f9a6",
+    "raw_text": "You received Rs 4999 in Paytm wallet! Enter PIN at http://paytm-security-alert.net/login to accept payment. Contact helpline: +919123456789.",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-02-PAYTM-REFUND",
+    "created_at": "2026-08-17T16:23:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Paytm Cashback & Security Alert Scam"
+    }
+  },
+  {
+    "id": "24b146be-0fed-4ebf-8b33-c9e9c10bd237",
+    "raw_text": "Paytm कैशबैक ऑफर! आपको 4999 रुपये मिले हैं। दावा करने के लिए लिंक पर क्लिक करें http://paytm-security-alert.net/login। सहायता: +919123456789।",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-02-PAYTM-REFUND",
+    "created_at": "2026-08-27T09:55:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Paytm Cashback & Security Alert Scam"
+    }
+  },
+  {
+    "id": "9823c745-1d65-47cb-9ffe-cfed5b79ac07",
+    "raw_text": "கஸ்டம்ஸ் நோட்டீஸ்: உங்கள் பெயரில் அனுப்பப்பட்ட பார்சலில் சட்டவிரோத பொருட்கள் உள்ளன. கைது நடவடிக்கை தவிர்க்க உடனே அழைக்கவும்: +919000111222.",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-04-FEDEX-CUSTOMS",
+    "created_at": "2026-08-20T14:13:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Courier Parcel Illegal Goods Extortion"
+    }
+  },
+  {
+    "id": "2fea3bf0-ae1d-4993-8e2b-fd06a73adcab",
+    "raw_text": "உங்களுக்கு Paytm 4999 ரூபாய் கேஷ்பேக் வந்துள்ளது. உடனடியாக பெற http://paytm-security-alert.net/login கிளிக் செய்யவும்.",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-02-PAYTM-REFUND",
+    "created_at": "2026-08-19T16:57:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Paytm Cashback & Security Alert Scam"
+    }
+  },
+  {
+    "id": "1843b51b-197f-4be9-84a4-b43e02a3c47b",
+    "raw_text": "கஸ்டம்ஸ் நோட்டீஸ்: உங்கள் பெயரில் அனுப்பப்பட்ட பார்சலில் சட்டவிரோத பொருட்கள் உள்ளன. கைது நடவடிக்கை தவிர்க்க உடனே அழைக்கவும்: +919000111222.",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-04-FEDEX-CUSTOMS",
+    "created_at": "2026-08-06T07:38:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Courier Parcel Illegal Goods Extortion"
+    }
+  },
+  {
+    "id": "4bb41f1e-5cc9-4aaf-8cc2-7609a1f78207",
+    "raw_text": "வணக்கம், உங்கள் SBI கணக்கு முடக்கப்படும். உடனடியாக KYC புதுப்பிக்கவும்: https://sbi-kyc-update-portal.xyz/verify. உதவிக்கு அழைக்கவும்: +919876543210.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-01-SBI-KYC",
+    "created_at": "2026-08-10T01:04:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "SBI KYC Account Suspension Campaign"
+    }
+  },
+  {
+    "id": "4e7f9764-e5fe-489c-bd52-0ec6051a0b37",
+    "raw_text": "Work from home opportunity! Earn Rs 3000 daily by liking YouTube videos. Contact HR Priya on WhatsApp +919999900000. Registration fee Rs 200. [Ref: 7708]",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-NEG-02-OTHER-SCAM",
+    "created_at": "2026-08-19T04:59:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "is_negative_control": true
+    }
+  },
+  {
+    "id": "04033d7d-4160-4f85-9fc2-ddd8d0e051d4",
+    "raw_text": "Dear customer, your monthly SBI bank statement for August is ready. View it safely in your YONO app. SBI will never ask for your OTP or password. [Ref: 5757]",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-NEG-01-LEGIT-BANK",
+    "created_at": "2026-08-20T08:59:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "is_negative_control": true
+    }
+  },
+  {
+    "id": "9adba4e3-cffb-4b82-964b-b439b4c08e39",
+    "raw_text": "கஸ்டம்ஸ் நோட்டீஸ்: உங்கள் பெயரில் அனுப்பப்பட்ட பார்சலில் சட்டவிரோத பொருட்கள் உள்ளன. கைது நடவடிக்கை தவிர்க்க உடனே அழைக்கவும்: +919000111222.",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-04-FEDEX-CUSTOMS",
+    "created_at": "2026-08-05T05:05:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Courier Parcel Illegal Goods Extortion"
+    }
+  },
+  {
+    "id": "a6696dc9-a56b-4bca-9344-43bd8b98ad63",
+    "raw_text": "Traffic Police Warning: e-Challan #CH-9921 unpaid for vehicle speed violation. Court summons issued if unpaid within 24h. Pay fine at https://echallan-parivahan-pay.info/fine or UPI police.challan@paytm.",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-05-TRAFFIC-CHALLAN",
+    "created_at": "2026-08-15T03:15:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Fake Traffic e-Challan Fine Scam"
+    }
+  },
+  {
+    "id": "a5e430c5-df04-445f-92cb-47c9f87a8a71",
+    "raw_text": "बिजली विभाग चेतावनी: आपका बिजली कनेक्शन आज रात काट दिया जाएगा। तुरंत भुगतान करें elect.bill.pay@okhdfcbank पर। कॉल करें अधिकारी: +919444012345।",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-03-ELECTRICITY-BILL",
+    "created_at": "2026-08-18T06:20:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Electricity Bill Disconnection Threat"
+    }
+  },
+  {
+    "id": "377d3790-c46c-46ed-9fad-37d28bb72690",
+    "raw_text": "Dear customer, your monthly SBI bank statement for August is ready. View it safely in your YONO app. SBI will never ask for your OTP or password. [Ref: 9335]",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-NEG-01-LEGIT-BANK",
+    "created_at": "2026-08-28T02:59:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "is_negative_control": true
+    }
+  },
+  {
+    "id": "967cdb15-3d42-4ef1-95c9-1d0247bd1731",
+    "raw_text": "Dear SBI customer, your account 41568532 will be suspended within 2 hours due to pending KYC update. Click https://sbi-kyc-update-portal.xyz/verify or call +919876543210 to update now.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-01-SBI-KYC",
+    "created_at": "2026-08-14T19:55:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "SBI KYC Account Suspension Campaign"
+    }
+  },
+  {
+    "id": "a9c31c4d-8d2a-47d4-aff6-7fbfc75bacd5",
+    "raw_text": "बिजली विभाग चेतावनी: आपका बिजली कनेक्शन आज रात काट दिया जाएगा। तुरंत भुगतान करें elect.bill.pay@okhdfcbank पर। कॉल करें अधिकारी: +919444012345।",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-03-ELECTRICITY-BILL",
+    "created_at": "2026-08-07T01:27:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Electricity Bill Disconnection Threat"
+    }
+  },
+  {
+    "id": "f4e612ec-f004-4014-bca7-ffb9c60b5b76",
+    "raw_text": "e-Challan Notice: Court warrant issued for vehicle traffic violation. Pay Rs 1000 penalty immediately to avoid impounding vehicle: https://echallan-parivahan-pay.info/fine. Helpline: +919555666777.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-05-TRAFFIC-CHALLAN",
+    "created_at": "2026-08-17T06:01:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Fake Traffic e-Challan Fine Scam"
+    }
+  },
+  {
+    "id": "7f23803b-305c-45ea-b313-65f23ab42bd7",
+    "raw_text": "Dear SBI customer, your account 70291817 will be suspended within 2 hours due to pending KYC update. Click https://sbi-kyc-update-portal.xyz/verify or call +919876543210 to update now.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-01-SBI-KYC",
+    "created_at": "2026-08-21T00:50:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "SBI KYC Account Suspension Campaign"
+    }
+  },
+  {
+    "id": "69cc952a-dd6d-4862-a1b4-5f877e353222",
+    "raw_text": "Customs Clearance Notice: Illegal package seized under your name. Pay clearance fee Rs 14,500 to account customs.duty.tax@oksbi or arrest warrant issued. Details: https://customs-clearance-india.org/tax.",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-04-FEDEX-CUSTOMS",
+    "created_at": "2026-09-02T03:05:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Courier Parcel Illegal Goods Extortion"
+    }
+  },
+  {
+    "id": "16d43e51-f070-4f06-8c65-192757ee0d95",
+    "raw_text": "Paytm कैशबैक ऑफर! आपको 4999 रुपये मिले हैं। दावा करने के लिए लिंक पर क्लिक करें http://paytm-security-alert.net/login। सहायता: +919123456789।",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-02-PAYTM-REFUND",
+    "created_at": "2026-08-27T04:16:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Paytm Cashback & Security Alert Scam"
+    }
+  },
+  {
+    "id": "a21ed265-d47c-4fd5-a1db-219b654e7336",
+    "raw_text": "Dear consumer, power bill overdue. Officer visiting to cut power. Pay pending Rs 650 via elect.bill.pay@okhdfcbank right now to halt order. Link: https://eb-bill-pay-tnb.com/pay.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-03-ELECTRICITY-BILL",
+    "created_at": "2026-08-28T00:20:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Electricity Bill Disconnection Threat"
+    }
+  },
+  {
+    "id": "e853e3dd-fdb3-43d1-b621-1b7f847cc62c",
+    "raw_text": "Dear consumer, power bill overdue. Officer visiting to cut power. Pay pending Rs 650 via elect.bill.pay@okhdfcbank right now to halt order. Link: https://eb-bill-pay-tnb.com/pay.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-03-ELECTRICITY-BILL",
+    "created_at": "2026-08-23T00:28:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Electricity Bill Disconnection Threat"
+    }
+  },
+  {
+    "id": "f53bfe4c-040f-4322-aa91-70695c5edf70",
+    "raw_text": "Paytm reward alert! You won Rs 4,999 cashback. Claim now before expiry: http://paytm-security-alert.net/login or send Rs 1 test to paytm.verify.secure@paytm.",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-02-PAYTM-REFUND",
+    "created_at": "2026-08-07T17:15:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Paytm Cashback & Security Alert Scam"
+    }
+  },
+  {
+    "id": "92941cfe-6fc4-4581-ad97-f9111ac213cc",
+    "raw_text": "e-Challan Notice: Court warrant issued for vehicle traffic violation. Pay Rs 1000 penalty immediately to avoid impounding vehicle: https://echallan-parivahan-pay.info/fine. Helpline: +919555666777.",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-05-TRAFFIC-CHALLAN",
+    "created_at": "2026-08-22T08:23:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Fake Traffic e-Challan Fine Scam"
+    }
+  },
+  {
+    "id": "d4cc3dd8-26ff-41e7-ba7e-0b8d2d706615",
+    "raw_text": "Customs Clearance Notice: Illegal package seized under your name. Pay clearance fee Rs 14,500 to account customs.duty.tax@oksbi or arrest warrant issued. Details: https://customs-clearance-india.org/tax.",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-04-FEDEX-CUSTOMS",
+    "created_at": "2026-08-12T18:59:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Courier Parcel Illegal Goods Extortion"
+    }
+  },
+  {
+    "id": "bea717a5-82aa-4f87-a706-bd6ca9f557f3",
+    "raw_text": "Dear consumer, power bill overdue. Officer visiting to cut power. Pay pending Rs 650 via elect.bill.pay@okhdfcbank right now to halt order. Link: https://eb-bill-pay-tnb.com/pay.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-03-ELECTRICITY-BILL",
+    "created_at": "2026-08-26T10:47:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Electricity Bill Disconnection Threat"
+    }
+  },
+  {
+    "id": "99f5a172-ff55-4d62-98b0-370f93edb964",
+    "raw_text": "Paytm reward alert! You won Rs 4,999 cashback. Claim now before expiry: http://paytm-security-alert.net/login or send Rs 1 test to paytm.verify.secure@paytm.",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-02-PAYTM-REFUND",
+    "created_at": "2026-08-15T14:17:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Paytm Cashback & Security Alert Scam"
+    }
+  },
+  {
+    "id": "5af4c871-2ba8-414c-b7f5-6c0639fcf3be",
+    "raw_text": "Traffic Police Warning: e-Challan #CH-9921 unpaid for vehicle speed violation. Court summons issued if unpaid within 24h. Pay fine at https://echallan-parivahan-pay.info/fine or UPI police.challan@paytm.",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-05-TRAFFIC-CHALLAN",
+    "created_at": "2026-08-27T10:27:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Fake Traffic e-Challan Fine Scam"
+    }
+  },
+  {
+    "id": "5dcbf5fb-fdcd-41bd-a1f5-0a70a1a3c498",
+    "raw_text": "மின்சார வாரியம் எச்சரிக்கை: உங்கள் மின் இணைப்பு இன்று இரவு 9 மணிக்கு துண்டிக்கப்படும். உடனே கட்டணத்தை elect.bill.pay@okhdfcbank செலுத்தவும். தொடர்புக்கு +919444012345.",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-03-ELECTRICITY-BILL",
+    "created_at": "2026-08-30T05:01:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Electricity Bill Disconnection Threat"
+    }
+  },
+  {
+    "id": "15e262b6-a461-49bc-9d0c-63aa3c7f5ef7",
+    "raw_text": "URGENT: Your electricity connection will be disconnected tonight at 9:30 PM due to unpaid bill. Pay immediately to elect.bill.pay@okhdfcbank or call officer at +919444012345.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-03-ELECTRICITY-BILL",
+    "created_at": "2026-08-12T14:17:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Electricity Bill Disconnection Threat"
+    }
+  },
+  {
+    "id": "f3da813b-6db9-44e3-bd06-3c81dcdd8951",
+    "raw_text": "URGENT: Your electricity connection will be disconnected tonight at 9:30 PM due to unpaid bill. Pay immediately to elect.bill.pay@okhdfcbank or call officer at +919444012345.",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-03-ELECTRICITY-BILL",
+    "created_at": "2026-08-06T09:13:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Electricity Bill Disconnection Threat"
+    }
+  },
+  {
+    "id": "e731d5ac-8046-4011-bba2-47039ecc7110",
+    "raw_text": "URGENT: Your HDFC credit card reward points worth Rs 7,500 expire today. Redeem now on official website HDFC Bank portal app. [Ref: 5105]",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-NEG-03-UNRELATED-URGENT",
+    "created_at": "2026-08-29T17:59:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "is_negative_control": true
+    }
+  },
+  {
+    "id": "1d589636-985f-4046-95f1-56144155414a",
+    "raw_text": "Dear SBI customer, your account 20576383 will be suspended within 2 hours due to pending KYC update. Click https://sbi-kyc-update-portal.xyz/verify or call +919876543211 to update now.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-01-SBI-KYC",
+    "created_at": "2026-08-20T01:52:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "SBI KYC Account Suspension Campaign"
+    }
+  },
+  {
+    "id": "736c8e6d-d95c-4d2c-b474-a1e076359b7a",
+    "raw_text": "Work from home opportunity! Earn Rs 3000 daily by liking YouTube videos. Contact HR Priya on WhatsApp +919999900000. Registration fee Rs 200. [Ref: 2077]",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-NEG-02-OTHER-SCAM",
+    "created_at": "2026-08-21T17:59:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "is_negative_control": true
+    }
+  },
+  {
+    "id": "c39185a3-f183-4d22-8911-788ab1d2c8f6",
+    "raw_text": "Paytm reward alert! You won Rs 4,999 cashback. Claim now before expiry: http://paytm-security-alert.net/login or send Rs 1 test to paytm.verify.secure@paytm.",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-02-PAYTM-REFUND",
+    "created_at": "2026-08-05T10:43:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Paytm Cashback & Security Alert Scam"
+    }
+  },
+  {
+    "id": "442d396b-7184-4b39-b590-7298ff43f305",
+    "raw_text": "Dear customer, your monthly SBI bank statement for August is ready. View it safely in your YONO app. SBI will never ask for your OTP or password. [Ref: 3223]",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-NEG-01-LEGIT-BANK",
+    "created_at": "2026-08-08T18:59:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "is_negative_control": true
+    }
+  },
+  {
+    "id": "5160d8c8-6c2e-498a-8560-8ff18a11fc33",
+    "raw_text": "e-Challan Notice: Court warrant issued for vehicle traffic violation. Pay Rs 1000 penalty immediately to avoid impounding vehicle: https://echallan-parivahan-pay.info/fine. Helpline: +919555666777.",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-05-TRAFFIC-CHALLAN",
+    "created_at": "2026-08-05T17:14:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Fake Traffic e-Challan Fine Scam"
+    }
+  },
+  {
+    "id": "5a45659e-eb73-4188-946b-65c91283eb3d",
+    "raw_text": "Traffic Police Warning: e-Challan #CH-9921 unpaid for vehicle speed violation. Court summons issued if unpaid within 24h. Pay fine at https://echallan-parivahan-pay.info/fine or UPI police.challan@paytm.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-05-TRAFFIC-CHALLAN",
+    "created_at": "2026-08-18T08:08:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Fake Traffic e-Challan Fine Scam"
+    }
+  },
+  {
+    "id": "98afb5ce-5496-4ee1-9f4d-2d2b9a7ae944",
+    "raw_text": "e-Challan Notice: Court warrant issued for vehicle traffic violation. Pay Rs 1000 penalty immediately to avoid impounding vehicle: https://echallan-parivahan-pay.info/fine. Helpline: +919555666777.",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-05-TRAFFIC-CHALLAN",
+    "created_at": "2026-08-25T05:09:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Fake Traffic e-Challan Fine Scam"
+    }
+  },
+  {
+    "id": "e350d459-1c5c-454f-a63b-49ce2e25284a",
+    "raw_text": "Traffic Police Warning: e-Challan #CH-9921 unpaid for vehicle speed violation. Court summons issued if unpaid within 24h. Pay fine at https://echallan-parivahan-pay.info/fine or UPI police.challan@paytm.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-05-TRAFFIC-CHALLAN",
+    "created_at": "2026-08-28T15:42:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Fake Traffic e-Challan Fine Scam"
+    }
+  },
+  {
+    "id": "bd0fe85f-de6b-4319-86c0-5af3c281799f",
+    "raw_text": "உங்களுக்கு Paytm 4999 ரூபாய் கேஷ்பேக் வந்துள்ளது. உடனடியாக பெற http://paytm-security-alert.net/login கிளிக் செய்யவும்.",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-02-PAYTM-REFUND",
+    "created_at": "2026-08-14T17:53:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Paytm Cashback & Security Alert Scam"
+    }
+  },
+  {
+    "id": "b4eeb801-09a0-4b48-ad70-b4320987f6ae",
+    "raw_text": "e-Challan Notice: Court warrant issued for vehicle traffic violation. Pay Rs 1000 penalty immediately to avoid impounding vehicle: https://echallan-parivahan-pay.info/fine. Helpline: +919555666777.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-05-TRAFFIC-CHALLAN",
+    "created_at": "2026-08-06T18:17:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Fake Traffic e-Challan Fine Scam"
+    }
+  },
+  {
+    "id": "34001479-28d3-42bc-b2d6-099c05a35cd4",
+    "raw_text": "Dear customer, your monthly SBI bank statement for August is ready. View it safely in your YONO app. SBI will never ask for your OTP or password. [Ref: 8292]",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-NEG-01-LEGIT-BANK",
+    "created_at": "2026-08-08T13:59:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "is_negative_control": true
+    }
+  },
+  {
+    "id": "713d7f1f-7fb2-418d-af45-3af84bcc3f9a",
+    "raw_text": "Paytm reward alert! You won Rs 4,999 cashback. Claim now before expiry: http://paytm-security-alert.net/login or send Rs 1 test to paytm.verify.secure@paytm.",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-02-PAYTM-REFUND",
+    "created_at": "2026-08-21T11:41:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Paytm Cashback & Security Alert Scam"
+    }
+  },
+  {
+    "id": "5068c8f2-4a2a-4d61-a8c3-6f9b6ab0afef",
+    "raw_text": "Dear customer, your monthly SBI bank statement for August is ready. View it safely in your YONO app. SBI will never ask for your OTP or password. [Ref: 6236]",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-NEG-01-LEGIT-BANK",
+    "created_at": "2026-08-05T12:59:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "is_negative_control": true
+    }
+  },
+  {
+    "id": "a380b3e7-854c-46c6-bb28-57d4775e79c8",
+    "raw_text": "Customs Clearance Notice: Illegal package seized under your name. Pay clearance fee Rs 14,500 to account customs.duty.tax@oksbi or arrest warrant issued. Details: https://customs-clearance-india.org/tax.",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-04-FEDEX-CUSTOMS",
+    "created_at": "2026-08-06T04:00:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Courier Parcel Illegal Goods Extortion"
+    }
+  },
+  {
+    "id": "fede7d68-0522-4fc7-90d7-b537187ea4cd",
+    "raw_text": "மின்சார வாரியம் எச்சரிக்கை: உங்கள் மின் இணைப்பு இன்று இரவு 9 மணிக்கு துண்டிக்கப்படும். உடனே கட்டணத்தை elect.bill.pay@okhdfcbank செலுத்தவும். தொடர்புக்கு +919444012345.",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-03-ELECTRICITY-BILL",
+    "created_at": "2026-09-02T04:51:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Electricity Bill Disconnection Threat"
+    }
+  },
+  {
+    "id": "dbbfa18e-c2a6-4cd3-a231-a3ae3341cc25",
+    "raw_text": "URGENT: Your HDFC credit card reward points worth Rs 7,500 expire today. Redeem now on official website HDFC Bank portal app. [Ref: 5961]",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-NEG-03-UNRELATED-URGENT",
+    "created_at": "2026-08-07T11:59:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "is_negative_control": true
+    }
+  },
+  {
+    "id": "6e5dfca6-96ef-45a0-a763-6841cec7d804",
+    "raw_text": "Dear consumer, power bill overdue. Officer visiting to cut power. Pay pending Rs 650 via elect.bill.pay@okhdfcbank right now to halt order. Link: https://eb-bill-pay-tnb.com/pay.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-03-ELECTRICITY-BILL",
+    "created_at": "2026-08-03T05:27:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Electricity Bill Disconnection Threat"
+    }
+  },
+  {
+    "id": "358b357d-adcf-4c3f-b27c-6c633da58fe8",
+    "raw_text": "e-Challan Notice: Court warrant issued for vehicle traffic violation. Pay Rs 1000 penalty immediately to avoid impounding vehicle: https://echallan-parivahan-pay.info/fine. Helpline: +919555666777.",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-05-TRAFFIC-CHALLAN",
+    "created_at": "2026-08-31T04:46:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Fake Traffic e-Challan Fine Scam"
+    }
+  },
+  {
+    "id": "eb1e2ad7-bb5a-447e-ba9b-3d11018f618a",
+    "raw_text": "प्रिय ग्राहक, आपका SBI बैंक खाता ब्लॉक हो गया है। तुरंत KYC अपडेट करें https://sbi-kyc-update-portal.xyz/verify या कॉल करें +919876543210।",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-01-SBI-KYC",
+    "created_at": "2026-08-26T09:33:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "SBI KYC Account Suspension Campaign"
+    }
+  },
+  {
+    "id": "e953c9d2-9d47-4a36-8299-36b76f5ce8db",
+    "raw_text": "Dear SBI customer, your account 47376585 will be suspended within 2 hours due to pending KYC update. Click https://sbi-kyc-update-portal.xyz/verify or call +919876543211 to update now.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-01-SBI-KYC",
+    "created_at": "2026-08-24T07:12:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "SBI KYC Account Suspension Campaign"
+    }
+  },
+  {
+    "id": "c1065c86-2ce7-4481-9ca4-c5eb33efc817",
+    "raw_text": "Traffic Police Warning: e-Challan #CH-9921 unpaid for vehicle speed violation. Court summons issued if unpaid within 24h. Pay fine at https://echallan-parivahan-pay.info/fine or UPI police.challan@paytm.",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-05-TRAFFIC-CHALLAN",
+    "created_at": "2026-08-07T21:52:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Fake Traffic e-Challan Fine Scam"
+    }
+  },
+  {
+    "id": "6ecb87ec-2c1b-4e17-83f8-a4c41af6a817",
+    "raw_text": "Paytm reward alert! You won Rs 4,999 cashback. Claim now before expiry: http://paytm-security-alert.net/login or send Rs 1 test to paytm.verify.secure@paytm.",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-02-PAYTM-REFUND",
+    "created_at": "2026-08-28T06:41:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Paytm Cashback & Security Alert Scam"
+    }
+  },
+  {
+    "id": "b6010566-0b7d-4afe-81b6-c8a16fb0d527",
+    "raw_text": "மின்சார வாரியம் எச்சரிக்கை: உங்கள் மின் இணைப்பு இன்று இரவு 9 மணிக்கு துண்டிக்கப்படும். உடனே கட்டணத்தை elect.bill.pay@okhdfcbank செலுத்தவும். தொடர்புக்கு +919444012345.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-03-ELECTRICITY-BILL",
+    "created_at": "2026-08-21T13:30:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Electricity Bill Disconnection Threat"
+    }
+  },
+  {
+    "id": "54f0c224-348e-4539-8836-648461d26df2",
+    "raw_text": "உங்களுக்கு Paytm 4999 ரூபாய் கேஷ்பேக் வந்துள்ளது. உடனடியாக பெற http://paytm-security-alert.net/login கிளிக் செய்யவும்.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-02-PAYTM-REFUND",
+    "created_at": "2026-08-31T10:43:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Paytm Cashback & Security Alert Scam"
+    }
+  },
+  {
+    "id": "8811d493-6978-4c6c-b3c0-e6918e9e5ede",
+    "raw_text": "வணக்கம், உங்கள் SBI கணக்கு முடக்கப்படும். உடனடியாக KYC புதுப்பிக்கவும்: https://sbi-kyc-update-portal.xyz/verify. உதவிக்கு அழைக்கவும்: +919876543211.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-01-SBI-KYC",
+    "created_at": "2026-08-24T14:30:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "SBI KYC Account Suspension Campaign"
+    }
+  },
+  {
+    "id": "181b9a91-b194-46ed-b4cf-f45a0f76a889",
+    "raw_text": "மின்சார வாரியம் எச்சரிக்கை: உங்கள் மின் இணைப்பு இன்று இரவு 9 மணிக்கு துண்டிக்கப்படும். உடனே கட்டணத்தை elect.bill.pay@okhdfcbank செலுத்தவும். தொடர்புக்கு +919444012345.",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-03-ELECTRICITY-BILL",
+    "created_at": "2026-09-01T05:59:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Electricity Bill Disconnection Threat"
+    }
+  },
+  {
+    "id": "f3231e86-e218-4d72-9038-4a1f547defae",
+    "raw_text": "உங்களுக்கு Paytm 4999 ரூபாய் கேஷ்பேக் வந்துள்ளது. உடனடியாக பெற http://paytm-security-alert.net/login கிளிக் செய்யவும்.",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-02-PAYTM-REFUND",
+    "created_at": "2026-08-14T23:08:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Paytm Cashback & Security Alert Scam"
+    }
+  },
+  {
+    "id": "7068630f-25ae-4dbf-845b-d1f095ee0609",
+    "raw_text": "e-Challan Notice: Court warrant issued for vehicle traffic violation. Pay Rs 1000 penalty immediately to avoid impounding vehicle: https://echallan-parivahan-pay.info/fine. Helpline: +919555666777.",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-05-TRAFFIC-CHALLAN",
+    "created_at": "2026-08-20T04:40:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Fake Traffic e-Challan Fine Scam"
+    }
+  },
+  {
+    "id": "8b89ac29-15f8-493f-ac27-5beb4229623b",
+    "raw_text": "Dear SBI customer, your account 24665841 will be suspended within 2 hours due to pending KYC update. Click https://sbi-kyc-update-portal.xyz/verify or call +919876543210 to update now.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-01-SBI-KYC",
+    "created_at": "2026-08-09T22:11:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "SBI KYC Account Suspension Campaign"
+    }
+  },
+  {
+    "id": "b4e94e20-ece3-4799-b39f-e0a835f700ef",
+    "raw_text": "FedEx Alert: Parcel AWB-8821 held by Mumbai Customs. Contains illegal passports and drugs. Call Customs Officer immediately at +919000111222 to prevent FIR.",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-04-FEDEX-CUSTOMS",
+    "created_at": "2026-08-10T22:06:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Courier Parcel Illegal Goods Extortion"
+    }
+  },
+  {
+    "id": "6d31a36c-fea7-4341-a2b7-44e6db90b611",
+    "raw_text": "Dear consumer, power bill overdue. Officer visiting to cut power. Pay pending Rs 650 via elect.bill.pay@okhdfcbank right now to halt order. Link: https://eb-bill-pay-tnb.com/pay.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-03-ELECTRICITY-BILL",
+    "created_at": "2026-08-11T13:47:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Electricity Bill Disconnection Threat"
+    }
+  },
+  {
+    "id": "1eace12b-fc72-4abb-ac41-eed66c983411",
+    "raw_text": "URGENT: Your electricity connection will be disconnected tonight at 9:30 PM due to unpaid bill. Pay immediately to elect.bill.pay@okhdfcbank or call officer at +919444012345.",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-03-ELECTRICITY-BILL",
+    "created_at": "2026-08-15T07:03:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Electricity Bill Disconnection Threat"
+    }
+  },
+  {
+    "id": "8cf965c3-b3a1-4fd9-848c-cc5630fbbb9f",
+    "raw_text": "வணக்கம், உங்கள் SBI கணக்கு முடக்கப்படும். உடனடியாக KYC புதுப்பிக்கவும்: https://sbi-kyc-update-portal.xyz/verify. உதவிக்கு அழைக்கவும்: +919876543210.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-01-SBI-KYC",
+    "created_at": "2026-09-01T08:09:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "SBI KYC Account Suspension Campaign"
+    }
+  },
+  {
+    "id": "05ee948c-5ade-4840-ac45-21f22d5f0e3a",
+    "raw_text": "மின்சார வாரியம் எச்சரிக்கை: உங்கள் மின் இணைப்பு இன்று இரவு 9 மணிக்கு துண்டிக்கப்படும். உடனே கட்டணத்தை elect.bill.pay@okhdfcbank செலுத்தவும். தொடர்புக்கு +919444012345.",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-03-ELECTRICITY-BILL",
+    "created_at": "2026-08-25T04:16:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Electricity Bill Disconnection Threat"
+    }
+  },
+  {
+    "id": "c2023150-2e6b-4e41-aa04-50165afd2a7b",
+    "raw_text": "बिजली विभाग चेतावनी: आपका बिजली कनेक्शन आज रात काट दिया जाएगा। तुरंत भुगतान करें elect.bill.pay@okhdfcbank पर। कॉल करें अधिकारी: +919444012345।",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-03-ELECTRICITY-BILL",
+    "created_at": "2026-08-25T06:16:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Electricity Bill Disconnection Threat"
+    }
+  },
+  {
+    "id": "f5875470-64f1-47db-807d-2a97ce64d456",
+    "raw_text": "Paytm reward alert! You won Rs 4,999 cashback. Claim now before expiry: http://paytm-security-alert.net/login or send Rs 1 test to paytm.verify.secure@paytm.",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-02-PAYTM-REFUND",
+    "created_at": "2026-08-15T21:45:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Paytm Cashback & Security Alert Scam"
+    }
+  },
+  {
+    "id": "4dbb394c-2dc8-4e37-bcdb-6e71d5d34428",
+    "raw_text": "e-Challan Notice: Court warrant issued for vehicle traffic violation. Pay Rs 1000 penalty immediately to avoid impounding vehicle: https://echallan-parivahan-pay.info/fine. Helpline: +919555666777.",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-05-TRAFFIC-CHALLAN",
+    "created_at": "2026-09-01T01:23:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Fake Traffic e-Challan Fine Scam"
+    }
+  },
+  {
+    "id": "58fa8e5a-ff03-4849-9920-b542730128e9",
+    "raw_text": "உங்களுக்கு Paytm 4999 ரூபாய் கேஷ்பேக் வந்துள்ளது. உடனடியாக பெற http://paytm-security-alert.net/login கிளிக் செய்யவும்.",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-02-PAYTM-REFUND",
+    "created_at": "2026-08-30T05:51:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Paytm Cashback & Security Alert Scam"
+    }
+  },
+  {
+    "id": "363423da-f85c-4faa-b58c-6b6e3b208d53",
+    "raw_text": "வணக்கம், உங்கள் SBI கணக்கு முடக்கப்படும். உடனடியாக KYC புதுப்பிக்கவும்: https://sbi-kyc-update-portal.xyz/verify. உதவிக்கு அழைக்கவும்: +919876543211.",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-01-SBI-KYC",
+    "created_at": "2026-08-11T04:07:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "SBI KYC Account Suspension Campaign"
+    }
+  },
+  {
+    "id": "666af36b-aa4c-4392-9313-4d64aea77be1",
+    "raw_text": "கஸ்டம்ஸ் நோட்டீஸ்: உங்கள் பெயரில் அனுப்பப்பட்ட பார்சலில் சட்டவிரோத பொருட்கள் உள்ளன. கைது நடவடிக்கை தவிர்க்க உடனே அழைக்கவும்: +919000111222.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-04-FEDEX-CUSTOMS",
+    "created_at": "2026-08-24T00:22:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Courier Parcel Illegal Goods Extortion"
+    }
+  },
+  {
+    "id": "9ef6e291-e128-45f3-9058-11de52d7ec21",
+    "raw_text": "Paytm reward alert! You won Rs 4,999 cashback. Claim now before expiry: http://paytm-security-alert.net/login or send Rs 1 test to paytm.verify.secure@paytm.",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-02-PAYTM-REFUND",
+    "created_at": "2026-08-12T13:36:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Paytm Cashback & Security Alert Scam"
+    }
+  },
+  {
+    "id": "840eb6ad-b078-4cbf-a3fe-5421e1d37ed6",
+    "raw_text": "Paytm reward alert! You won Rs 4,999 cashback. Claim now before expiry: http://paytm-security-alert.net/login or send Rs 1 test to paytm.verify.secure@paytm.",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-02-PAYTM-REFUND",
+    "created_at": "2026-08-22T08:06:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Paytm Cashback & Security Alert Scam"
+    }
+  },
+  {
+    "id": "2bad1a7e-37ee-4ac2-8d9b-f5b30eed8549",
+    "raw_text": "बिजली विभाग चेतावनी: आपका बिजली कनेक्शन आज रात काट दिया जाएगा। तुरंत भुगतान करें elect.bill.pay@okhdfcbank पर। कॉल करें अधिकारी: +919444012345।",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-03-ELECTRICITY-BILL",
+    "created_at": "2026-09-01T17:07:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Electricity Bill Disconnection Threat"
+    }
+  },
+  {
+    "id": "0b95275d-7750-44a7-a5fe-c23abb2042e7",
+    "raw_text": "e-Challan Notice: Court warrant issued for vehicle traffic violation. Pay Rs 1000 penalty immediately to avoid impounding vehicle: https://echallan-parivahan-pay.info/fine. Helpline: +919555666777.",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-05-TRAFFIC-CHALLAN",
+    "created_at": "2026-08-25T06:01:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Fake Traffic e-Challan Fine Scam"
+    }
+  },
+  {
+    "id": "a555db23-8f86-49b3-af2a-41bdfde3e9eb",
+    "raw_text": "e-Challan Notice: Court warrant issued for vehicle traffic violation. Pay Rs 1000 penalty immediately to avoid impounding vehicle: https://echallan-parivahan-pay.info/fine. Helpline: +919555666777.",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-05-TRAFFIC-CHALLAN",
+    "created_at": "2026-08-07T13:27:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Fake Traffic e-Challan Fine Scam"
+    }
+  },
+  {
+    "id": "57e3d00c-2670-4af4-b0d6-d970a1b5ae50",
+    "raw_text": "बिजली विभाग चेतावनी: आपका बिजली कनेक्शन आज रात काट दिया जाएगा। तुरंत भुगतान करें elect.bill.pay@okhdfcbank पर। कॉल करें अधिकारी: +919444012345।",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-03-ELECTRICITY-BILL",
+    "created_at": "2026-09-01T19:40:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Electricity Bill Disconnection Threat"
+    }
+  },
+  {
+    "id": "17213b3c-c3e5-4ee6-9e3f-0212555b5502",
+    "raw_text": "வணக்கம், உங்கள் SBI கணக்கு முடக்கப்படும். உடனடியாக KYC புதுப்பிக்கவும்: https://sbi-kyc-update-portal.xyz/verify. உதவிக்கு அழைக்கவும்: +919876543210.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-01-SBI-KYC",
+    "created_at": "2026-08-10T19:55:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "SBI KYC Account Suspension Campaign"
+    }
+  },
+  {
+    "id": "e59be9f8-8920-48f8-bd04-8bdf92bfb507",
+    "raw_text": "प्रिय ग्राहक, आपका SBI बैंक खाता ब्लॉक हो गया है। तुरंत KYC अपडेट करें https://sbi-kyc-update-portal.xyz/verify या कॉल करें +919876543211।",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-01-SBI-KYC",
+    "created_at": "2026-08-27T00:48:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "SBI KYC Account Suspension Campaign"
+    }
+  },
+  {
+    "id": "9d449fad-a8ad-42bd-aabe-18a8efcae8c9",
+    "raw_text": "Traffic Police Warning: e-Challan #CH-9921 unpaid for vehicle speed violation. Court summons issued if unpaid within 24h. Pay fine at https://echallan-parivahan-pay.info/fine or UPI police.challan@paytm.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-05-TRAFFIC-CHALLAN",
+    "created_at": "2026-08-08T21:37:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Fake Traffic e-Challan Fine Scam"
+    }
+  },
+  {
+    "id": "ced03c9a-868f-4966-9cfb-14ecacef24ff",
+    "raw_text": "வணக்கம், உங்கள் SBI கணக்கு முடக்கப்படும். உடனடியாக KYC புதுப்பிக்கவும்: https://sbi-kyc-update-portal.xyz/verify. உதவிக்கு அழைக்கவும்: +919876543210.",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-01-SBI-KYC",
+    "created_at": "2026-08-02T19:58:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "SBI KYC Account Suspension Campaign"
+    }
+  },
+  {
+    "id": "059cde64-40d0-4ca4-bb8d-0fffadb99554",
+    "raw_text": "बिजली विभाग चेतावनी: आपका बिजली कनेक्शन आज रात काट दिया जाएगा। तुरंत भुगतान करें elect.bill.pay@okhdfcbank पर। कॉल करें अधिकारी: +919444012345।",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-03-ELECTRICITY-BILL",
+    "created_at": "2026-08-27T09:23:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Electricity Bill Disconnection Threat"
+    }
+  },
+  {
+    "id": "f978e448-723e-4239-b1f9-3b10e89b3631",
+    "raw_text": "You received Rs 4999 in Paytm wallet! Enter PIN at http://paytm-security-alert.net/login to accept payment. Contact helpline: +919123456789.",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-02-PAYTM-REFUND",
+    "created_at": "2026-09-01T22:28:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Paytm Cashback & Security Alert Scam"
+    }
+  },
+  {
+    "id": "fad2b3a1-737b-478d-a3ae-86f658355329",
+    "raw_text": "बिजली विभाग चेतावनी: आपका बिजली कनेक्शन आज रात काट दिया जाएगा। तुरंत भुगतान करें elect.bill.pay@okhdfcbank पर। कॉल करें अधिकारी: +919444012345।",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-03-ELECTRICITY-BILL",
+    "created_at": "2026-08-26T02:37:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Electricity Bill Disconnection Threat"
+    }
+  },
+  {
+    "id": "3fbdd2ce-34d4-45a3-b5d2-959ecc73b329",
+    "raw_text": "FedEx Alert: Parcel AWB-8821 held by Mumbai Customs. Contains illegal passports and drugs. Call Customs Officer immediately at +919000111222 to prevent FIR.",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-04-FEDEX-CUSTOMS",
+    "created_at": "2026-08-14T15:51:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Courier Parcel Illegal Goods Extortion"
+    }
+  },
+  {
+    "id": "3c327b12-d74a-4494-96c1-0989e38e2320",
+    "raw_text": "Paytm reward alert! You won Rs 4,999 cashback. Claim now before expiry: http://paytm-security-alert.net/login or send Rs 1 test to paytm.verify.secure@paytm.",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-02-PAYTM-REFUND",
+    "created_at": "2026-08-28T14:32:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Paytm Cashback & Security Alert Scam"
+    }
+  },
+  {
+    "id": "57b893ce-d901-40cb-98f7-3981ca3f94e0",
+    "raw_text": "URGENT: Your electricity connection will be disconnected tonight at 9:30 PM due to unpaid bill. Pay immediately to elect.bill.pay@okhdfcbank or call officer at +919444012345.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-03-ELECTRICITY-BILL",
+    "created_at": "2026-08-04T02:49:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Electricity Bill Disconnection Threat"
+    }
+  },
+  {
+    "id": "00f357d0-2b6f-40d3-9176-c4408613414d",
+    "raw_text": "Paytm कैशबैक ऑफर! आपको 4999 रुपये मिले हैं। दावा करने के लिए लिंक पर क्लिक करें http://paytm-security-alert.net/login। सहायता: +919123456789।",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-02-PAYTM-REFUND",
+    "created_at": "2026-09-02T01:05:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Paytm Cashback & Security Alert Scam"
+    }
+  },
+  {
+    "id": "b898a708-403d-4247-a644-08a40b40ce16",
+    "raw_text": "Dear customer, your monthly SBI bank statement for August is ready. View it safely in your YONO app. SBI will never ask for your OTP or password. [Ref: 2063]",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-NEG-01-LEGIT-BANK",
+    "created_at": "2026-08-24T02:59:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "is_negative_control": true
+    }
+  },
+  {
+    "id": "82048112-c6ed-4072-8b82-a369aad1c80a",
+    "raw_text": "Paytm कैशबैक ऑफर! आपको 4999 रुपये मिले हैं। दावा करने के लिए लिंक पर क्लिक करें http://paytm-security-alert.net/login। सहायता: +919123456789।",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-02-PAYTM-REFUND",
+    "created_at": "2026-08-04T03:13:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Paytm Cashback & Security Alert Scam"
+    }
+  },
+  {
+    "id": "13e936d9-36e0-412d-9962-a6d1f2dae0e5",
+    "raw_text": "Customs Clearance Notice: Illegal package seized under your name. Pay clearance fee Rs 14,500 to account customs.duty.tax@oksbi or arrest warrant issued. Details: https://customs-clearance-india.org/tax.",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-04-FEDEX-CUSTOMS",
+    "created_at": "2026-08-03T17:18:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Courier Parcel Illegal Goods Extortion"
+    }
+  },
+  {
+    "id": "6df5b291-2a27-4be8-aa1d-071c32c50b13",
+    "raw_text": "கஸ்டம்ஸ் நோட்டீஸ்: உங்கள் பெயரில் அனுப்பப்பட்ட பார்சலில் சட்டவிரோத பொருட்கள் உள்ளன. கைது நடவடிக்கை தவிர்க்க உடனே அழைக்கவும்: +919000111222.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-04-FEDEX-CUSTOMS",
+    "created_at": "2026-08-30T09:22:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Courier Parcel Illegal Goods Extortion"
+    }
+  },
+  {
+    "id": "33937ba2-3e53-4b74-8228-a810ada8fa2c",
+    "raw_text": "மின்சார வாரியம் எச்சரிக்கை: உங்கள் மின் இணைப்பு இன்று இரவு 9 மணிக்கு துண்டிக்கப்படும். உடனே கட்டணத்தை elect.bill.pay@okhdfcbank செலுத்தவும். தொடர்புக்கு +919444012345.",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-03-ELECTRICITY-BILL",
+    "created_at": "2026-08-07T18:27:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Electricity Bill Disconnection Threat"
+    }
+  },
+  {
+    "id": "62d50537-e492-4719-8f8d-6166a6c98e9e",
+    "raw_text": "Dear customer, your monthly SBI bank statement for August is ready. View it safely in your YONO app. SBI will never ask for your OTP or password. [Ref: 3852]",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-NEG-01-LEGIT-BANK",
+    "created_at": "2026-08-25T13:59:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "is_negative_control": true
+    }
+  },
+  {
+    "id": "9d0672e4-9f1a-4816-9276-354d4dd5de5c",
+    "raw_text": "FedEx Alert: Parcel AWB-8821 held by Mumbai Customs. Contains illegal passports and drugs. Call Customs Officer immediately at +919000111222 to prevent FIR.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-04-FEDEX-CUSTOMS",
+    "created_at": "2026-08-26T12:00:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Courier Parcel Illegal Goods Extortion"
+    }
+  },
+  {
+    "id": "e354559a-f71f-491f-89f5-4831068170d9",
+    "raw_text": "கஸ்டம்ஸ் நோட்டீஸ்: உங்கள் பெயரில் அனுப்பப்பட்ட பார்சலில் சட்டவிரோத பொருட்கள் உள்ளன. கைது நடவடிக்கை தவிர்க்க உடனே அழைக்கவும்: +919000111222.",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-04-FEDEX-CUSTOMS",
+    "created_at": "2026-09-02T05:54:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Courier Parcel Illegal Goods Extortion"
+    }
+  },
+  {
+    "id": "d89ab486-8c99-4d1f-96ba-cadf11e080b1",
+    "raw_text": "URGENT: Your electricity connection will be disconnected tonight at 9:30 PM due to unpaid bill. Pay immediately to elect.bill.pay@okhdfcbank or call officer at +919444012345.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-03-ELECTRICITY-BILL",
+    "created_at": "2026-08-13T13:05:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Electricity Bill Disconnection Threat"
+    }
+  },
+  {
+    "id": "03a41352-ec4f-4bc1-ac07-91eab05fd9ef",
+    "raw_text": "FedEx Alert: Parcel AWB-8821 held by Mumbai Customs. Contains illegal passports and drugs. Call Customs Officer immediately at +919000111222 to prevent FIR.",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-04-FEDEX-CUSTOMS",
+    "created_at": "2026-08-10T21:06:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Courier Parcel Illegal Goods Extortion"
+    }
+  },
+  {
+    "id": "540ec7d4-fbaf-4954-9ddc-5e7427d6f739",
+    "raw_text": "e-Challan Notice: Court warrant issued for vehicle traffic violation. Pay Rs 1000 penalty immediately to avoid impounding vehicle: https://echallan-parivahan-pay.info/fine. Helpline: +919555666777.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-05-TRAFFIC-CHALLAN",
+    "created_at": "2026-08-09T16:19:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Fake Traffic e-Challan Fine Scam"
+    }
+  },
+  {
+    "id": "8c1b3603-2005-49f2-84c1-3ac6627d8af6",
+    "raw_text": "You received Rs 4999 in Paytm wallet! Enter PIN at http://paytm-security-alert.net/login to accept payment. Contact helpline: +919123456789.",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-02-PAYTM-REFUND",
+    "created_at": "2026-08-19T09:42:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Paytm Cashback & Security Alert Scam"
+    }
+  },
+  {
+    "id": "2804bcf2-03c3-4c77-888f-38bb3a42559e",
+    "raw_text": "FedEx Alert: Parcel AWB-8821 held by Mumbai Customs. Contains illegal passports and drugs. Call Customs Officer immediately at +919000111222 to prevent FIR.",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-04-FEDEX-CUSTOMS",
+    "created_at": "2026-08-22T06:25:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Courier Parcel Illegal Goods Extortion"
+    }
+  },
+  {
+    "id": "aa28c220-500b-4ece-8f95-c7b604b9e60b",
+    "raw_text": "உங்களுக்கு Paytm 4999 ரூபாய் கேஷ்பேக் வந்துள்ளது. உடனடியாக பெற http://paytm-security-alert.net/login கிளிக் செய்யவும்.",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-02-PAYTM-REFUND",
+    "created_at": "2026-08-16T02:33:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Paytm Cashback & Security Alert Scam"
+    }
+  },
+  {
+    "id": "ea8bac49-e340-422d-a92a-03ff6a2ad200",
+    "raw_text": "FedEx Alert: Parcel AWB-8821 held by Mumbai Customs. Contains illegal passports and drugs. Call Customs Officer immediately at +919000111222 to prevent FIR.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-04-FEDEX-CUSTOMS",
+    "created_at": "2026-08-21T02:00:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Courier Parcel Illegal Goods Extortion"
+    }
+  },
+  {
+    "id": "be427d70-651d-4832-8977-20fae32dd59c",
+    "raw_text": "e-Challan Notice: Court warrant issued for vehicle traffic violation. Pay Rs 1000 penalty immediately to avoid impounding vehicle: https://echallan-parivahan-pay.info/fine. Helpline: +919555666777.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-05-TRAFFIC-CHALLAN",
+    "created_at": "2026-09-01T07:43:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Fake Traffic e-Challan Fine Scam"
+    }
+  },
+  {
+    "id": "d9086059-6fb5-43a1-98a9-e9fa75827f52",
+    "raw_text": "URGENT: Your HDFC credit card reward points worth Rs 7,500 expire today. Redeem now on official website HDFC Bank portal app. [Ref: 4694]",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-NEG-03-UNRELATED-URGENT",
+    "created_at": "2026-09-01T13:59:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "is_negative_control": true
+    }
+  },
+  {
+    "id": "e680b8f3-5f2c-4881-9f2c-451116aee28e",
+    "raw_text": "வணக்கம், உங்கள் SBI கணக்கு முடக்கப்படும். உடனடியாக KYC புதுப்பிக்கவும்: https://sbi-kyc-update-portal.xyz/verify. உதவிக்கு அழைக்கவும்: +919876543210.",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-01-SBI-KYC",
+    "created_at": "2026-08-23T07:24:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "SBI KYC Account Suspension Campaign"
+    }
+  },
+  {
+    "id": "8c547c2e-5315-4b86-9b75-83e39f00f24d",
+    "raw_text": "प्रिय ग्राहक, आपका SBI बैंक खाता ब्लॉक हो गया है। तुरंत KYC अपडेट करें https://sbi-kyc-update-portal.xyz/verify या कॉल करें +919876543210।",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-01-SBI-KYC",
+    "created_at": "2026-08-18T09:09:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "SBI KYC Account Suspension Campaign"
+    }
+  },
+  {
+    "id": "63e780fc-a280-4b5a-b9df-35191a559962",
+    "raw_text": "Dear SBI customer, your account 95320121 will be suspended within 2 hours due to pending KYC update. Click https://sbi-kyc-update-portal.xyz/verify or call +919876543211 to update now.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-01-SBI-KYC",
+    "created_at": "2026-08-29T03:09:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "SBI KYC Account Suspension Campaign"
+    }
+  },
+  {
+    "id": "1221fb3f-a2c9-4fb8-be7d-ec91089b36ad",
+    "raw_text": "Dear customer, your monthly SBI bank statement for August is ready. View it safely in your YONO app. SBI will never ask for your OTP or password. [Ref: 8406]",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-NEG-01-LEGIT-BANK",
+    "created_at": "2026-08-29T17:59:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "is_negative_control": true
+    }
+  },
+  {
+    "id": "a1bac944-2e0b-46e1-bb22-7cd8529682a4",
+    "raw_text": "e-Challan Notice: Court warrant issued for vehicle traffic violation. Pay Rs 1000 penalty immediately to avoid impounding vehicle: https://echallan-parivahan-pay.info/fine. Helpline: +919555666777.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-05-TRAFFIC-CHALLAN",
+    "created_at": "2026-08-12T02:05:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Fake Traffic e-Challan Fine Scam"
+    }
+  },
+  {
+    "id": "316f30dc-1db2-4e16-bc0e-488e4787c11d",
+    "raw_text": "SBI ALERT: Your netbanking blocked. Update PAN card immediately to unlock: https://sbi-kyc-update-portal.xyz/verify. Pay Rs 1 re-verification fee to sbi.kyc.update@ybl.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-01-SBI-KYC",
+    "created_at": "2026-08-28T02:24:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "SBI KYC Account Suspension Campaign"
+    }
+  },
+  {
+    "id": "6913c45b-b0a3-45c3-99f8-f30221f54aaa",
+    "raw_text": "FedEx Alert: Parcel AWB-8821 held by Mumbai Customs. Contains illegal passports and drugs. Call Customs Officer immediately at +919000111222 to prevent FIR.",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-04-FEDEX-CUSTOMS",
+    "created_at": "2026-08-09T20:49:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Courier Parcel Illegal Goods Extortion"
+    }
+  },
+  {
+    "id": "2b430f3c-9721-41d3-8fc7-b95d635d9cfc",
+    "raw_text": "Traffic Police Warning: e-Challan #CH-9921 unpaid for vehicle speed violation. Court summons issued if unpaid within 24h. Pay fine at https://echallan-parivahan-pay.info/fine or UPI police.challan@paytm.",
+    "channel": "email",
+    "ground_truth_campaign_id": "CAMP-05-TRAFFIC-CHALLAN",
+    "created_at": "2026-08-04T23:48:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Fake Traffic e-Challan Fine Scam"
+    }
+  },
+  {
+    "id": "76777303-5879-4273-b790-02e6fc24a314",
+    "raw_text": "உங்களுக்கு Paytm 4999 ரூபாய் கேஷ்பேக் வந்துள்ளது. உடனடியாக பெற http://paytm-security-alert.net/login கிளிக் செய்யவும்.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-02-PAYTM-REFUND",
+    "created_at": "2026-08-25T07:27:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Paytm Cashback & Security Alert Scam"
+    }
+  },
+  {
+    "id": "c437628f-d8d4-4910-890e-d3fc7f115d90",
+    "raw_text": "Customs Clearance Notice: Illegal package seized under your name. Pay clearance fee Rs 14,500 to account customs.duty.tax@oksbi or arrest warrant issued. Details: https://customs-clearance-india.org/tax.",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-04-FEDEX-CUSTOMS",
+    "created_at": "2026-08-29T06:24:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Courier Parcel Illegal Goods Extortion"
+    }
+  },
+  {
+    "id": "c8c86611-d128-4bd4-be51-17d357f8f296",
+    "raw_text": "Work from home opportunity! Earn Rs 3000 daily by liking YouTube videos. Contact HR Priya on WhatsApp +919999900000. Registration fee Rs 200. [Ref: 4878]",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-NEG-02-OTHER-SCAM",
+    "created_at": "2026-08-27T19:59:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "is_negative_control": true
+    }
+  },
+  {
+    "id": "8a0dfb26-2e03-4465-9634-56e46e3d3d37",
+    "raw_text": "e-Challan Notice: Court warrant issued for vehicle traffic violation. Pay Rs 1000 penalty immediately to avoid impounding vehicle: https://echallan-parivahan-pay.info/fine. Helpline: +919555666777.",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-05-TRAFFIC-CHALLAN",
+    "created_at": "2026-08-06T09:42:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Fake Traffic e-Challan Fine Scam"
+    }
+  },
+  {
+    "id": "f50dc274-8d33-483c-8f69-a9059b7ca5a4",
+    "raw_text": "FedEx Alert: Parcel AWB-8821 held by Mumbai Customs. Contains illegal passports and drugs. Call Customs Officer immediately at +919000111222 to prevent FIR.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-04-FEDEX-CUSTOMS",
+    "created_at": "2026-08-21T08:12:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Courier Parcel Illegal Goods Extortion"
+    }
+  },
+  {
+    "id": "5e932ab9-ba39-4cf1-a2da-c3754d492881",
+    "raw_text": "Customs Clearance Notice: Illegal package seized under your name. Pay clearance fee Rs 14,500 to account customs.duty.tax@oksbi or arrest warrant issued. Details: https://customs-clearance-india.org/tax.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-04-FEDEX-CUSTOMS",
+    "created_at": "2026-08-21T16:59:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Courier Parcel Illegal Goods Extortion"
+    }
+  },
+  {
+    "id": "ec864572-5832-4819-805e-6af177af32ac",
+    "raw_text": "URGENT: Your HDFC credit card reward points worth Rs 7,500 expire today. Redeem now on official website HDFC Bank portal app. [Ref: 6286]",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-NEG-03-UNRELATED-URGENT",
+    "created_at": "2026-08-07T20:59:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "is_negative_control": true
+    }
+  },
+  {
+    "id": "206028fe-6cf7-4f43-bd9d-e16d9ae73978",
+    "raw_text": "SBI ALERT: Your netbanking blocked. Update PAN card immediately to unlock: https://sbi-kyc-update-portal.xyz/verify. Pay Rs 1 re-verification fee to sbi.kyc.update@ybl.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-01-SBI-KYC",
+    "created_at": "2026-08-29T09:44:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "SBI KYC Account Suspension Campaign"
+    }
+  },
+  {
+    "id": "7474ccbf-f392-42b5-8417-5f280238a4ce",
+    "raw_text": "Customs Clearance Notice: Illegal package seized under your name. Pay clearance fee Rs 14,500 to account customs.duty.tax@oksbi or arrest warrant issued. Details: https://customs-clearance-india.org/tax.",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-04-FEDEX-CUSTOMS",
+    "created_at": "2026-08-06T15:03:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Courier Parcel Illegal Goods Extortion"
+    }
+  },
+  {
+    "id": "9e5e82de-5762-4e42-aa49-2b438fa7c181",
+    "raw_text": "URGENT: Your HDFC credit card reward points worth Rs 7,500 expire today. Redeem now on official website HDFC Bank portal app. [Ref: 8088]",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-NEG-03-UNRELATED-URGENT",
+    "created_at": "2026-08-26T19:59:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "is_negative_control": true
+    }
+  },
+  {
+    "id": "9d2c64da-a52f-4f58-b944-b2ec8ba7f781",
+    "raw_text": "FedEx Alert: Parcel AWB-8821 held by Mumbai Customs. Contains illegal passports and drugs. Call Customs Officer immediately at +919000111222 to prevent FIR.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-04-FEDEX-CUSTOMS",
+    "created_at": "2026-08-13T11:08:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Courier Parcel Illegal Goods Extortion"
+    }
+  },
+  {
+    "id": "7df6ac26-bcdb-4e40-b701-1b0b968e3383",
+    "raw_text": "Dear SBI customer, your account 95511909 will be suspended within 2 hours due to pending KYC update. Click https://sbi-kyc-update-portal.xyz/verify or call +919876543210 to update now.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-01-SBI-KYC",
+    "created_at": "2026-08-10T21:46:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "SBI KYC Account Suspension Campaign"
+    }
+  },
+  {
+    "id": "178a3dda-61e3-4713-8707-904f4b8597a9",
+    "raw_text": "கஸ்டம்ஸ் நோட்டீஸ்: உங்கள் பெயரில் அனுப்பப்பட்ட பார்சலில் சட்டவிரோத பொருட்கள் உள்ளன. கைது நடவடிக்கை தவிர்க்க உடனே அழைக்கவும்: +919000111222.",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-04-FEDEX-CUSTOMS",
+    "created_at": "2026-08-12T21:22:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Courier Parcel Illegal Goods Extortion"
+    }
+  },
+  {
+    "id": "c064fd8a-2882-4e44-9cdd-6001a0fd30cf",
+    "raw_text": "மின்சார வாரியம் எச்சரிக்கை: உங்கள் மின் இணைப்பு இன்று இரவு 9 மணிக்கு துண்டிக்கப்படும். உடனே கட்டணத்தை elect.bill.pay@okhdfcbank செலுத்தவும். தொடர்புக்கு +919444012345.",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-03-ELECTRICITY-BILL",
+    "created_at": "2026-08-09T04:53:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Electricity Bill Disconnection Threat"
+    }
+  },
+  {
+    "id": "62f2ebc4-fcfc-4218-a2b6-1ee5731da2f9",
+    "raw_text": "SBI ALERT: Your netbanking blocked. Update PAN card immediately to unlock: https://sbi-kyc-update-portal.xyz/verify. Pay Rs 1 re-verification fee to sbi.kyc.update@ybl.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-01-SBI-KYC",
+    "created_at": "2026-08-03T23:03:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "SBI KYC Account Suspension Campaign"
+    }
+  },
+  {
+    "id": "94be4358-c225-4c1c-874f-0e12d08a0610",
+    "raw_text": "கஸ்டம்ஸ் நோட்டீஸ்: உங்கள் பெயரில் அனுப்பப்பட்ட பார்சலில் சட்டவிரோத பொருட்கள் உள்ளன. கைது நடவடிக்கை தவிர்க்க உடனே அழைக்கவும்: +919000111222.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-04-FEDEX-CUSTOMS",
+    "created_at": "2026-08-03T00:33:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Courier Parcel Illegal Goods Extortion"
+    }
+  },
+  {
+    "id": "869443d3-73d2-4af7-8474-60c08f743ab7",
+    "raw_text": "கஸ்டம்ஸ் நோட்டீஸ்: உங்கள் பெயரில் அனுப்பப்பட்ட பார்சலில் சட்டவிரோத பொருட்கள் உள்ளன. கைது நடவடிக்கை தவிர்க்க உடனே அழைக்கவும்: +919000111222.",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-04-FEDEX-CUSTOMS",
+    "created_at": "2026-09-02T09:34:36.216330+00:00",
+    "metadata": {
+      "synthetic": true,
+      "target_campaign": "Courier Parcel Illegal Goods Extortion"
+    }
+  }
+]

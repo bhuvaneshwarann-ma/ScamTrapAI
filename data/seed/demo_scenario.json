@@ -1,0 +1,34 @@
+[
+  {
+    "id": "inc-demo-a",
+    "raw_text": "SBI ALERT: Your netbanking account has been suspended due to pending KYC update. Click https://sbi-kyc-update-portal.xyz/verify or pay Rs 1 test fee to sbi.kyc.update@ybl. Contact officer at +919876543210 immediately.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-SBI-KYC-01",
+    "demo_role": "TRUE_CAMPAIGN",
+    "created_at": "2026-09-01T10:00:00Z"
+  },
+  {
+    "id": "inc-demo-b",
+    "raw_text": "வணக்கம், உங்கள் SBI கணக்கு முடக்கப்படும். உடனடியாக KYC புதுப்பிக்கவும்: https://sbi-kyc-update-portal.xyz/verify. கட்டணம் செலுத்த வேண்டிய UPI: sbi.kyc.update@ybl. தொடர்புக்கு: +919876543210.",
+    "channel": "whatsapp",
+    "ground_truth_campaign_id": "CAMP-SBI-KYC-01",
+    "demo_role": "TRUE_CAMPAIGN",
+    "created_at": "2026-09-01T10:30:00Z"
+  },
+  {
+    "id": "inc-demo-c",
+    "raw_text": "प्रिय ग्राहक, आपका SBI बैंक खाता ब्लॉक हो गया है। तुरंत KYC अपडेट करें https://sbi-kyc-update-portal.xyz/verify या UPI पर 1 रुपया भेजें sbi.kyc.update@ybl। कॉल करें +919876543210।",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-SBI-KYC-01",
+    "demo_role": "TRUE_CAMPAIGN",
+    "created_at": "2026-09-01T11:00:00Z"
+  },
+  {
+    "id": "inc-demo-d",
+    "raw_text": "Dear customer, your monthly SBI bank statement for August is ready. View it safely in your YONO app. SBI will never ask for your OTP, PIN, or passwords.",
+    "channel": "sms",
+    "ground_truth_campaign_id": "CAMP-LEGIT-SBI-99",
+    "demo_role": "FALSE_SIMILARITY",
+    "created_at": "2026-09-01T11:15:00Z"
+  }
+]
