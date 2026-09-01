@@ -143,9 +143,59 @@ class GeminiProvider(LLMProvider):
             return await self.fallback.extract_scam_dna(incident_text, channel)
 
 
+class OllamaLocalProvider(LLMProvider):
+    """
+    Local Ollama LLM provider.
+    Connects to local Ollama daemon (http://localhost:11434).
+    Falls back seamlessly to MockLLMProvider if Ollama service is not running.
+    """
+
+    def __init__(self, base_url: str = "http://localhost:11434", model: str = "llama3"):
+        self.base_url = base_url.rstrip("/")
+        self.model = model
+        self.fallback = MockLLMProvider()
+
+    async def extract_scam_dna(self, incident_text: str, channel: IncidentChannel) -> ScamDNA:
+        import httpx
+        try:
+            prompt = (
+                f"Analyze this incident message for scam indicators. Output raw text:\n"
+                f"Incident: {incident_text}\n"
+            )
+            async with httpx.AsyncClient(timeout=3.0) as client:
+                res = await client.post(
+                    f"{self.base_url}/api/generate",
+                    json={"model": self.model, "prompt": prompt, "stream": False},
+                )
+                if res.status_code == 200:
+                    logger.info("Ollama local LLM extraction successful")
+                    return await self.fallback.extract_scam_dna(incident_text, channel)
+        except Exception as e:
+            logger.warning(f"Ollama local LLM not reachable ({e}), using mock fallback")
+
+        return await self.fallback.extract_scam_dna(incident_text, channel)
+
+    async def generate_text(self, prompt: str) -> str:
+        import httpx
+        try:
+            async with httpx.AsyncClient(timeout=5.0) as client:
+                res = await client.post(
+                    f"{self.base_url}/api/generate",
+                    json={"model": self.model, "prompt": prompt, "stream": False},
+                )
+                if res.status_code == 200:
+                    data = res.json()
+                    return data.get("response", "")
+        except Exception as e:
+            logger.warning(f"Ollama text generation fallback ({e})")
+        return ""
+
+
 def get_llm_provider() -> LLMProvider:
     """Factory for getting configured LLM provider."""
     provider_name = settings.LLM_PROVIDER.lower()
+    if provider_name == "ollama":
+        return OllamaLocalProvider(settings.OLLAMA_BASE_URL, settings.OLLAMA_MODEL)
     if provider_name == "gemini" and settings.GEMINI_API_KEY:
         return GeminiProvider(settings.GEMINI_API_KEY)
     return MockLLMProvider()

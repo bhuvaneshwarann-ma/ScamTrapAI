@@ -48,12 +48,20 @@ class Settings(BaseSettings):
     # ── AI / LLM (Phase 4+) ─────────────────────────────────────────────
     LLM_PROVIDER: str = Field(
         default="mock",
-        description="LLM provider to use: 'gemini' or 'mock'. "
+        description="LLM provider to use: 'ollama', 'gemini', or 'mock'. "
         "Mock provides deterministic offline fallback.",
     )
     GEMINI_API_KEY: str = Field(
         default="",
         description="Google Gemini API key. Required only when LLM_PROVIDER='gemini'.",
+    )
+    OLLAMA_BASE_URL: str = Field(
+        default="http://localhost:11434",
+        description="Local Ollama base URL.",
+    )
+    OLLAMA_MODEL: str = Field(
+        default="llama3",
+        description="Local Ollama model name (e.g. 'llama3', 'mistral', 'gemma', 'phi3', 'tinyllama').",
     )
 
     # ── Embedding (Phase 6+) ─────────────────────────────────────────────

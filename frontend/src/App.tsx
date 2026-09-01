@@ -9,6 +9,7 @@ import TrojanVictim from './pages/TrojanVictim'
 import IOCSearch from './pages/IOCSearch'
 import MitreMatrix from './pages/MitreMatrix'
 import ThreatFeeds from './pages/ThreatFeeds'
+import RAGConsole from './pages/RAGConsole'
 import Copilot from './pages/Copilot'
 import Evaluation from './pages/Evaluation'
 import Architecture from './pages/Architecture'
@@ -29,6 +30,7 @@ function App() {
           <Route path="/ioc-search" element={<IOCSearch />} />
           <Route path="/mitre-matrix" element={<MitreMatrix />} />
           <Route path="/threat-feeds" element={<ThreatFeeds />} />
+          <Route path="/rag" element={<RAGConsole />} />
           <Route path="/architecture" element={<Architecture />} />
           <Route path="/copilot" element={<Copilot />} />
           <Route path="/evaluation" element={<Evaluation />} />

@@ -12,6 +12,7 @@ import {
   Search,
   Activity,
   Radio,
+  Cpu,
 } from 'lucide-react'
 
 const navItems = [
@@ -34,6 +35,7 @@ const navItems = [
     section: 'Intelligence',
     items: [
       { to: '/copilot', label: 'Investigator Copilot', icon: MessageSquare },
+      { to: '/rag', label: 'RAG Codebase Engine', icon: Cpu },
       { to: '/evaluation', label: 'Evaluation Scorecard', icon: BarChart3 },
       { to: '/security', label: 'Security & PII Sandbox', icon: Shield },
     ],
