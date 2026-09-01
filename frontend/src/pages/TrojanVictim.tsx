@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { ShieldAlert, Crosshair, FileText, Zap, Network } from 'lucide-react'
 
 export default function TrojanVictim() {
@@ -6,6 +6,12 @@ export default function TrojanVictim() {
   const [stressResult, setStressResult] = useState<any>(null)
   const [playbook, setPlaybook] = useState<any>(null)
   const [loading, setLoading] = useState(false)
+
+  useEffect(() => {
+    handleGenerateTrojan()
+    handleRunStressTest('authority')
+    handleLoadPlaybook()
+  }, [])
 
   const handleGenerateTrojan = async () => {
     setLoading(true)

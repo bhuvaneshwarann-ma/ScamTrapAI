@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Search, Target, Activity, Network } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 
@@ -7,6 +7,10 @@ export default function IOCSearch() {
   const [result, setResult] = useState<any>(null)
   const [loading, setLoading] = useState(false)
   const navigate = useNavigate()
+
+  useEffect(() => {
+    handleSearch()
+  }, [])
 
   const handleSearch = async (e?: React.FormEvent) => {
     if (e) e.preventDefault()
