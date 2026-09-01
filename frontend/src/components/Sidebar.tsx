@@ -9,6 +9,9 @@ import {
   Layers,
   Network,
   Crosshair,
+  Search,
+  Activity,
+  Radio,
 } from 'lucide-react'
 
 const navItems = [
@@ -20,6 +23,9 @@ const navItems = [
       { to: '/campaigns', label: 'Campaign Clusters', icon: Target },
       { to: '/graph', label: 'Campaign Graph', icon: Network },
       { to: '/trojan-victim', label: 'Trojan Victim Protocol', icon: Crosshair },
+      { to: '/ioc-search', label: 'Global IOC Search', icon: Search },
+      { to: '/mitre-matrix', label: 'MITRE ATT&CK Matrix', icon: Activity },
+      { to: '/threat-feeds', label: 'CTI Threat Feeds', icon: Radio },
       { to: '/architecture', label: 'System Architecture', icon: Layers },
       { to: '/demo', label: 'Killer Demo Mode', icon: Shield },
     ],

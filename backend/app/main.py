@@ -27,6 +27,7 @@ from backend.app.api.campaigns import router as campaigns_router
 from backend.app.api.investigations import router as investigations_router
 from backend.app.api.evaluation import router as evaluation_router
 from backend.app.api.trojan_victim import router as trojan_victim_router
+from backend.app.api.cti import router as cti_router
 
 logger = get_logger(__name__)
 
@@ -145,6 +146,7 @@ def create_app() -> FastAPI:
     app.include_router(investigations_router)
     app.include_router(evaluation_router)
     app.include_router(trojan_victim_router)
+    app.include_router(cti_router)
 
     # Also mount health at root for simple Docker/LB probes
     app.include_router(health_router)
