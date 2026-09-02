@@ -15,7 +15,7 @@
 
 ## 📌 Problem Statement
 
-Traditional Cyber Threat Intelligence (CTI) platforms rely on static technical Indicators of Compromise (IOCs)—such as IP addresses, static domains, or file hashes. Modern threat actors running widespread fraud campaigns rapidly rotate infrastructure across disposable payment handles (UPI IDs, temporary crypto wallets), short-lived domains, and burner phone numbers while preserving underlying **psychological manipulation tactics, urgency pressure, script patterns, and social-engineering playbooks** across multilingual communication channels (SMS, WhatsApp, Email, Voice).
+Traditional Cyber Threat Intelligence (CTI) platforms rely primarily on static technical Indicators of Compromise (IOCs)—such as IP addresses, static domain names, or file hashes. Modern threat actors running widespread fraud campaigns rapidly rotate infrastructure across disposable payment handles (UPI IDs, temporary crypto wallets), short-lived domains, and burner phone numbers while preserving underlying **psychological manipulation tactics, urgency pressure, script patterns, and social-engineering playbooks** across multilingual communication channels (SMS, WhatsApp, Email, Voice).
 
 ---
 
@@ -36,7 +36,7 @@ By coupling deterministic entity resolution with high-dimensional vector similar
 
 - 🧬 **Scam DNA Extraction (v1.0)**: Structured behavioral fingerprint (`ScamDNA`) tracking urgency indices, psychological tactics (`SocialEngineeringTactic`), impersonation targets (`ImpersonationTarget`), payment methods (`PaymentMethod`), and extracted identifiers with field-level namespaced confidence scores (`confidence_scores`).
 - 🕸️ **Louvain Graph Campaign Clustering**: Graph community engine built on NetworkX (`GraphEngine.get_clusters()`) optimizing modularity to discover emerging scam campaigns.
-- 🌐 **Multilingual Normalization & Dialect Handling**: Normalizes messages across English, Tamil (`ta`), Hindi (`hi`), and code-switching dialects (`ta-en`, `hi-en`) in `MockLLMProvider` ([`backend/app/services/llm_provider.py`](backend/app/services/llm_provider.py)).
+- 🌐 **Multilingual Intelligence & Normalization**: Normalizes and correlates scam messages across English, Tamil (`ta`), Hindi (`hi`), and code-switching dialects (`ta-en`, `hi-en`) in `MockLLMProvider` ([`backend/app/services/llm_provider.py`](backend/app/services/llm_provider.py)).
 - ⏱️ **Temporal Campaign Evolution**: Chronological attack timelines (`Campaign.timeline`) tracking incident progression over time.
 - 🤖 **Evidence-Grounded Investigator Copilot**: Zero-hallucination Q&A (`CopilotService.answer_query()`) returning cited evidence IDs or fallback `"Insufficient evidence to determine this."`.
 - 🎯 **Autonomous Trojan Victim Honeypot**: Dialogue agent (`TrojanVictimService`) engaging scammers in controlled simulation mode with synthetic personas, stress testing, and kill-switch safety boundaries.
@@ -63,7 +63,7 @@ By coupling deterministic entity resolution with high-dimensional vector similar
 | **Investigator Audit Trail**| [`backend/app/services/audit_service.py`](backend/app/services/audit_service.py) | ✅ Implemented | Audit logging tracking actor, role, action, target_id, and operation details |
 | **Evidence Integrity** | [`backend/app/models/evidence.py`](backend/app/models/evidence.py) | ✅ Implemented | Canonical SHA-256 checksum generator `compute_integrity_hash()` |
 | **Accuracy Benchmarking** | [`scripts/benchmark_accuracy.py`](scripts/benchmark_accuracy.py) | ✅ Implemented | Reproducible evaluation script computing Precision, Recall, and F1 |
-| **Trojan Victim Honeypot** | [`backend/app/services/trojan_victim_service.py`](backend/app/services/trojan_victim_service.py) | 🧪 Experimental | Controlled simulation state machine with synthetic personas & stress tests |
+| **Trojan Victim Honeypot** | [`backend/app/services/trojan_victim_service.py`](backend/app/services/trojan_victim_service.py) | 🧪 Experimental | Controlled simulation mode with synthetic personas & stress tests |
 | **Dual ORM Database Engine**| [`backend/app/db/engine.py`](backend/app/db/engine.py) | 🚧 Production Ready | Dual-driver SQLAlchemy 2.0 supporting SQLite (local/Vercel) & PostgreSQL + `pgvector` |
 
 ---
@@ -104,7 +104,7 @@ By coupling deterministic entity resolution with high-dimensional vector similar
                      │  - Graph & Campaign Deck     │  (Dashboard, Campaigns,
                      │  - Copilot / CTI Export     │   Copilot, ThreatFeeds)
                      │  - Trojan Victim Honeypot    │
-                     └──────────────────────────────┘
+                     └───────────────┬──────────────┘
 ```
 
 ---
@@ -306,15 +306,25 @@ ScamTrapAI/
 
 ---
 
-## ⚠️ Limitations
+## 🤝 Architectural Decision Records (ADRs)
 
-- **Demo Environment**: Demonstration data uses synthetic payloads.
-- **Serverless Storage**: Serverless Vercel deployment uses ephemeral `/tmp` storage suitable for demonstration. Multi-tenant production requires PostgreSQL + `pgvector`.
-- **Honeypot Boundaries**: Honeypot engagement operates strictly in simulated evaluation mode with synthetic identities.
+Key engineering design decisions documented in [`docs/decisions.md`](docs/decisions.md):
+
+1. **ADR-001: Hybrid Graph & Vector Search**: Selected Louvain graph clustering for deterministic infrastructure links combined with dense cosine embeddings for semantic tactic matching.
+2. **ADR-002: Deterministic HMAC PII Redaction**: Implemented HMAC-SHA256 with salt to prevent raw PII persistence while preserving exact match capability across incidents.
+3. **ADR-003: SQLite / PostgreSQL Dual Driver**: Designed an abstraction layer in `backend/app/db/engine.py` allowing zero-config local SQLite development alongside production PostgreSQL + `pgvector` scaling.
 
 ---
 
-## 🛡️ Responsible Use Guidelines
+## ⚠️ Limitations & Failure Modes
+
+- **Demo Environment**: Demonstration data uses synthetic payloads for threat research safety.
+- **Serverless Storage**: Serverless Vercel deployment uses ephemeral `/tmp` storage suitable for demonstration. Multi-tenant enterprise production requires PostgreSQL + `pgvector`.
+- **Honeypot Boundaries**: Honeypot engagement operates strictly in simulated evaluation mode with synthetic identities and safety kill-switches.
+
+---
+
+## 🛡️ Responsible Use & Safety Guidelines
 
 - ScamTrap AI is designed for cybersecurity research, SOC analysis, and threat intelligence.
 - Campaign correlation provides decision support and does not constitute criminal attribution or legal proof.
