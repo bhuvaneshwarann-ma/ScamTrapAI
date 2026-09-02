@@ -2,6 +2,8 @@
 
 **Behavioral Intelligence Platform for Multilingual Scam Campaign Detection & Autonomous Investigation**
 
+ScamTrap AI transforms suspicious multilingual communications into behavioral Scam DNA, correlates incidents using graph and semantic intelligence, and helps investigators uncover coordinated scam campaigns.
+
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-3776AB.svg?style=flat-square&logo=python&logoColor=white)](https://www.python.org/downloads/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115.0-009688.svg?style=flat-square&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
 [![React 18](https://img.shields.io/badge/React-18.3-61DAFB.svg?style=flat-square&logo=react&logoColor=black)](https://react.dev/)
@@ -11,28 +13,15 @@
 [![Tests](https://img.shields.io/badge/tests-90%20passed%20%7C%20100%25-brightgreen.svg?style=flat-square&logo=pytest&logoColor=white)]()
 [![Vercel Deployment](https://img.shields.io/badge/Vercel-Serverless_Ready-000000.svg?style=flat-square&logo=vercel&logoColor=white)](https://vercel.com/)
 
+[📖 Interactive OpenAPI Docs](http://localhost:8000/docs) • [💻 GitHub Repository](https://github.com/bhuvaneshwarann-ma/ScamTrapAI) • [📊 Architecture Specification](docs/architecture.md) • [🤝 ADR Decisions](docs/decisions.md)
+
 ---
 
 ## 📸 Product Interface Preview
 
-```
-┌─────────────────────────────────────────────────────────────────────────────────────────────┐
-│ 🛡️ ScamTrap AI — Intelligence Center Workspace                                            │
-├─────────────────┬───────────────────────────────────────────────────────────────────────────┤
-│ 📊 Dashboard    │  ScamTrap AI Intelligence Center                      🟢 SYSTEM ONLINE    │
-│ 📋 Incidents    │  Behavioral intelligence platform for scam campaign detection             │
-│ 🕸️ Campaigns   │ ┌───────────────────────────────────────────────────────────────────────┐ │
-│ 🎯 Honeypot     │ │ 🛰️ Cyber Threat Radar & Syndicate Sweeper        🟢 5 CLUSTERS DETECTED │ │
-│ 🔍 IOC Search   │ │ Radar Latency: 12ms │ Active Nodes: 18 │ Risk Level: HIGH (88/100)   │ │
-│ 🧬 RAG Engine   │ └───────────────────────────────────────────────────────────────────────┘ │
-│ 🤖 Copilot      │ ┌─────────────────┬─────────────────┬─────────────────┬─────────────────┐ │
-│ ⚙️ Settings     │ │ Incidents: 250  │ Campaigns: 5    │ Relationships:  │ Active Alerts:  │ │
-│                 │ │ Analyzed        │ Active Clusters │ 1,225 Edges     │ 1 High Risk     │ │
-│                 │ └─────────────────┴─────────────────┴─────────────────┴─────────────────┘ │
-└─────────────────┴───────────────────────────────────────────────────────────────────────────┘
-```
+![ScamTrap AI Intelligence Center Dashboard](docs/images/dashboard.png)
 
-> **Interactive Views**: Dashboard • Incident Analysis • Scam DNA Breakdown • Campaign Graph • Attack Evolution Timeline • Investigator Copilot • STIX 2.1 CTI Export
+> **Workspace Navigation**: Dashboard • Incident Ingestion • Scam DNA Breakdown • Campaign Graph • Attack Evolution Timeline • Investigator Copilot • STIX 2.1 Export
 
 ---
 
@@ -49,6 +38,27 @@ Modern cybercriminals rapidly rotate infrastructure across disposable payment ha
 | **Matching Engine** | Exact string / IP matching | Semantic embedding + entity overlap similarity |
 | **Threat Output** | Flat IOC lists & blacklists | Heterogeneous relationship graphs & attack timelines |
 | **Investigation** | Manual query & investigation | Evidence-Grounded AI Investigator Copilot |
+
+---
+
+## 👥 Intended Users
+
+- **SOC Analysts**: Triage incoming user-reported scam messages and identify emerging campaign threats in real time.
+- **Cyber Threat Intelligence (CTI) Analysts**: Map campaign infrastructure, trace actor relationships, and export standardized STIX 2.1 bundles & MISP threat feeds.
+- **Fraud Investigation Teams**: Perform deep-dive correlation across payment handles, domain clusters, and psychological tactics.
+- **Security Researchers**: Analyze multilingual social-engineering playbooks and evaluate automated Honeypot dialogue engagement strategies.
+- **Academic Cybersecurity Researchers**: Benchmark graph community detection and semantic vector retrieval over multilingual fraud datasets.
+
+---
+
+## 🛠️ Technology Stack
+
+- **Frontend**: React 18 • TypeScript 5.5 • Vite 5.4 • Tailwind CSS 3.4 • React Flow
+- **Backend**: Python 3.11+ • FastAPI 0.115.0 • Pydantic v2 • SQLAlchemy 2.0
+- **AI & Retrieval**: LLM Provider Abstraction • Dense Vector Embeddings • RAG Engine • Cosine Vector Search
+- **Graph Intelligence**: NetworkX 3.0 • Louvain Modularity Community Detection
+- **Database Storage**: SQLite (Local Dev / Vercel Serverless `/tmp`) • PostgreSQL + `pgvector` (Production Enterprise)
+- **Threat Intelligence**: STIX 2.1 • MISP JSON • MITRE ATT&CK / FiCF Taxonomy
 
 ---
 
@@ -76,7 +86,7 @@ Modern cybercriminals rapidly rotate infrastructure across disposable payment ha
 - 🕸️ **Louvain Graph Campaign Clustering**: Graph community engine built on NetworkX (`GraphEngine.get_clusters()`) optimizing modularity to discover emerging scam campaigns.
 - 🌐 **Multilingual Intelligence & Normalization**: Normalizes and correlates scam messages across English, Tamil (`ta`), Hindi (`hi`), and code-switching dialects (`ta-en`, `hi-en`) in `MockLLMProvider` ([`backend/app/services/llm_provider.py`](backend/app/services/llm_provider.py)).
 - ⏱️ **Temporal Campaign Evolution**: Chronological attack timelines (`Campaign.timeline`) tracking incident progression over time.
-- 🤖 **Evidence-Grounded Investigator Copilot**: Zero-hallucination Q&A (`CopilotService.answer_query()`) returning cited evidence IDs or fallback `"Insufficient evidence to determine this."`.
+- 🤖 **Evidence-Grounded Investigator Copilot**: Evidence-backed Q&A (`CopilotService.answer_query()`) returning cited evidence IDs with an explicit insufficient-evidence fallback (`"Insufficient evidence to determine this."`).
 - 🎯 **Autonomous Trojan Victim Honeypot**: Dialogue agent (`TrojanVictimService`) engaging scammers in controlled simulation mode with synthetic personas, stress testing, and kill-switch safety boundaries.
 - 🛡️ **Offline-First Execution & PII Protection**: Mandatory `HMAC-SHA256` deterministic PII redaction (`hash_pii()` in [`backend/app/core/security.py`](backend/app/core/security.py)) and multi-pass prompt injection defense (`sanitize_input()` in [`backend/app/core/sanitizer.py`](backend/app/core/sanitizer.py)).
 - 🔐 **Investigator Audit Logging & Evidence Integrity**: Complete audit trail (`AuditService` in [`backend/app/services/audit_service.py`](backend/app/services/audit_service.py)) and canonical SHA-256 evidence hashing (`Evidence.compute_integrity_hash()` in [`backend/app/models/evidence.py`](backend/app/models/evidence.py)).
@@ -298,7 +308,16 @@ curl -X POST http://localhost:8000/api/v1/incidents/analyze \
 
 ## 📊 Benchmark Results
 
-Reproducible correlation accuracy benchmark results executed via [`scripts/benchmark_accuracy.py`](scripts/benchmark_accuracy.py):
+| Benchmark Metric | Result Value |
+|------------------|--------------|
+| **Evaluation Dataset** | 3 Synthetic Incidents |
+| **Pairwise Evaluations** | 3 Incident Pairs |
+| **Execution Latency** | 0.00 ms |
+| **Precision** | 33.3% |
+| **Recall** | 100.0% |
+| **F1-Score** | 50.0% |
+
+Reproducible evaluation output from [`scripts/benchmark_accuracy.py`](scripts/benchmark_accuracy.py):
 
 ```text
 ======================================================================
@@ -386,6 +405,8 @@ ScamTrapAI/
 │   └── package.json
 ├── data/                     # Synthetic Multilingual Benchmark Datasets
 ├── docs/                     # Architecture & ADR Documentation
+│   └── images/
+│       └── dashboard.png     # Application Dashboard Screenshot Preview
 ├── scripts/                  # Calibration & Accuracy Benchmark Utilities
 ├── tests/                    # Pytest Test Suite (90 Unit & Integration Tests)
 ├── docker-compose.yml        # Docker Container Stack
@@ -419,6 +440,18 @@ Key engineering design decisions documented in [`docs/decisions.md`](docs/decisi
 - [ ] **Advanced Temporal Graph Analytics** with continuous sliding-window campaign clustering
 - [ ] **Native PostgreSQL + pgvector Infrastructure** with automated Alembic migrations
 - [ ] **Multi-Tenant Investigator Workspace** with Role-Based Access Control (RBAC)
+
+---
+
+## 🤝 Contributing
+
+Contributions, bug reports, feature requests, and security improvements are welcome!
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feat/amazing-feature`)
+3. Make your changes and add tests
+4. Run the automated test suite (`python -m pytest tests/ -v`)
+5. Submit a Pull Request for review
 
 ---
 
