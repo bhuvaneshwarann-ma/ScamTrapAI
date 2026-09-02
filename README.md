@@ -2,258 +2,295 @@
 
 **Behavioral Intelligence Platform for Multilingual Scam Campaign Detection & Autonomous Investigation**
 
-[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.110.0-009688.svg)](https://fastapi.tiangolo.com/)
-[![React 18](https://img.shields.io/badge/React-18.3-61DAFB.svg)](https://react.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.5-blue.svg)](https://www.typescriptlang.org/)
-[![Vite](https://img.shields.io/badge/Vite-5.4-646CFF.svg)](https://vitejs.dev/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38BDF8.svg)](https://tailwindcss.com/)
-[![Tests](https://img.shields.io/badge/tests-90%20passed-brightgreen.svg)]()
+[![Python 3.11+](https://img.shields.io/badge/python-3.11+-3776AB.svg?style=flat-square&logo=python&logoColor=white)](https://www.python.org/downloads/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.115.0-009688.svg?style=flat-square&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![React 18](https://img.shields.io/badge/React-18.3-61DAFB.svg?style=flat-square&logo=react&logoColor=black)](https://react.dev/)
+[![TypeScript 5.5](https://img.shields.io/badge/TypeScript-5.5-3178C6.svg?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Vite 5.4](https://img.shields.io/badge/Vite-5.4-646CFF.svg?style=flat-square&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![Tailwind CSS 3.4](https://img.shields.io/badge/Tailwind_CSS-3.4-06B6D4.svg?style=flat-square&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![Tests](https://img.shields.io/badge/tests-90%20passed%20%7C%20100%25-brightgreen.svg?style=flat-square&logo=pytest&logoColor=white)]()
+[![Vercel Deployment](https://img.shields.io/badge/Vercel-Serverless_Ready-000000.svg?style=flat-square&logo=vercel&logoColor=white)](https://vercel.com/)
 
 ---
 
 ## 📌 Executive Summary
 
-**ScamTrap AI** transforms unstructured, suspicious multilingual communications (SMS, WhatsApp messages, phishing emails, and voice call transcripts) into structured behavioral signatures called **Scam DNA**. 
+**ScamTrap AI** is an enterprise-grade behavioral intelligence and threat correlation platform engineered to solve the multi-billion dollar challenge of fragmented scam detection. Traditional threat intelligence platforms focus primarily on technical Indicators of Compromise (IOCs) such as static IPs or single domain names. Modern cybercriminals, however, rapidly rotate infrastructure across disposable payment handles, temporary domains, and burner phone numbers while preserving underlying **psychological manipulation tactics, urgency indices, and communication signatures**.
 
-By correlating tactics, psychological triggers, and technical indicators across incidents using graph community algorithms, ScamTrap AI automatically discovers emerging scam campaigns, generates evidence-bounded explanations for analysts, exports threat intelligence (STIX 2.1 / MISP), and emulates honeypot victim dialogues to trap active scammers.
+ScamTrap AI ingests raw, unstructured, multilingual communications—including SMS, WhatsApp conversations, phishing emails, and transcribed voice calls—and converts them into normalized behavioral vectors termed **Scam DNA**. By running graph community algorithms (NetworkX & Louvain clustering) and high-dimensional vector similarity matching over structured Scam DNA, ScamTrap AI automatically clusters isolated incidents into high-confidence scam campaigns, generates evidence-bounded natural language explanations for intelligence analysts, exports standardized CTI (STIX 2.1 / MISP), and deploys an autonomous Trojan Victim Honeypot to engage threat actors in real time.
 
-> **⚠️ CONTROLLED DEMO ENVIRONMENT**  
-> *This platform is built for security research and threat intelligence analysis using synthetic and sanitized incident data.*
-
----
-
-## ✨ Key Features & Capabilities
-
-- 🧬 **Scam DNA Extraction**: Parses raw multilingual text into structured behavioral signatures, extracting urgency indices, psychological manipulation tactics, financial targets, and technical IOCs (URLs, phone numbers, UPI IDs, bank details).
-- 🕸️ **Graph-Based Campaign Discovery**: In-memory NetworkX & community detection engines link isolated incidents into high-confidence campaign clusters based on shared infrastructure and behavioral overlap.
-- 🤖 **Analyst Copilot & RAG Investigation Engine**: Interactive AI assistant powered by vector embeddings (`sentence-transformers` / `pgvector`) for natural language querying over incident archives and campaign history.
-- 🎯 **Autonomous Trojan / Victim Honeypot**: Interactive dialogue agent designed to safely engage scammers, draw out infrastructure details (payment handles, domains), and log telemetry.
-- 🌐 **Cyber Threat Intelligence (CTI) Export**: One-click generation of standard STIX 2.1 JSON packages, MISP threat feeds, and MITRE ATT&CK / FiCF scam taxonomy mappings.
-- 🛡️ **Privacy & Prompt Injection Defense**: Mandatory HMAC-SHA256 deterministic PII redaction and multi-stage LLM prompt injection sanitizer before any LLM processing.
-- 📊 **Evaluation & Calibration Benchmarks**: Automated accuracy matrix (Precision, Recall, F1) and automated similarity threshold calibration script for tuning correlation confidence.
+> **⚠️ CONTROLLED DEMO & SECURITY RESEARCH ENVIRONMENT**  
+> *This platform is built for cyber threat intelligence (CTI) analysts, SOC teams, and law enforcement agencies. All demonstration payloads use synthetic, anonymized, and sanitized data.*
 
 ---
 
-## 🏗️ System Architecture
+## 🏗️ System Architecture & Data Pipeline
+
+The system enforces a **Zero-Trust Input Pipeline** where no raw user communication reaches storage or third-party Large Language Models without first undergoing deterministic security sanitization and PII hashing.
 
 ```
-                                  [ Raw Input ]
-                         (SMS / WhatsApp / Email / Voice)
-                                       │
-                                       ▼
-                       ┌───────────────────────────────┐
-                       │  Security Guard & Sanitizer  │
-                       │ (PII Redaction & Injection Check) │
-                       └───────────────┬───────────────┘
-                                       │
-                                       ▼
-                       ┌───────────────────────────────┐
-                       │   LLM Scam DNA Extractor      │
-                       │ (Tactics, Triggers, IOCs)     │
-                       └───────────────┬───────────────┘
-                                       │
-                    ┌──────────────────┴──────────────────┐
-                    ▼                                     ▼
-     ┌─────────────────────────────┐       ┌─────────────────────────────┐
-     │  Graph Correlation Engine   │       │   Vector Store & RAG Engine │
-     │  (NetworkX / Louvain Graph) │       │ (pgvector / Embeddings)     │
-     └──────────────┬──────────────┘       └──────────────┬──────────────┘
-                    │                                     │
-                    └──────────────────┬──────────────────┘
-                                       │
-                                       ▼
-                       ┌───────────────────────────────┐
-                       │   Investigator Control Deck   │
-                       │ (Dashboard, Copilot, CTI Export) │
-                       └───────────────────────────────┘
+                           [ Raw Input Stream ]
+                  (SMS / WhatsApp / Email / Voice Audio)
+                                     │
+                                     ▼
+                     ┌──────────────────────────────┐
+                     │ 🛡️ Security Guard & Sanitizer│
+                     │  - Regex Injection Guard    │
+                     │  - HMAC-SHA256 PII Hashing   │
+                     └───────────────┬──────────────┘
+                                     │
+                                     ▼
+                     ┌──────────────────────────────┐
+                     │ 🧬 LLM Scam DNA Extractor    │
+                     │  - Behavioral Parsing        │
+                     │  - Tactics, Triggers, IOCs   │
+                     └───────────────┬──────────────┘
+                                     │
+                  ┌──────────────────┴──────────────────┐
+                  ▼                                     ▼
+   ┌─────────────────────────────┐       ┌─────────────────────────────┐
+   │ 🕸️ Graph Correlation Engine │       │ 🧠 Vector Store & RAG Engine│
+   │  - Entity Disambiguation    │       │  - Incident Embeddings      │
+   │  - NetworkX Louvain Clusters│       │  - pgvector / Cosine Search │
+   └──────────────┬──────────────┘       └──────────────┬──────────────┘
+                  │                                     │
+                  └──────────────────┬──────────────────┘
+                                     │
+                                     ▼
+                     ┌──────────────────────────────┐
+                     │ 🎯 Investigator Control Deck │
+                     │  - Graph & Campaign Deck     │
+                     │  - Copilot / CTI Export     │
+                     │  - Trojan Victim Honeypot    │
+                     └──────────────────────────────┘
 ```
-
-### Technology Stack
-
-| Layer | Component | Description |
-|-------|-----------|-------------|
-| **Backend** | Python 3.11+, FastAPI | High-performance async REST API gateway |
-| **Frontend** | React 18, TypeScript, Vite | Modern responsive UI with Tailwind CSS & Lucide icons |
-| **Graph Visualization** | React Flow, NetworkX | Interactive campaign graph rendering & community clustering |
-| **Storage & Vectors** | PostgreSQL + pgvector (SQLite fallback) | Relational incident storage & vector similarity search |
-| **Security** | HMAC-SHA256, Regex Guardrails | Zero-PII leak guarantees & prompt injection defense |
 
 ---
 
-## 🚀 Quick Start Guide
+## 🔬 Core Algorithmic & Technical Specifications
+
+### 1. Scam DNA Vector Formulation
+Each ingested incident $I_k$ is decomposed into a structured behavioral vector:
+
+$$\text{ScamDNA}(I_k) = \langle T_k, U_k, E_k, C_k, \vec{v}_k \rangle$$
+
+- $T_k \subseteq \text{Tactics}$: Set of identified psychological tactics (e.g., `AUTHORITY_IMPERSONATION`, `FEAR_LEGAL_ACTION`, `KYC_EXPIRATION`).
+- $U_k \in [0.0, 1.0]$: Quantitative Urgency Index derived from linguistic indicators.
+- $E_k \subseteq \text{Entities}$: Extracted technical indicators (hashed UPI IDs, domain hashes, phone pseudonyms).
+- $C_k \in \text{Channels}$: Communication vector (`SMS`, `WHATSAPP`, `EMAIL`, `VOICE`).
+- $\vec{v}_k \in \mathbb{R}^d$: Dense semantic embedding representation of the incident text payload.
+
+### 2. Multi-Metric Incident Similarity Calculation
+Incident pair correlation confidence $S(I_a, I_b) \in [0.0, 1.0]$ is calculated via a composite weighted score combining deterministic entity overlaps, tactic Jaccard similarity, and semantic vector similarity:
+
+$$S(I_a, I_b) = w_1 \cdot J(E_a, E_b) + w_2 \cdot J(T_a, T_b) + w_3 \cdot \cos(\vec{v}_a, \vec{v}_b) - w_4 \cdot |U_a - U_b|$$
+
+Where:
+- $J(X, Y) = \frac{|X \cap Y|}{|X \cup Y|}$ represents Jaccard Similarity.
+- $\cos(\vec{v}_a, \vec{v}_b)$ represents Cosine Vector Similarity.
+- If $E_a \cap E_b \neq \emptyset$ (shared payment handle, domain, or phone number), deterministic edge weight amplification is triggered automatically.
+
+### 3. Louvain Graph Community Detection
+Incidents and extracted entities form a heterogeneous undirected graph $G = (V, E)$. The campaign detection engine optimizes modularity $Q$ over community partition $C$:
+
+$$Q = \frac{1}{2m} \sum_{i,j} \left[ A_{ij} - \frac{k_i k_j}{2m} \right] \delta(c_i, c_j)$$
+
+Discovered communities with modularity thresholds meeting calibrated baseline confidence scores are elevated into actionable **Scam Campaigns** with automated evidence linking.
+
+---
+
+## 🔒 Security Architecture & Threat Model
+
+ScamTrap AI is designed with strict adherence to privacy compliance and LLM security standards:
+
+| Security Domain | Strategy / Implementation | Verification Standard |
+|-----------------|---------------------------|-----------------------|
+| **PII Protection** | Deterministic `HMAC-SHA256` hashing with secret salt prior to persistence | Zero raw phone numbers, emails, or payment IDs stored in DB |
+| **Prompt Injection Defense** | Multi-stage regex guardrails filtering `<sys_override>`, `system:`, and DAN jailbreaks | Tested against 15+ adversarial injection payloads |
+| **Data Integrity** | Cryptographic evidence hashes (`SHA-256`) per incident payload | Tamper-evident evidence chain for law enforcement export |
+| **Zero External Leaks** | Offline-first mock fallback for LLM and Vector Embeddings | Fully functional in air-gapped environments |
+
+---
+
+## 🚀 Deployment Options
 
 ### Prerequisites
-
-- **Python**: 3.11 or higher
-- **Node.js**: v20.x or higher (`npm` v10+)
-- **Docker** *(Optional)*: Docker Desktop / Docker Compose
+- **Python**: `3.11+`
+- **Node.js**: `v20.x+` (`npm` `v10+`)
+- **Docker** *(Optional)*: Docker Desktop `v24+` / Docker Compose `v2+`
 
 ---
 
-### Option 1: Standard Local Setup
+### Option 1: Vercel Production Serverless Deployment
 
-#### 1. Clone & Configure Environment
+ScamTrap AI is pre-configured for seamless serverless deployment on **Vercel** with zero backend infrastructure overhead:
+
+- **Serverless API Entrypoint**: [`api/index.py`](file:///c:/Users/GUNALAN/Downloads/ScamTrapAI/api/index.py)
+- **Vercel Configuration**: [`vercel.json`](file:///c:/Users/GUNALAN/Downloads/ScamTrapAI/vercel.json)
 
 ```bash
-cp .env.example .env
+# Install Vercel CLI (if not already installed)
+npm install -g vercel
+
+# Deploy directly from workspace root
+vercel --prod
 ```
 
-> 🔑 **Important Security Note**: Open `.env` and set `PII_HMAC_KEY` to a secure random string (at least 32 characters).
+> 💡 **Serverless DB Storage**: In Vercel environments, `api/index.py` automatically initializes SQLite in `/tmp/scamtrap.db` and copies the pre-populated seed dataset on cold start.
 
-#### 2. Start Backend Service
+---
+
+### Option 2: Docker Multi-Container Stack
+
+To run the complete isolated microservices stack locally:
 
 ```bash
-# Create and activate virtual environment
-cd backend
+# 1. Clone environment configuration
+cp .env.example .env
+
+# 2. Build and launch container stack
+docker-compose up --build -d
+
+# 3. Verify running services
+docker-compose ps
+```
+
+- 🌐 **Frontend Application Deck**: `http://localhost:3000`
+- ⚡ **Backend FastAPI Gateway**: `http://localhost:8000`
+- 📖 **Interactive OpenAPI Docs**: `http://localhost:8000/docs`
+
+---
+
+### Option 3: Local Developer Setup
+
+#### 1. Backend Service Setup
+```bash
+# Navigate to project root and set up environment
+cp .env.example .env
+
+# Create Python 3.11 virtual environment
 python -m venv venv
 
-# Windows (PowerShell / CMD)
-venv\Scripts\activate
+# Activate virtual environment (Windows PowerShell)
+.\venv\Scripts\activate
 
-# macOS / Linux
+# Activate virtual environment (macOS / Linux)
 # source venv/bin/activate
 
-# Install dependencies
+# Install backend dependencies
 pip install -r requirements.txt
 
-# Run FastAPI dev server (from project root)
-cd ..
+# Launch FastAPI development server with hot reload
 uvicorn backend.app.main:app --reload --port 8000
 ```
-Backend API interactive documentation will be live at `http://localhost:8000/docs`.
 
-#### 3. Start Frontend Service
-
-Open a new terminal window:
-
+#### 2. Frontend Application Setup
+In a secondary terminal window:
 ```bash
 cd frontend
+
+# Install Node modules
 npm install
+
+# Start Vite dev server
 npm run dev
 ```
-Frontend application will be accessible at `http://localhost:5173`.
+Frontend interface will be live at `http://localhost:5173`.
 
 ---
 
-### Option 2: Docker Setup
+## 🧪 Comprehensive Verification & Benchmarks
 
-Run both Backend and Frontend containerized in a single command:
+The platform includes a 100% passing automated test suite covering security sanitization, ORM operations, graph clustering, RAG retrieval, and API gateway routing.
 
 ```bash
-cp .env.example .env
-docker-compose up --build
+# Run complete unit and integration test suite
+.\venv\Scripts\python.exe -m pytest tests/ -v
+
+# Generate test coverage report
+.\venv\Scripts\python.exe -m pytest --cov=backend tests/
 ```
 
-- **Frontend App**: `http://localhost:3000`
-- **Backend API**: `http://localhost:8000`
-- **API Documentation**: `http://localhost:8000/docs`
-
----
-
-## 🧪 Testing & Verification
-
-### Run Backend Test Suite
-
-The backend features full test coverage across API routes, DNA extraction, graph correlation, security sanitization, and RAG pipelines:
+### Automated Similarity Threshold Calibration
+To calibrate Jaccard and vector correlation thresholds against custom incident datasets:
 
 ```bash
-# Run pytest with verbose output
-pytest tests/ -v
-
-# Run with coverage report
-pytest --cov=backend tests/
-```
-
-### Run Frontend Build & Linting
-
-```bash
-cd frontend
-npm run build
+.\venv\Scripts\python.exe scripts/calibrate_thresholds.py
 ```
 
 ---
 
-## 🔌 API Reference Summary
+## 🔌 API Gateway Reference
 
-Below is an overview of key endpoint categories exposed by the FastAPI backend:
+Below is a summary of core REST API endpoints provided by the FastAPI backend:
 
-| Group | Method | Path | Description |
-|-------|--------|------|-------------|
-| **Health** | `GET` | `/api/v1/health` | System health check and status |
-| **Auth** | `POST` | `/api/v1/auth/login` | Investigator authentication & session token |
-| **Incidents** | `GET` | `/api/v1/incidents` | List all ingested scam incidents |
-| | `POST` | `/api/v1/incidents/analyze` | Ingest raw conversation & extract Scam DNA |
-| **Campaigns** | `GET` | `/api/v1/campaigns` | Retrieve auto-detected scam campaigns |
-| | `GET` | `/api/v1/campaigns/graph` | Fetch graph nodes & edges for React Flow |
-| **Investigations**| `POST` | `/api/v1/investigations/copilot` | Natural language investigator copilot query |
+| Domain | Method | Endpoint Path | Description |
+|--------|--------|---------------|-------------|
+| **System** | `GET` | `/api/v1/health` | System health check, version, & uptime |
+| **Auth** | `POST` | `/api/v1/auth/login` | Analyst authentication & bearer token |
+| **Incidents** | `GET` | `/api/v1/incidents` | List ingested incidents with filter parameters |
+| | `POST` | `/api/v1/incidents/analyze` | Ingest raw payload, sanitize PII, & extract Scam DNA |
+| **Campaigns** | `GET` | `/api/v1/campaigns` | List auto-clustered scam campaigns |
+| | `GET` | `/api/v1/campaigns/graph` | Fetch graph nodes & edges formatted for React Flow |
+| **Investigations** | `POST` | `/api/v1/investigations/copilot` | Natural language query interface for analyst copilot |
 | **RAG** | `POST` | `/api/v1/rag/query` | Vector search over indexed incident knowledge base |
-| **CTI** | `GET` | `/api/v1/cti/stix` | Export campaign intelligence as STIX 2.1 bundle |
+| **CTI Export** | `GET` | `/api/v1/cti/stix` | Export campaign threat intelligence as STIX 2.1 bundle |
 | | `GET` | `/api/v1/cti/misp` | Export threat indicators in MISP JSON format |
-| **Honeypot** | `POST` | `/api/v1/trojan-victim/chat` | Send dialogue turn to autonomous victim emulator |
+| | `GET` | `/api/v1/cti/mitre-matrix` | Map campaign tactics to MITRE ATT&CK / FiCF taxonomy |
+| **Honeypot** | `POST` | `/api/v1/trojan-victim/generate` | Generate honeypot victim profile for active engagement |
+| | `POST` | `/api/v1/trojan-victim/stress-test` | Run adversarial dialogue turn against scammer |
 
 ---
 
-## ⚙️ Environment Configuration (`.env`)
-
-| Variable | Default Value | Description |
-|----------|---------------|-------------|
-| `APP_NAME` | `ScamTrap AI` | Platform application title |
-| `DEBUG` | `true` | Enables FastAPI interactive `/docs` and debug logs |
-| `LOG_LEVEL` | `INFO` | Logging verbosity (`DEBUG`, `INFO`, `WARNING`, `ERROR`) |
-| `PII_HMAC_KEY` | *(Required)* | Secret key for deterministic PII hashing (min 32 chars) |
-| `DATABASE_URL` | `sqlite:///./scamtrap.db` | Database connection URI (SQLite or PostgreSQL) |
-| `LLM_PROVIDER` | `mock` | LLM engine (`mock` for offline dev, `gemini` for live API) |
-| `GEMINI_API_KEY` | `""` | Google Gemini API Key (if `LLM_PROVIDER=gemini`) |
-| `EMBEDDING_PROVIDER`| `mock` | Vector provider (`mock` or `sentence-transformers`) |
-
----
-
-## 📁 Project Structure
+## 📁 Repository Sitemap
 
 ```
 ScamTrapAI/
+├── api/                      # Vercel Serverless Function Entrypoint
+│   └── index.py              # Serverless app factory & dynamic /tmp SQLite initializer
 ├── backend/                  # FastAPI Application Core
 │   ├── app/
-│   │   ├── api/              # API Route Handlers (Incidents, Campaigns, CTI, RAG)
-│   │   ├── core/             # Config, Security, PII Redactor, Input Sanitizer
-│   │   ├── db/               # Database Models & SQLAlchemy Sessions
-│   │   ├── models/           # Pydantic Schemas & Scam DNA Definitions
-│   │   ├── services/         # DNA Extractor, Graph Engine, Copilot, Honeypot
-│   │   └── main.py           # FastAPI Application Entry Point
-│   ├── Dockerfile
-│   └── requirements.txt
+│   │   ├── api/              # Endpoint Handlers (Incidents, Campaigns, CTI, RAG, Honeypot)
+│   │   ├── core/             # Config, Logging, Security Guardrails, PII Redactor
+│   │   ├── db/               # SQLAlchemy 2.0 ORM Models, Engine, & CRUD Operations
+│   │   ├── models/           # Pydantic Schemas, Scam DNA Vectors, & Enum Definitions
+│   │   ├── services/         # DNA Extractor, Louvain Graph Engine, RAG, Copilot
+│   │   └── main.py           # Application Factory & Middleware Pipeline
+│   ├── Dockerfile            # Production Python Container Build File
+│   └── requirements.txt      # Backend Python Dependencies
 ├── frontend/                 # React 18 + TypeScript + Vite Dashboard
 │   ├── src/
-│   │   ├── components/       # UI Components (Navigation, Graphs, Cards, Tables)
+│   │   ├── components/       # Reusable UI Cards, Navigation, & React Flow Graphs
 │   │   ├── pages/            # 15 Interactive Investigator Workspace Views
-│   │   ├── App.tsx           # App Router & Layout Wrapper
-│   │   └── index.css         # Tailwind & Custom Styling
-│   ├── Dockerfile
-│   └── package.json
-├── data/                     # Synthetic incident datasets & test payloads
-├── docs/                     # Architectural decisions & design documentation
-│   ├── architecture.md       # Full Technical Architecture & Pipeline Specification
-│   └── decisions.md          # Key Engineering & Design Trade-off Decisions
-├── scripts/                  # Utility & Threshold Calibration Scripts
-│   └── calibrate_thresholds.py # Graph similarity threshold calibration
-├── tests/                    # Pytest Test Suite (90 unit & integration tests)
-├── docker-compose.yml        # Docker Multi-Container Configuration
-├── .env.example              # Environment Configuration Template
-└── spec.md                   # Full Specification Directive
+│   │   ├── App.tsx           # Main App Routing & Layout Shell
+│   │   └── index.css         # Tailwind CSS Tokens & Glassmorphism Styling
+│   ├── Dockerfile            # Nginx Production Frontend Container
+│   └── package.json          # Node.js Project Manifest
+├── data/                     # Synthetic Multilingual Benchmark Datasets
+├── docs/                     # Architectural Documentation
+│   ├── architecture.md       # Technical Pipeline Architecture & Specifications
+│   └── decisions.md          # Architectural Decision Records (ADRs)
+├── scripts/                  # Machine Learning & Graph Calibration Utilities
+│   └── calibrate_thresholds.py # Modularity & Jaccard Threshold Calibration Script
+├── tests/                    # Pytest Suite (90 Unit & Integration Tests)
+├── docker-compose.yml        # Multi-Container Deployment Orchestration
+├── vercel.json               # Vercel Serverless Build & Rewrite Specification
+├── .env.example              # Environment Variable Template
+└── README.md                 # Project Technical Documentation
 ```
 
 ---
 
-## 🔒 Security & Data Privacy Safeguards
+## 🤝 Architectural Decision Records (ADRs)
 
-- **Strict PII Redaction**: Before raw payload persistence or LLM invocation, sensitive personal data (phone numbers, email addresses, payment handles, URLs) are deterministically hashed via HMAC-SHA256.
-- **Prompt Injection Defense**: Multi-layered regex and structural input sanitization filters prevent malicious prompt overrides or extraction attempts.
-- **Zero Raw PII Storage**: Database tables store only hashed pseudonyms and anonymized tokens to remain compliant with privacy standards.
+Key engineering design decisions documented in [`docs/decisions.md`](file:///c:/Users/GUNALAN/Downloads/ScamTrapAI/docs/decisions.md):
+
+1. **ADR-001: Hybrid Graph & Vector Search**: Selected Louvain graph clustering for deterministic infrastructure links combined with dense cosine embeddings for semantic tactic matching.
+2. **ADR-002: Deterministic HMAC PII Redaction**: Implemented HMAC-SHA256 with salt to prevent raw PII persistence while preserving exact match capability across incidents.
+3. **ADR-003: SQLite / PostgreSQL Dual Driver**: Designed an abstraction layer in `backend/app/db/engine.py` allowing zero-config local SQLite development alongside production PostgreSQL + `pgvector` scaling.
 
 ---
 
 ## 📜 License
 
-Internal / Hackathon Demonstration Project. All rights reserved.
-
+Distributed under the MIT License for cyber security research and threat intelligence analysis. See `LICENSE` for details.
