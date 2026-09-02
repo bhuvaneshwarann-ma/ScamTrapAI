@@ -32,7 +32,9 @@ class CopilotService:
         if any(w in q_lower for w in ["who is the criminal", "who owns this name", "arrest", "real address"]):
             return InvestigationResponse(
                 question=query.question,
-                answer="Insufficient evidence. The system operates strictly on synthetic behavioral indicators and does not identify real-world personal identities or declare criminal guilt.",
+                assessment="Out-of-scope attribution request",
+                confidence=0.0,
+                answer="Insufficient evidence to determine this. The system operates strictly on synthetic behavioral indicators and does not identify real-world personal identities or declare criminal guilt.",
                 insufficient_evidence=True,
             )
 
@@ -44,6 +46,8 @@ class CopilotService:
                 claim_text = obs[0].claim if obs else rel.explanation
                 return InvestigationResponse(
                     question=query.question,
+                    assessment=f"High-confidence link between Incident {rel.source_incident_id[:8]} and {rel.target_incident_id[:8]}",
+                    confidence=rel.relationship_confidence,
                     answer=f"Incidents {rel.source_incident_id[:8]} and {rel.target_incident_id[:8]} are connected with confidence {rel.relationship_confidence:.2f}. Key evidence: {claim_text}.",
                     cited_evidence=rel.supporting_evidence,
                     cited_incident_ids=[rel.source_incident_id, rel.target_incident_id],
@@ -63,6 +67,8 @@ class CopilotService:
             if tactics:
                 return InvestigationResponse(
                     question=query.question,
+                    assessment=f"Identified {len(tactics)} social engineering tactics across {len(cited_inc_ids)} incidents",
+                    confidence=0.92,
                     answer=f"Observed social engineering tactics across incidents: {', '.join(sorted(tactics))}.",
                     cited_incident_ids=cited_inc_ids,
                     insufficient_evidence=False,
@@ -71,6 +77,8 @@ class CopilotService:
         # Default fallback if evidence is insufficient
         return InvestigationResponse(
             question=query.question,
-            answer="Insufficient evidence.",
+            assessment="No matching evidence found in active context",
+            confidence=0.0,
+            answer="Insufficient evidence to determine this.",
             insufficient_evidence=True,
         )

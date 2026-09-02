@@ -106,7 +106,7 @@ class CampaignStatus(str, Enum):
 
 
 class RelationshipType(str, Enum):
-    """Types of relationships between incidents."""
+    """Types of relationships between incidents and entities."""
     SHARED_PHONE = "shared_phone"
     SHARED_UPI = "shared_upi"
     SHARED_URL = "shared_url"
@@ -116,6 +116,13 @@ class RelationshipType(str, Enum):
     TEMPORAL_PROXIMITY = "temporal_proximity"
     SHARED_IMPERSONATION = "shared_impersonation"
     SHARED_TACTICS = "shared_tactics"
+    USES = "uses"
+    MENTIONS = "mentions"
+    CONTACTED_BY = "contacted_by"
+    SHARES_WITH = "shares_with"
+    SIMILAR_TO = "similar_to"
+    IMPERSONATES = "impersonates"
+    BELONGS_TO = "belongs_to"
 
 
 class RiskLevel(str, Enum):

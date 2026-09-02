@@ -75,13 +75,22 @@ class InvestigationQuery(BaseModel):
 
 
 class InvestigationResponse(BaseModel):
-    """Response from the Evidence-Bounded Investigator Copilot."""
+    """Response from the Evidence-Bounded Investigator Copilot (§ Phase 8)."""
     id: str = Field(
         default_factory=lambda: str(uuid.uuid4())
     )
     question: str = Field(
         ...,
         description="The original question."
+    )
+    assessment: Optional[str] = Field(
+        default=None,
+        description="Structured assessment summary (e.g. 'Likely associated with Campaign SC-1024')."
+    )
+    confidence: float = Field(
+        default=0.0,
+        ge=0.0, le=1.0,
+        description="Grounding confidence score (0.0–1.0)."
     )
     answer: str = Field(
         ...,
@@ -106,6 +115,14 @@ class InvestigationResponse(BaseModel):
     insufficient_evidence: bool = Field(
         default=False,
         description="True if the copilot could not answer due to insufficient evidence."
+    )
+    model_name: str = Field(
+        default="copilot-evidence-bounded-v1",
+        description="Model identifier used for Q&A synthesis."
+    )
+    scam_dna_schema_version: str = Field(
+        default="1.0",
+        description="Scam DNA schema version used."
     )
     created_at: datetime = Field(
         default_factory=lambda: datetime.now(timezone.utc)

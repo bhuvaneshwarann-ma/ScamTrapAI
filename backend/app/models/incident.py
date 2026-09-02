@@ -49,7 +49,7 @@ class Incident(BaseModel):
         description="Raw text of the scam conversation/transcript."
     )
     channel: IncidentChannel = Field(
-        ...,
+        default=IncidentChannel.SMS,
         description="Communication channel."
     )
     status: IncidentStatus = Field(

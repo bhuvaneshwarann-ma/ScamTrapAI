@@ -6,7 +6,7 @@ incident. The LLM extractor (Phase 4) populates this schema by classifying
 into the locked enums from §3.3 — it does NOT generate free text for enum fields.
 """
 
-from typing import List, Optional
+from typing import Dict, List, Optional
 
 from pydantic import BaseModel, Field
 
@@ -26,9 +26,22 @@ class ScamDNA(BaseModel):
     All enum fields are classified into the locked taxonomy — deterministic
     set-intersection is possible without LLM involvement.
     """
+    schema_version: str = Field(
+        default="1.0",
+        description="Version of the Scam DNA schema definition."
+    )
     language: str = Field(
         ...,
         description="Detected language of the incident (e.g. 'en', 'ta', 'hi', 'ta-en')."
+    )
+    language_confidence: float = Field(
+        default=0.95,
+        ge=0.0, le=1.0,
+        description="Confidence score of language classification (0.0–1.0)."
+    )
+    detected_languages: List[str] = Field(
+        default_factory=lambda: ["en"],
+        description="List of all detected languages in the payload."
     )
     channel: IncidentChannel = Field(
         ...,
@@ -108,7 +121,17 @@ class ScamDNA(BaseModel):
         description="Email addresses extracted from the incident."
     )
     extraction_confidence: float = Field(
+        default=0.92,
         ge=0.0, le=1.0,
         description="How sure the Scam DNA extractor is about the fields it extracted. "
                     "Namespaced confidence (§3.2) — backend/diagnostics only."
+    )
+    confidence_scores: Dict[str, float] = Field(
+        default_factory=lambda: {
+            "impersonation_target": 0.92,
+            "tactics": 0.90,
+            "payment_method": 0.88,
+            "urgency": 0.94,
+        },
+        description="Field-level confidence scores map (§3.2)."
     )

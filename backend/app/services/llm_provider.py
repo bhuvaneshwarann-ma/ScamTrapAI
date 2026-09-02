@@ -49,12 +49,15 @@ class MockLLMProvider(LLMProvider):
         sanitized = sanitize_input(incident_text)
         text = sanitized.sanitized_text.lower()
 
-        # Detect language
+        # Detect language and languages list
         language = "en"
+        detected_languages = ["en"]
         if any(w in text for w in ["வணக்கம்", "உங்கள்", "முடக்கப்படும்", "கட்டணம்", "கணக்கு"]):
             language = "ta-en" if any(c.isalpha() and ord(c) < 128 for c in text) else "ta"
+            detected_languages = ["ta", "en"] if language == "ta-en" else ["ta"]
         elif any(w in text for w in ["प्रिय", "खाता", "ब्लॉक", "अपडेट", "कॉल"]):
             language = "hi-en" if any(c.isalpha() and ord(c) < 128 for c in text) else "hi"
+            detected_languages = ["hi", "en"] if language == "hi-en" else ["hi"]
 
         # Detect impersonation target (closed taxonomy enum)
         target = ImpersonationTarget.OTHER
@@ -103,7 +106,10 @@ class MockLLMProvider(LLMProvider):
         domains = [re.sub(r"^https?://([^/:]+).*", r"\1", u) for u in urls]
 
         return ScamDNA(
+            schema_version="1.0",
             language=language,
+            language_confidence=0.96,
+            detected_languages=detected_languages,
             channel=channel,
             impersonation_target=target,
             urgency=urgency,
@@ -120,6 +126,12 @@ class MockLLMProvider(LLMProvider):
             urls=list(set(urls)),
             domains=list(set(domains)),
             extraction_confidence=0.92,
+            confidence_scores={
+                "impersonation_target": 0.94,
+                "social_engineering_tactics": 0.92,
+                "payment_method": 0.90,
+                "urgency": 0.95,
+            },
         )
 
 

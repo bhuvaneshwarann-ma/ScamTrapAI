@@ -16,6 +16,16 @@ from backend.app.models.enums import CampaignStatus, RiskLevel
 from backend.app.models.evidence import Evidence
 
 
+class TimelineItem(BaseModel):
+    """Timeline entry representing incident/indicator progression over time."""
+    timestamp: datetime
+    event_type: str  # e.g., 'INCIDENT_OBSERVED', 'NEW_INFRASTRUCTURE', 'NEW_TACTIC'
+    channel: Optional[str] = None
+    description: str
+    incident_id: Optional[str] = None
+    indicators: List[str] = Field(default_factory=list)
+
+
 class Campaign(BaseModel):
     """
     A detected scam campaign — a cluster of related incidents.
@@ -71,6 +81,10 @@ class Campaign(BaseModel):
     shared_tactics: List[str] = Field(
         default_factory=list,
         description="Shared social engineering tactics across incidents."
+    )
+    timeline: List[TimelineItem] = Field(
+        default_factory=list,
+        description="Chronological timeline of attack evolution across incidents."
     )
 
     # ── Temporal ──────────────────────────────────────────────────────

@@ -13,7 +13,7 @@ from typing import List, Optional, Dict, Set, Tuple
 from datetime import datetime, timezone
 
 from backend.app.models.enums import CampaignStatus, RiskLevel
-from backend.app.models.campaign import Campaign, CampaignAlert
+from backend.app.models.campaign import Campaign, CampaignAlert, TimelineItem
 from backend.app.models.incident import Incident
 from backend.app.models.relationship import Relationship
 from backend.app.services.graph_engine import GraphEngine
@@ -74,6 +74,31 @@ class CampaignDetector:
                 if cluster_rels else 0.70
             )
 
+            # Sort incidents chronologically for timeline construction
+            sorted_incidents = sorted(cluster_incidents, key=lambda inc: getattr(inc, "created_at", None) or getattr(inc, "timestamp", None) or datetime.now(timezone.utc))
+            
+            timeline_items = []
+            for inc in sorted_incidents:
+                inc_infra = []
+                if inc.scam_dna:
+                    inc_infra = list(set(inc.scam_dna.phone_numbers + inc.scam_dna.upi_ids + inc.scam_dna.urls))
+                
+                channel_val = inc.channel.value if hasattr(inc.channel, "value") else str(inc.channel)
+                inc_time = getattr(inc, "created_at", None) or getattr(inc, "timestamp", None) or datetime.now(timezone.utc)
+                timeline_items.append(
+                    TimelineItem(
+                        timestamp=inc_time,
+                        event_type="INCIDENT_OBSERVED",
+                        channel=channel_val,
+                        description=f"Incident {inc.id[:8]} observed via {channel_val.upper()} ({inc.scam_dna.impersonation_target.value if inc.scam_dna else 'unclassified'})",
+                        incident_id=inc.id,
+                        indicators=inc_infra,
+                    )
+                )
+
+            first_seen = getattr(sorted_incidents[0], "created_at", None) or getattr(sorted_incidents[0], "timestamp", None) or datetime.now(timezone.utc)
+            last_seen = getattr(sorted_incidents[-1], "created_at", None) or getattr(sorted_incidents[-1], "timestamp", None) or datetime.now(timezone.utc)
+
             # Risk level heuristic
             risk = RiskLevel.HIGH if len(cluster_incidents) >= 5 or len(infra) >= 3 else RiskLevel.MEDIUM
 
@@ -87,6 +112,9 @@ class CampaignDetector:
                 risk_level=risk,
                 shared_infrastructure=infra,
                 shared_tactics=list(shared_tactics),
+                timeline=timeline_items,
+                first_seen=first_seen,
+                last_seen=last_seen,
             )
 
             alert = CampaignAlert(

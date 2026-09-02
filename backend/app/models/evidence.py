@@ -70,3 +70,18 @@ class Evidence(BaseModel):
         default_factory=lambda: datetime.now(timezone.utc),
         description="When this evidence was generated."
     )
+
+    def compute_integrity_hash(self) -> str:
+        """Generate canonical SHA-256 tamper-evident hash for this evidence record (§ Phase 13)."""
+        import hashlib
+        import json
+        payload = {
+            "claim": self.claim,
+            "type": self.type.value if hasattr(self.type, "value") else str(self.type),
+            "source": self.source,
+            "evidence_confidence": self.evidence_confidence,
+            "supporting_incident_ids": sorted(self.supporting_incident_ids),
+            "supporting_entity_ids": sorted(self.supporting_entity_ids),
+        }
+        canonical_bytes = json.dumps(payload, sort_keys=True).encode("utf-8")
+        return hashlib.sha256(canonical_bytes).hexdigest()
