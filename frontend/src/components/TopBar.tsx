@@ -17,7 +17,7 @@ export default function TopBar() {
   useEffect(() => {
     const checkHealth = async () => {
       try {
-        const res = await fetch('/health')
+        const res = await fetch('/api/v1/health')
         if (res.ok) {
           const data = await res.json()
           setHealth(data)
