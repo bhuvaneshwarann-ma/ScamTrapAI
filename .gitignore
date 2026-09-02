@@ -54,3 +54,5 @@ coverage.xml
 
 # Pytest
 .pytest_cache/
+
+.vercel

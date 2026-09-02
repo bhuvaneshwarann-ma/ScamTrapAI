@@ -81,8 +81,8 @@ def create_app() -> FastAPI:
             "conversations into structured Scam DNA, correlates incidents, "
             "and discovers emerging campaigns."
         ),
-        docs_url="/docs" if settings.DEBUG else None,
-        redoc_url="/redoc" if settings.DEBUG else None,
+        docs_url="/docs",
+        redoc_url="/redoc",
         lifespan=lifespan,
     )
 
