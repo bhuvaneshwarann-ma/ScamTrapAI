@@ -13,103 +13,180 @@
 
 ---
 
-## 📌 Problem Statement
+## 📸 Product Interface Preview
 
-Traditional Cyber Threat Intelligence (CTI) platforms rely primarily on static technical Indicators of Compromise (IOCs)—such as IP addresses, static domain names, or file hashes. Modern threat actors running widespread fraud campaigns rapidly rotate infrastructure across disposable payment handles (UPI IDs, temporary crypto wallets), short-lived domains, and burner phone numbers while preserving underlying **psychological manipulation tactics, urgency pressure, script patterns, and social-engineering playbooks** across multilingual communication channels (SMS, WhatsApp, Email, Voice).
+```
+┌─────────────────────────────────────────────────────────────────────────────────────────────┐
+│ 🛡️ ScamTrap AI — Intelligence Center Workspace                                            │
+├─────────────────┬───────────────────────────────────────────────────────────────────────────┤
+│ 📊 Dashboard    │  ScamTrap AI Intelligence Center                      🟢 SYSTEM ONLINE    │
+│ 📋 Incidents    │  Behavioral intelligence platform for scam campaign detection             │
+│ 🕸️ Campaigns   │ ┌───────────────────────────────────────────────────────────────────────┐ │
+│ 🎯 Honeypot     │ │ 🛰️ Cyber Threat Radar & Syndicate Sweeper        🟢 5 CLUSTERS DETECTED │ │
+│ 🔍 IOC Search   │ │ Radar Latency: 12ms │ Active Nodes: 18 │ Risk Level: HIGH (88/100)   │ │
+│ 🧬 RAG Engine   │ └───────────────────────────────────────────────────────────────────────┘ │
+│ 🤖 Copilot      │ ┌─────────────────┬─────────────────┬─────────────────┬─────────────────┐ │
+│ ⚙️ Settings     │ │ Incidents: 250  │ Campaigns: 5    │ Relationships:  │ Active Alerts:  │ │
+│                 │ │ Analyzed        │ Active Clusters │ 1,225 Edges     │ 1 High Risk     │ │
+│                 │ └─────────────────┴─────────────────┴─────────────────┴─────────────────┘ │
+└─────────────────┴───────────────────────────────────────────────────────────────────────────┘
+```
+
+> **Interactive Views**: Dashboard • Incident Analysis • Scam DNA Breakdown • Campaign Graph • Attack Evolution Timeline • Investigator Copilot • STIX 2.1 CTI Export
 
 ---
 
-## 💡 Solution Architecture
+## ⚡ Why ScamTrap AI?
 
-**ScamTrap AI** converts unstructured, suspicious multilingual communications into structured behavioral signatures called **Scam DNA** (`ScamDNA` in [`backend/app/models/scam_dna.py`](backend/app/models/scam_dna.py)). 
+Traditional Cyber Threat Intelligence (CTI) detects known indicators. **ScamTrap AI detects the recurring behavioral patterns behind scam campaigns.**
 
-By coupling deterministic entity resolution with high-dimensional vector similarity (`SimilarityService` in [`backend/app/services/similarity_service.py`](backend/app/services/similarity_service.py)) and graph community clustering (`GraphEngine` & `CampaignDetector` in [`backend/app/services/graph_engine.py`](backend/app/services/graph_engine.py)), ScamTrap AI:
-1. Automatically groups isolated incidents into high-confidence **Scam Campaigns** (`Campaign` in [`backend/app/models/campaign.py`](backend/app/models/campaign.py)).
-2. Constructs chronological **Attack Evolution Timelines** (`TimelineItem`).
-3. Generates evidence-bounded natural language explanations via an **Investigator Copilot** (`CopilotService` in [`backend/app/services/copilot_service.py`](backend/app/services/copilot_service.py)).
-4. Exports standardized CTI packages (STIX 2.1 bundles, MISP JSON feeds, MITRE ATT&CK / FiCF scam taxonomy mappings in [`backend/app/api/cti.py`](backend/app/api/cti.py)).
-5. Deploys an autonomous **Trojan Victim Honeypot** (`TrojanVictimService` in [`backend/app/services/trojan_victim_service.py`](backend/app/services/trojan_victim_service.py)) to safely engage threat actors.
+Modern cybercriminals rapidly rotate infrastructure across disposable payment handles (UPI IDs, temporary wallets), short-lived domains, and burner phone numbers while preserving underlying **psychological manipulation tactics, urgency pressure, script patterns, and social-engineering playbooks** across multilingual communication channels (SMS, WhatsApp, Email, Voice).
+
+| Feature / Capability | Traditional CTI | ScamTrap AI |
+|----------------------|-----------------|-------------|
+| **Primary Vector** | Static IOCs (IPs, domains, single hashes) | Behavioral Scam DNA (`ScamDNA` v1.0) |
+| **Correlation Scope** | Individual isolated incidents | Campaign-level graph & cluster correlation |
+| **Matching Engine** | Exact string / IP matching | Semantic embedding + entity overlap similarity |
+| **Threat Output** | Flat IOC lists & blacklists | Heterogeneous relationship graphs & attack timelines |
+| **Investigation** | Manual query & investigation | Evidence-Grounded AI Investigator Copilot |
 
 ---
 
-## ✨ Key Technical Features
+## 🚦 Project Status Summary
 
-- 🧬 **Scam DNA Extraction (v1.0)**: Structured behavioral fingerprint (`ScamDNA`) tracking urgency indices, psychological tactics (`SocialEngineeringTactic`), impersonation targets (`ImpersonationTarget`), payment methods (`PaymentMethod`), and extracted identifiers with field-level namespaced confidence scores (`confidence_scores`).
+| Component Module | Status | Source Code File | Description |
+|------------------|--------|------------------|-------------|
+| **Scam DNA Extractor** | ✅ Implemented | [`backend/app/models/scam_dna.py`](backend/app/models/scam_dna.py) | Pydantic v2 schema with `schema_version`, field confidence map, & language metadata |
+| **Campaign Detection** | ✅ Implemented | [`backend/app/services/campaign_detector.py`](backend/app/services/campaign_detector.py) | Threshold detection (`min_incidents=3`), alerts, and temporal timeline sorting |
+| **Graph Intelligence** | ✅ Implemented | [`backend/app/services/graph_engine.py`](backend/app/services/graph_engine.py) | NetworkX Louvain graph clustering & React Flow graph export |
+| **Vector RAG Store** | ✅ Implemented | [`backend/app/services/rag_engine.py`](backend/app/services/rag_engine.py) | Incident embedding indexing & cosine vector search Q&A |
+| **Multilingual Normalization** | ✅ Implemented | [`backend/app/services/llm_provider.py`](backend/app/services/llm_provider.py) | Tested on English, Tamil (`ta`), Hindi (`hi`) & Code-Switching (`ta-en`, `hi-en`) |
+| **Investigator Copilot** | ✅ Implemented | [`backend/app/services/copilot_service.py`](backend/app/services/copilot_service.py) | Evidence-grounded Q&A with strict confidence threshold fallback |
+| **STIX 2.1 / MISP Export** | ✅ Implemented | [`backend/app/api/cti.py`](backend/app/api/cti.py) | Validated STIX 2.1 JSON bundle & MISP feed exporter |
+| **Audit & Evidence Integrity**| ✅ Implemented | [`backend/app/services/audit_service.py`](backend/app/services/audit_service.py) | Audit logging tracking actor, role, action, target_id, and operation details |
+| **Accuracy Benchmarking** | ✅ Implemented | [`scripts/benchmark_accuracy.py`](scripts/benchmark_accuracy.py) | Reproducible evaluation script computing Precision, Recall, and F1 |
+| **Trojan Victim Honeypot** | 🧪 Experimental | [`backend/app/services/trojan_victim_service.py`](backend/app/services/trojan_victim_service.py) | Controlled simulation mode with synthetic personas & stress tests |
+| **Production DB (pgvector)** | 🚧 Production Ready | [`backend/app/db/engine.py`](backend/app/db/engine.py) | Dual-driver SQLAlchemy 2.0 supporting SQLite (local/Vercel) & PostgreSQL + `pgvector` |
+
+---
+
+## ✨ Key Features
+
+- 🧬 **Scam DNA Extraction (v1.0)**: Decomposes raw multilingual text into structured behavioral fingerprints, tracking urgency indices, psychological tactics (`SocialEngineeringTactic`), impersonation targets (`ImpersonationTarget`), payment methods (`PaymentMethod`), and extracted IOCs with field-level namespaced confidence scores (`confidence_scores`).
 - 🕸️ **Louvain Graph Campaign Clustering**: Graph community engine built on NetworkX (`GraphEngine.get_clusters()`) optimizing modularity to discover emerging scam campaigns.
 - 🌐 **Multilingual Intelligence & Normalization**: Normalizes and correlates scam messages across English, Tamil (`ta`), Hindi (`hi`), and code-switching dialects (`ta-en`, `hi-en`) in `MockLLMProvider` ([`backend/app/services/llm_provider.py`](backend/app/services/llm_provider.py)).
 - ⏱️ **Temporal Campaign Evolution**: Chronological attack timelines (`Campaign.timeline`) tracking incident progression over time.
 - 🤖 **Evidence-Grounded Investigator Copilot**: Zero-hallucination Q&A (`CopilotService.answer_query()`) returning cited evidence IDs or fallback `"Insufficient evidence to determine this."`.
 - 🎯 **Autonomous Trojan Victim Honeypot**: Dialogue agent (`TrojanVictimService`) engaging scammers in controlled simulation mode with synthetic personas, stress testing, and kill-switch safety boundaries.
-- 🛡️ **Zero-Trust Input Pipeline & PII Protection**: Mandatory HMAC-SHA256 deterministic PII redaction (`hash_pii()` in [`backend/app/core/security.py`](backend/app/core/security.py)) and multi-pass prompt injection defense (`sanitize_input()` in [`backend/app/core/sanitizer.py`](backend/app/core/sanitizer.py)).
+- 🛡️ **Offline-First Execution & PII Protection**: Mandatory `HMAC-SHA256` deterministic PII redaction (`hash_pii()` in [`backend/app/core/security.py`](backend/app/core/security.py)) and multi-pass prompt injection defense (`sanitize_input()` in [`backend/app/core/sanitizer.py`](backend/app/core/sanitizer.py)).
 - 🔐 **Investigator Audit Logging & Evidence Integrity**: Complete audit trail (`AuditService` in [`backend/app/services/audit_service.py`](backend/app/services/audit_service.py)) and canonical SHA-256 evidence hashing (`Evidence.compute_integrity_hash()` in [`backend/app/models/evidence.py`](backend/app/models/evidence.py)).
 
 ---
 
-## ⚙️ Module Codebase Implementation Matrix
+## 🚀 Quick Start Guide
 
-| Module | Codebase Source File | Status | Technical Details |
-|--------|----------------------|--------|-------------------|
-| **Scam DNA Schema (v1.0)** | [`backend/app/models/scam_dna.py`](backend/app/models/scam_dna.py) | ✅ Implemented | Pydantic v2 schema with `schema_version`, field confidence map, & language metadata |
-| **Locked Enums Taxonomy** | [`backend/app/models/enums.py`](backend/app/models/enums.py) | ✅ Implemented | Closed-set taxonomy for `SocialEngineeringTactic`, `ImpersonationTarget`, `PaymentMethod`, `RelationshipType` |
-| **PII Hashing & Security** | [`backend/app/core/security.py`](backend/app/core/security.py) | ✅ Implemented | Deterministic `HMAC-SHA256` hashing with secret salt prior to DB persistence |
-| **Prompt Injection Guard** | [`backend/app/core/sanitizer.py`](backend/app/core/sanitizer.py) | ✅ Implemented | Multi-pass regex filtering system tags, DAN jailbreaks, and delimiter overrides |
-| **Entity Resolver** | [`backend/app/services/entity_resolver.py`](backend/app/services/entity_resolver.py) | ✅ Implemented | Canonicalization of phone numbers, UPI handles, domains, and URLs |
-| **Incident Similarity** | [`backend/app/services/similarity_service.py`](backend/app/services/similarity_service.py) | ✅ Implemented | Multi-metric vector similarity returning sub-scores & evidence reasons |
-| **Graph Community Engine** | [`backend/app/services/graph_engine.py`](backend/app/services/graph_engine.py) | ✅ Implemented | NetworkX Louvain graph clustering & React Flow graph export |
-| **Campaign Detector** | [`backend/app/services/campaign_detector.py`](backend/app/services/campaign_detector.py) | ✅ Implemented | Threshold detection (`min_incidents=3`), alerts, and temporal timeline sorting |
-| **Evidence Copilot** | [`backend/app/services/copilot_service.py`](backend/app/services/copilot_service.py) | ✅ Implemented | Strict evidence grounding with citations and insufficient evidence fallback |
-| **RAG Retrieval Engine** | [`backend/app/services/rag_engine.py`](backend/app/services/rag_engine.py) | ✅ Implemented | Incident embedding indexing & cosine vector search Q&A |
-| **CTI Exporter (STIX/MISP)** | [`backend/app/api/cti.py`](backend/app/api/cti.py) | ✅ Implemented | STIX 2.1 JSON bundle generator, MISP feeds, & MITRE ATT&CK mapping |
-| **Investigator Audit Trail**| [`backend/app/services/audit_service.py`](backend/app/services/audit_service.py) | ✅ Implemented | Audit logging tracking actor, role, action, target_id, and operation details |
-| **Evidence Integrity** | [`backend/app/models/evidence.py`](backend/app/models/evidence.py) | ✅ Implemented | Canonical SHA-256 checksum generator `compute_integrity_hash()` |
-| **Accuracy Benchmarking** | [`scripts/benchmark_accuracy.py`](scripts/benchmark_accuracy.py) | ✅ Implemented | Reproducible evaluation script computing Precision, Recall, and F1 |
-| **Trojan Victim Honeypot** | [`backend/app/services/trojan_victim_service.py`](backend/app/services/trojan_victim_service.py) | 🧪 Experimental | Controlled simulation mode with synthetic personas & stress tests |
-| **Dual ORM Database Engine**| [`backend/app/db/engine.py`](backend/app/db/engine.py) | 🚧 Production Ready | Dual-driver SQLAlchemy 2.0 supporting SQLite (local/Vercel) & PostgreSQL + `pgvector` |
+### Prerequisites
+- **Python**: `3.11+`
+- **Node.js**: `v20.x+` (`npm` `v10+`)
+- **Docker** *(Optional)*: Docker Desktop `v24+` / Docker Compose `v2+`
+
+### 1. Local Setup Commands
+
+```bash
+# Clone environment configuration template
+cp .env.example .env
+
+# Create Python 3.11 virtual environment
+python -m venv venv
+
+# Activate virtual environment (Windows PowerShell)
+.\venv\Scripts\activate
+
+# Activate virtual environment (macOS / Linux)
+# source venv/bin/activate
+
+# Install backend dependencies
+pip install -r requirements.txt
+
+# Start FastAPI backend service (Terminal 1)
+uvicorn backend.app.main:app --reload --port 8000
+```
+
+In a secondary terminal window:
+
+```bash
+# Start React + TypeScript + Vite frontend service (Terminal 2)
+cd frontend
+npm install
+npm run dev
+```
+
+- 🌐 **Frontend App Deck**: `http://localhost:5173`
+- ⚡ **Backend API**: `http://localhost:8000`
+- 📖 **Interactive OpenAPI Docs**: `http://localhost:8000/docs`
 
 ---
 
-## 🏗️ System Architecture & Data Flow Pipeline
+## 🔄 End-to-End Investigation Pipeline Workflow
 
 ```
-                           [ Raw Input Stream ]
-                  (SMS / WhatsApp / Email / Voice Audio)
-                                     │
-                                     ▼
-                     ┌──────────────────────────────┐
-                     │ 🛡️ Security Guard & Sanitizer│  backend/app/core/sanitizer.py
-                     │  - Regex Injection Guard    │  backend/app/core/security.py
-                     │  - HMAC-SHA256 PII Hashing   │
-                     └───────────────┬──────────────┘
-                                     │
-                                     ▼
-                     ┌──────────────────────────────┐
-                     │ 🧬 LLM Scam DNA Extractor    │  backend/app/models/scam_dna.py
-                     │  - Behavioral Parsing        │  backend/app/services/llm_provider.py
-                     │  - Tactics, Triggers, IOCs   │
-                     └───────────────┬──────────────┘
-                                     │
-                  ┌──────────────────┴──────────────────┐
-                  ▼                                     ▼
-   ┌─────────────────────────────┐       ┌─────────────────────────────┐
-   │ 🕸️ Graph Correlation Engine │       │ 🧠 Vector Store & RAG Engine│
-   │  - Entity Disambiguation    │       │  - Incident Embeddings      │  backend/app/services/
-   │  - NetworkX Louvain Clusters│       │  - pgvector / Cosine Search │    rag_engine.py
-   └──────────────┬──────────────┘       └──────────────┬──────────────┘
-                  │                                     │
-                  └──────────────────┬──────────────────┘
-                                     │
-                                     ▼
-                     ┌──────────────────────────────┐
-                     │ 🎯 Investigator Control Deck │  frontend/src/pages/
-                     │  - Graph & Campaign Deck     │  (Dashboard, Campaigns,
-                     │  - Copilot / CTI Export     │   Copilot, ThreatFeeds)
-                     │  - Trojan Victim Honeypot    │
-                     └───────────────┬──────────────┘
+       Suspicious Multilingual Communication (SMS / WhatsApp / Email / Voice)
+                                         │
+                                         ▼
+                   ┌───────────────────────────────────────────┐
+                   │  Sanitization & PII Protection            │
+                   │  - HMAC-SHA256 Deterministic PII Redaction│
+                   │  - Multi-pass Prompt Injection Guardrail  │
+                   └─────────────────────┬─────────────────────┘
+                                         │
+                                         ▼
+                   ┌───────────────────────────────────────────┐
+                   │  Scam DNA Extraction (v1.0)               │
+                   │  - Urgency, Tactics, Impersonation Target │
+                   │  - Namespaced Field Confidence Scores     │
+                   └─────────────────────┬─────────────────────┘
+                                         │
+                                         ▼
+                   ┌───────────────────────────────────────────┐
+                   │  Entity Resolution & Disambiguation       │
+                   │  - UPI, Domain, URL, Phone Canonicalization│
+                   └─────────────────────┬─────────────────────┘
+                                         │
+                                         ▼
+                   ┌───────────────────────────────────────────┐
+                   │  Pairwise Similarity Analysis             │
+                   │  - Composite Vector + Jaccard Scoring     │
+                   │  - Sub-score Breakdown & Evidence Reasons │
+                   └─────────────────────┬─────────────────────┘
+                                         │
+                                         ▼
+                   ┌───────────────────────────────────────────┐
+                   │  Graph Community Correlation (Louvain)    │
+                   │  - NetworkX Graph Edge Weighting          │
+                   │  - Cluster Discovery & Modularity Optimization
+                   └─────────────────────┬─────────────────────┘
+                                         │
+                                         ▼
+                   ┌───────────────────────────────────────────┐
+                   │  Campaign Detection & Timeline Assembly   │
+                   │  - Emerging Campaign Alerts               │
+                   │  - Chronological Attack Progression Timeline│
+                   └─────────────────────┬─────────────────────┘
+                                         │
+                  ┌──────────────────────┴──────────────────────┐
+                  ▼                                             ▼
+┌───────────────────────────────────┐         ┌───────────────────────────────────┐
+│  Investigator Copilot Query       │         │  Cyber Threat Intelligence Export │
+│  - Evidence-Grounded Q&A          │         │  - STIX 2.1 JSON Bundles          │
+│  - Citation & Threshold Fallback  │         │  - MISP JSON Threat Feeds         │
+└───────────────────────────────────┘         └───────────────────────────────────┘
 ```
 
 ---
 
-## 🧬 Scam DNA & Technical Specifications
+## 🧬 Scam DNA Engine & Technical Specifications
+
+A scammer can change their phone number, URL, or payment handle while keeping the same psychological script. **ScamTrap AI captures this recurring behavioral pattern as Scam DNA.**
 
 ### 1. Scam DNA Vector Formulation
 Each ingested incident $I_k$ is decomposed into a structured behavioral vector in `ScamDNA`:
@@ -127,10 +204,7 @@ Incident pair correlation confidence $S(I_a, I_b) \in [0.0, 1.0]$ in `Similarity
 
 $$S(I_a, I_b) = w_1 \cdot J(E_a, E_b) + w_2 \cdot J(T_a, T_b) + w_3 \cdot \cos(\vec{v}_a, \vec{v}_b) - w_4 \cdot |U_a - U_b|$$
 
-Where:
-- $J(X, Y) = \frac{|X \cap Y|}{|X \cup Y|}$ represents Jaccard Similarity over entities ($E$) and tactics ($T$).
-- $\cos(\vec{v}_a, \vec{v}_b)$ represents Cosine Vector Similarity.
-- Output `SimilarityResult` exposes `entity_overlap_score`, `tactic_similarity_score`, `semantic_similarity_score`, `urgency_similarity_score`, and `primary_evidence_reasons`.
+Where $J(X, Y) = \frac{|X \cap Y|}{|X \cup Y|}$ represents Jaccard Similarity over entities ($E$) and tactics ($T$). Output `SimilarityResult` exposes `entity_overlap_score`, `tactic_similarity_score`, `semantic_similarity_score`, `urgency_similarity_score`, and `primary_evidence_reasons`.
 
 ### 3. Louvain Graph Community Detection
 Incidents and extracted entities form a heterogeneous undirected graph $G = (V, E)$ in `GraphEngine`. The campaign detection engine optimizes modularity $Q$ over community partition $C$:
@@ -147,7 +221,78 @@ $$Q = \frac{1}{2m} \sum_{i,j} \left[ A_{ij} - \frac{k_i k_j}{2m} \right] \delta(
 | **Prompt Injection Defense** | [`backend/app/core/sanitizer.py`](backend/app/core/sanitizer.py) | Multi-pass regex filtering `<sys_override>`, `system:`, and DAN jailbreaks |
 | **Evidence Integrity** | [`backend/app/models/evidence.py`](backend/app/models/evidence.py) | Canonical SHA-256 checksum generator `compute_integrity_hash()` |
 | **Investigator Audit Trail** | [`backend/app/services/audit_service.py`](backend/app/services/audit_service.py) | Audit logging tracking actor, role, action, target_id, and operation details |
-| **Zero External Leaks** | [`backend/app/services/llm_provider.py`](backend/app/services/llm_provider.py) | Offline-first `MockLLMProvider` fallback for air-gapped execution |
+| **Offline-First Execution** | [`backend/app/services/llm_provider.py`](backend/app/services/llm_provider.py) | Offline-first `MockLLMProvider` fallback for air-gapped execution |
+
+---
+
+## 💻 API Example & Gateway Reference
+
+### Incident Analysis API Example
+
+```bash
+curl -X POST http://localhost:8000/api/v1/incidents/analyze \
+  -H "Content-Type: application/json" \
+  -d '{
+    "channel": "sms",
+    "raw_text": "URGENT: SBI YONO account will be blocked today. Update your KYC immediately at http://sbi-kyc-update.com or pay Rs 1 to sbi.kyc@ybl"
+  }'
+```
+
+#### Scam DNA Extracted Response
+
+```json
+{
+  "incident_id": "inc-101",
+  "status": "analyzed",
+  "scam_dna": {
+    "schema_version": "1.0",
+    "language": "ta-en",
+    "language_confidence": 0.96,
+    "channel": "sms",
+    "impersonation_target": "bank",
+    "urgency": 0.9,
+    "fear": 0.85,
+    "authority_pressure": 0.8,
+    "credential_request": true,
+    "payment_request": true,
+    "payment_method": "upi",
+    "requested_action": "Update KYC / Pay pending bill or fee",
+    "social_engineering_tactics": [
+      "urgency_pressure",
+      "authority_impersonation"
+    ],
+    "phone_numbers": [],
+    "upi_ids": ["sbi.kyc@ybl"],
+    "urls": ["http://sbi-kyc-update.com"],
+    "domains": ["sbi-kyc-update.com"],
+    "extraction_confidence": 0.92,
+    "confidence_scores": {
+      "impersonation_target": 0.94,
+      "social_engineering_tactics": 0.92,
+      "payment_method": 0.90,
+      "urgency": 0.95
+    }
+  }
+}
+```
+
+### API Endpoint Reference Summary
+
+| Domain | Method | Endpoint Path | Source Route Handler | Description |
+|--------|--------|---------------|----------------------|-------------|
+| **System** | `GET` | `/api/v1/health` | [`backend/app/api/health.py`](backend/app/api/health.py) | System health check, version, & uptime |
+| **Auth** | `POST` | `/api/v1/auth/login` | [`backend/app/api/auth.py`](backend/app/api/auth.py) | Analyst authentication & bearer token |
+| **Incidents** | `GET` | `/api/v1/incidents` | [`backend/app/api/incidents.py`](backend/app/api/incidents.py) | List ingested incidents with filter parameters |
+| | `POST` | `/api/v1/incidents/analyze` | [`backend/app/api/incidents.py`](backend/app/api/incidents.py) | Ingest raw payload, sanitize PII, & extract Scam DNA |
+| **Campaigns** | `GET` | `/api/v1/campaigns` | [`backend/app/api/campaigns.py`](backend/app/api/campaigns.py) | List auto-clustered scam campaigns |
+| | `GET` | `/api/v1/campaigns/graph` | [`backend/app/api/campaigns.py`](backend/app/api/campaigns.py) | Fetch graph nodes & edges formatted for React Flow |
+| **Investigations** | `POST` | `/api/v1/investigations/copilot` | [`backend/app/api/investigations.py`](backend/app/api/investigations.py) | Natural language query interface for analyst copilot |
+| **RAG** | `POST` | `/api/v1/rag/query` | [`backend/app/api/rag.py`](backend/app/api/rag.py) | Vector search over indexed incident knowledge base |
+| **CTI Export** | `GET` | `/api/v1/cti/stix` | [`backend/app/api/cti.py`](backend/app/api/cti.py) | Export campaign threat intelligence as STIX 2.1 bundle |
+| | `GET` | `/api/v1/cti/misp` | [`backend/app/api/cti.py`](backend/app/api/cti.py) | Export threat indicators in MISP JSON format |
+| | `GET` | `/api/v1/cti/mitre-matrix` | [`backend/app/api/cti.py`](backend/app/api/cti.py) | Map campaign tactics to MITRE ATT&CK / FiCF taxonomy |
+| **Honeypot** | `POST` | `/api/v1/trojan-victim/generate` | [`backend/app/api/trojan_victim.py`](backend/app/api/trojan_victim.py) | Generate honeypot victim profile for active engagement |
+| | `POST` | `/api/v1/trojan-victim/stress-test` | [`backend/app/api/trojan_victim.py`](backend/app/api/trojan_victim.py) | Run adversarial dialogue turn against scammer |
 
 ---
 
@@ -172,63 +317,7 @@ F1-Score           : 50.0%
 ======================================================================
 ```
 
----
-
-## 🔌 API Gateway Reference Summary
-
-| Domain | Method | Endpoint Path | Source Route Handler | Description |
-|--------|--------|---------------|----------------------|-------------|
-| **System** | `GET` | `/api/v1/health` | [`backend/app/api/health.py`](backend/app/api/health.py) | System health check, version, & uptime |
-| **Auth** | `POST` | `/api/v1/auth/login` | [`backend/app/api/auth.py`](backend/app/api/auth.py) | Analyst authentication & bearer token |
-| **Incidents** | `GET` | `/api/v1/incidents` | [`backend/app/api/incidents.py`](backend/app/api/incidents.py) | List ingested incidents with filter parameters |
-| | `POST` | `/api/v1/incidents/analyze` | [`backend/app/api/incidents.py`](backend/app/api/incidents.py) | Ingest raw payload, sanitize PII, & extract Scam DNA |
-| **Campaigns** | `GET` | `/api/v1/campaigns` | [`backend/app/api/campaigns.py`](backend/app/api/campaigns.py) | List auto-clustered scam campaigns |
-| | `GET` | `/api/v1/campaigns/graph` | [`backend/app/api/campaigns.py`](backend/app/api/campaigns.py) | Fetch graph nodes & edges formatted for React Flow |
-| **Investigations** | `POST` | `/api/v1/investigations/copilot` | [`backend/app/api/investigations.py`](backend/app/api/investigations.py) | Natural language query interface for analyst copilot |
-| **RAG** | `POST` | `/api/v1/rag/query` | [`backend/app/api/rag.py`](backend/app/api/rag.py) | Vector search over indexed incident knowledge base |
-| **CTI Export** | `GET` | `/api/v1/cti/stix` | [`backend/app/api/cti.py`](backend/app/api/cti.py) | Export campaign threat intelligence as STIX 2.1 bundle |
-| | `GET` | `/api/v1/cti/misp` | [`backend/app/api/cti.py`](backend/app/api/cti.py) | Export threat indicators in MISP JSON format |
-| | `GET` | `/api/v1/cti/mitre-matrix` | [`backend/app/api/cti.py`](backend/app/api/cti.py) | Map campaign tactics to MITRE ATT&CK / FiCF taxonomy |
-| **Honeypot** | `POST` | `/api/v1/trojan-victim/generate` | [`backend/app/api/trojan_victim.py`](backend/app/api/trojan_victim.py) | Generate honeypot victim profile for active engagement |
-| | `POST` | `/api/v1/trojan-victim/stress-test` | [`backend/app/api/trojan_victim.py`](backend/app/api/trojan_victim.py) | Run adversarial dialogue turn against scammer |
-
----
-
-## 🚀 Quick Start Guide
-
-### Prerequisites
-- **Python**: `3.11+`
-- **Node.js**: `v20.x+` (`npm` `v10+`)
-- **Docker** *(Optional)*: Docker Desktop `v24+` / Docker Compose `v2+`
-
-### Local Development Setup
-
-#### 1. Start Backend Service
-```bash
-# Clone environment configuration
-cp .env.example .env
-
-# Create Python virtual environment
-python -m venv venv
-
-# Activate virtual environment (Windows PowerShell)
-.\venv\Scripts\activate
-
-# Install backend dependencies
-pip install -r requirements.txt
-
-# Run FastAPI dev server
-uvicorn backend.app.main:app --reload --port 8000
-```
-
-#### 2. Start Frontend Application
-In a secondary terminal window:
-```bash
-cd frontend
-npm install
-npm run dev
-```
-Frontend interface will be accessible at `http://localhost:5173`.
+> *Note: This is an initial reproducible benchmark executed on a 3-incident synthetic evaluation dataset to verify mathematical pipeline stability. It should not be interpreted as real-world production accuracy.*
 
 ---
 
@@ -313,6 +402,23 @@ Key engineering design decisions documented in [`docs/decisions.md`](docs/decisi
 1. **ADR-001: Hybrid Graph & Vector Search**: Selected Louvain graph clustering for deterministic infrastructure links combined with dense cosine embeddings for semantic tactic matching.
 2. **ADR-002: Deterministic HMAC PII Redaction**: Implemented HMAC-SHA256 with salt to prevent raw PII persistence while preserving exact match capability across incidents.
 3. **ADR-003: SQLite / PostgreSQL Dual Driver**: Designed an abstraction layer in `backend/app/db/engine.py` allowing zero-config local SQLite development alongside production PostgreSQL + `pgvector` scaling.
+
+---
+
+## 🗺️ Roadmap
+
+- [x] **Scam DNA Schema v1.0** with field-level namespaced confidence scores
+- [x] **Graph Community Campaign Detection** using Louvain modularity optimization
+- [x] **Multilingual Normalization** across English, Tamil (`ta`), Hindi (`hi`), and dialect code-switching
+- [x] **Evidence-Grounded Copilot** with strict citation fallback (`"Insufficient evidence to determine this."`)
+- [x] **Standardized CTI Exports** (STIX 2.1 JSON bundles, MISP feeds, & MITRE ATT&CK / FiCF taxonomy)
+- [x] **Investigator Audit Logging** (`AuditService`) & canonical SHA-256 evidence checksums
+- [x] **Reproducible Accuracy Benchmark Script** (`scripts/benchmark_accuracy.py`)
+- [ ] **Expanded Multilingual Benchmark** over 10,000+ real-world multilingual incident samples
+- [ ] **Real-World CTI Feed Ingestion** (Automated sync with CERT-In and MISP threat feeds)
+- [ ] **Advanced Temporal Graph Analytics** with continuous sliding-window campaign clustering
+- [ ] **Native PostgreSQL + pgvector Infrastructure** with automated Alembic migrations
+- [ ] **Multi-Tenant Investigator Workspace** with Role-Based Access Control (RBAC)
 
 ---
 
