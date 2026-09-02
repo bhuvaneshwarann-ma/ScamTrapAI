@@ -15,6 +15,7 @@ Usage:
     init_db()  # Creates all tables
 """
 
+import os
 from typing import Generator
 
 from sqlalchemy import create_engine, event
@@ -34,6 +35,8 @@ class Base(DeclarativeBase):
 def _create_engine():
     """Create the SQLAlchemy engine based on configuration."""
     url = settings.DATABASE_URL
+    if os.getenv("VERCEL") and url.startswith("sqlite"):
+        url = "sqlite:////tmp/scamtrap.db"
 
     # SQLite-specific configuration
     if url.startswith("sqlite"):
