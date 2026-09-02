@@ -15,15 +15,7 @@ ScamTrap AI transforms suspicious multilingual communications into behavioral Sc
 
 [📖 Interactive OpenAPI Docs](http://localhost:8000/docs) • [💻 GitHub Repository](https://github.com/bhuvaneshwarann-ma/ScamTrapAI) • [📊 Architecture Specification](docs/architecture.md) • [🤝 ADR Decisions](docs/decisions.md)
 
----
 
-## 📸 Product Interface Preview
-
-![ScamTrap AI Intelligence Center Dashboard](docs/images/dashboard.png)
-
-> **Workspace Navigation**: Dashboard • Incident Ingestion • Scam DNA Breakdown • Campaign Graph • Attack Evolution Timeline • Investigator Copilot • STIX 2.1 Export
-
----
 
 ## ⚡ Why ScamTrap AI?
 
