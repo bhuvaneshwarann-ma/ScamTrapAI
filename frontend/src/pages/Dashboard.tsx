@@ -32,9 +32,9 @@ export default function Dashboard() {
   }, [])
 
   return (
-    <div className="animate-fade-in">
+    <div className="animate-fade-in" style={{ maxWidth: '1200px', margin: '0 auto', width: '100%', display: 'flex', flexDirection: 'column', gap: '24px', paddingBottom: '40px' }}>
       {/* Hero Section */}
-      <div className="glass-card glass-card--accent" style={{ marginBottom: '24px' }}>
+      <div className="glass-card glass-card--accent">
         <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
           <div style={{
             width: '56px',
